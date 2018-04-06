@@ -45,6 +45,12 @@ namespace Mobius.iOS.Views
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
                 cell.CollectionViewHomeCell14.Tag = 1;
+                var layout = new UICollectionViewFlowLayout();
+                layout.ScrollDirection = UICollectionViewScrollDirection.Horizontal;
+                //layout.ItemSize = new CGSize(tableView.Frame.Width * (nfloat)0.8,tableView.Frame.Height * (nfloat)0.25);
+                cell.CollectionViewHomeCell14.CollectionViewLayout = layout;
+                cell.ConstraintCollectionViewHeight.Constant = tableView.Frame.Height * (nfloat)0.25;
+
                 cell.CollectionViewHomeCell14.Source = new MainHomeCollectionSource(cell.CollectionViewHomeCell14);
                 cell.CollectionViewHomeCell14.Delegate = new MainHomeCollectionLayoutDelegate(cell.CollectionViewHomeCell14);
                 return cell;
@@ -54,6 +60,11 @@ namespace Mobius.iOS.Views
                 var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
+                var layout = new UICollectionViewFlowLayout();
+                layout.ScrollDirection = UICollectionViewScrollDirection.Horizontal;
+                //layout.ItemSize = new CGSize(tableView.Frame.Width * (nfloat)0.8,tableView.Frame.Height * (nfloat)0.25);
+                cell.CollectionViewHomeCell14.CollectionViewLayout = layout;
+                cell.ConstraintCollectionViewHeight.Constant = tableView.Frame.Height * (nfloat)0.45;
                 cell.CollectionViewHomeCell14.Tag = 2;
                 cell.CollectionViewHomeCell14.Source = new MainHomeCollectionSource(cell.CollectionViewHomeCell14);
                 cell.CollectionViewHomeCell14.Delegate = new MainHomeCollectionLayoutDelegate(cell.CollectionViewHomeCell14);
@@ -64,6 +75,11 @@ namespace Mobius.iOS.Views
                 var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell6", NSBundle.MainBundle), "HomeCell6");
+                var layout = new UICollectionViewFlowLayout();
+                layout.ScrollDirection = UICollectionViewScrollDirection.Horizontal;
+                //layout.ItemSize = new CGSize(tableView.Frame.Width * (nfloat)0.8,tableView.Frame.Height * (nfloat)0.25);
+                cell.CollectionViewHomeCell14.CollectionViewLayout = layout;
+                cell.ConstraintCollectionViewHeight.Constant = tableView.Frame.Height * (nfloat)0.45;
                 cell.CollectionViewHomeCell14.Tag = 3;
                 cell.CollectionViewHomeCell14.Source = new MainHomeCollectionSource(cell.CollectionViewHomeCell14);
                 cell.CollectionViewHomeCell14.Delegate = new MainHomeCollectionLayoutDelegate(cell.CollectionViewHomeCell14);
@@ -98,6 +114,7 @@ namespace Mobius.iOS.Views
                 var layout = new UICollectionViewFlowLayout();
                 layout.ScrollDirection = UICollectionViewScrollDirection.Vertical;
                 cell.CollectionViewHomeCell14.CollectionViewLayout = layout;
+                cell.ConstraintCollectionViewHeight.Constant = tableView.Frame.Height * (nfloat)0.75;
                 cell.CollectionViewHomeCell14.Source = new HomeViewOffer3Cell(cell.CollectionViewHomeCell14);
                 cell.CollectionViewHomeCell14.Delegate = new HomeViewOffer3CellLayout(cell.CollectionViewHomeCell14);
                 //cell.CollectionViewHomeCell14.scrol

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Roboto-Regular.ttf">
@@ -22,23 +21,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SfF-eA-nc5" id="eIb-4g-aqD">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHy-Rk-i0H">
-                        <rect key="frame" x="23" y="12" width="244" height="16.5"/>
+                        <rect key="frame" x="23" y="12" width="34" height="16.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                         <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F71-sE-gaS">
-                        <rect key="frame" x="23" y="31.5" width="244" height="22.5"/>
+                        <rect key="frame" x="23" y="31.5" width="171" height="22.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Shi-Jt-ATW">
-                        <rect key="frame" x="45" y="55" width="222" height="29"/>
+                        <rect key="frame" x="45" y="55" width="149" height="29"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                         <state key="normal" title="29th Aug - 4th Sep 2018">
                             <color key="titleColor" red="0.25490196079999999" green="0.69411764710000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,8 +60,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeDefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-Zn-o9p">
                         <rect key="frame" x="272" y="17.5" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="Pw3-QM-nDt"/>
-                            <constraint firstAttribute="width" constant="50" id="mx6-7G-5kJ"/>
+                            <constraint firstAttribute="width" constant="50" id="99n-KW-mu4"/>
+                            <constraint firstAttribute="height" constant="50" id="UJL-y9-9F0"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -70,13 +69,14 @@
                     <constraint firstItem="F71-sE-gaS" firstAttribute="top" secondItem="HHy-Rk-i0H" secondAttribute="bottom" constant="3" id="0Av-bF-L6G"/>
                     <constraint firstItem="tQG-e7-K8p" firstAttribute="top" secondItem="F71-sE-gaS" secondAttribute="bottom" constant="5" id="5Po-p5-YFm"/>
                     <constraint firstItem="F71-sE-gaS" firstAttribute="centerY" secondItem="eIb-4g-aqD" secondAttribute="centerY" id="6sP-l5-PLH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HC7-Zn-o9p" secondAttribute="bottom" constant="6.5" id="9Wx-Yj-niD"/>
                     <constraint firstItem="kme-rz-75S" firstAttribute="centerY" secondItem="eIb-4g-aqD" secondAttribute="centerY" id="AJ0-a1-oeX"/>
-                    <constraint firstItem="kme-rz-75S" firstAttribute="leading" secondItem="HC7-Zn-o9p" secondAttribute="trailing" constant="8" id="T6D-Qy-WRN"/>
+                    <constraint firstItem="HC7-Zn-o9p" firstAttribute="top" secondItem="eIb-4g-aqD" secondAttribute="topMargin" constant="6.5" id="C9I-Tc-W9v"/>
+                    <constraint firstAttribute="bottom" secondItem="tQG-e7-K8p" secondAttribute="bottom" constant="6" id="F95-2a-B1R"/>
+                    <constraint firstAttribute="bottom" secondItem="Shi-Jt-ATW" secondAttribute="bottom" constant="1" id="GTq-9F-ceT"/>
+                    <constraint firstItem="kme-rz-75S" firstAttribute="leading" secondItem="HC7-Zn-o9p" secondAttribute="trailing" constant="8" id="NgJ-8s-fF5"/>
                     <constraint firstItem="F71-sE-gaS" firstAttribute="leading" secondItem="eIb-4g-aqD" secondAttribute="leadingMargin" constant="7" id="Uf2-Mu-p5Z"/>
                     <constraint firstItem="HHy-Rk-i0H" firstAttribute="leading" secondItem="eIb-4g-aqD" secondAttribute="leadingMargin" constant="7" id="Urq-1U-ha3"/>
-                    <constraint firstItem="HC7-Zn-o9p" firstAttribute="leading" secondItem="HHy-Rk-i0H" secondAttribute="trailing" constant="5" id="Y9T-vs-r26"/>
-                    <constraint firstItem="HC7-Zn-o9p" firstAttribute="centerY" secondItem="eIb-4g-aqD" secondAttribute="centerY" id="Ze6-07-EZN"/>
-                    <constraint firstItem="HC7-Zn-o9p" firstAttribute="leading" secondItem="F71-sE-gaS" secondAttribute="trailing" constant="5" id="bGU-dU-NiA"/>
                     <constraint firstItem="Shi-Jt-ATW" firstAttribute="top" secondItem="F71-sE-gaS" secondAttribute="bottom" constant="1" id="hl0-LT-OXl"/>
                     <constraint firstItem="Shi-Jt-ATW" firstAttribute="trailing" secondItem="F71-sE-gaS" secondAttribute="trailing" id="mwV-Ph-PG1"/>
                     <constraint firstAttribute="trailingMargin" secondItem="kme-rz-75S" secondAttribute="trailing" constant="9" id="nof-Lg-oA3"/>
@@ -85,101 +85,14 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="ConstraintImageWidth" destination="mx6-7G-5kJ" id="UYi-2b-0L0"/>
+                <outlet property="ConstraintImageWidth" destination="99n-KW-mu4" id="fbV-cA-Atm"/>
             </connections>
             <point key="canvasLocation" x="80.5" y="-54.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="homeCal" width="512" height="512"/>
-        <image name="homeDefaultImage" width="512" height="512"/>
-        <image name="homeNextArrow" width="32" height="32"/>
-        <image name="homeIcon" width="32" height="32"/>
-        <image name="nextArrow" width="32" height="32"/>
-        <image name="cal" width="512" height="512"/>
-        <image name="check" width="512" height="512"/>
-        <image name="checkwhite" width="512" height="512"/>
-        <image name="clock" width="2134" height="2134"/>
-        <image name="clockwhite" width="2134" height="2134"/>
-        <image name="defaultimage" width="512" height="512"/>
-        <image name="fb" width="512" height="512"/>
-        <image name="food" width="512" height="512"/>
-        <image name="gym" width="512" height="512"/>
-        <image name="homeAdd" width="512" height="512"/>
-        <image name="homeBestOffer" width="512" height="512"/>
-        <image name="location" width="512" height="512"/>
-        <image name="moon" width="512" height="512"/>
-        <image name="nextarrowhome" width="512" height="512"/>
-        <image name="ratingempty" width="512" height="512"/>
-        <image name="ratingfull" width="512" height="512"/>
-        <image name="ratinghalf" width="512" height="512"/>
-        <image name="homeCheck" width="512" height="512"/>
-        <image name="homeCheckWhite" width="512" height="512"/>
-        <image name="homeClock" width="2134" height="2134"/>
-        <image name="homeClockWhite" width="2134" height="2134"/>
-        <image name="homeFB" width="512" height="512"/>
-        <image name="homeFood" width="512" height="512"/>
-        <image name="homeGym" width="512" height="512"/>
-        <image name="homeLocation" width="512" height="512"/>
-        <image name="homeMoon" width="512" height="512"/>
-        <image name="homeNextArrowHome" width="512" height="512"/>
-        <image name="homeRatingEmpty" width="512" height="512"/>
-        <image name="homeRatingFull" width="512" height="512"/>
-        <image name="homeRatingHalf" width="512" height="512"/>
-        <image name="homeParking" width="512" height="512"/>
-        <image name="homePencil" width="512" height="512"/>
-        <image name="homePerson" width="512" height="512"/>
-        <image name="homePersonWhite" width="512" height="512"/>
-        <image name="homeRoom" width="512" height="512"/>
-        <image name="homeSettings" width="512" height="512"/>
-        <image name="homeSwim" width="512" height="512"/>
-        <image name="homeWiFi" width="512" height="512"/>
-        <image name="homeicon" width="32" height="32"/>
-        <image name="nextarrow" width="32" height="32"/>
-        <image name="hotelRoomTest" width="1920" height="1200"/>
-        <image name="add-1" width="512" height="512"/>
-        <image name="arrow-white" width="50" height="34"/>
-        <image name="arrow" width="50" height="34"/>
-        <image name="best-offer" width="512" height="512"/>
-        <image name="check-white" width="512" height="512"/>
-        <image name="clock-white" width="2134" height="2134"/>
-        <image name="empty" width="512" height="512"/>
-        <image name="food-1" width="512" height="512"/>
-        <image name="full" width="512" height="512"/>
-        <image name="grey-cross-1" width="512" height="512"/>
-        <image name="gym-1" width="512" height="512"/>
-        <image name="half" width="512" height="512"/>
-        <image name="img" width="512" height="512"/>
-        <image name="minus" width="512" height="512"/>
-        <image name="moon-1" width="512" height="512"/>
-        <image name="next-arrrow-1" width="512" height="512"/>
-        <image name="parking-1" width="512" height="512"/>
-        <image name="pencil-1" width="512" height="512"/>
-        <image name="person-1" width="512" height="512"/>
-        <image name="person-white" width="512" height="512"/>
-        <image name="red-cross-1" width="512" height="512"/>
-        <image name="room-1" width="512" height="512"/>
-        <image name="search-1" width="512" height="512"/>
-        <image name="settings-1" width="512" height="512"/>
-        <image name="swim-1" width="512" height="512"/>
-        <image name="tag" width="512" height="515"/>
-        <image name="wifi-1" width="512" height="512"/>
-        <image name="BuildingMobius" width="259" height="194"/>
-        <image name="calWhite" width="512" height="512"/>
-        <image name="handicaped-white" width="512" height="512"/>
-        <image name="heart-line" width="512" height="512"/>
-        <image name="heart" width="512" height="512"/>
-        <image name="hotel-calendar-white" width="512" height="512"/>
-        <image name="locationWhite" width="512" height="512"/>
-        <image name="lock-white" width="512" height="512"/>
-        <image name="moon-white" width="512" height="512"/>
-        <image name="personWhite" width="512" height="512"/>
-        <image name="pet-white" width="512" height="512"/>
-        <image name="spoon-white" width="512" height="512"/>
-        <image name="top-bar-calendar" width="512" height="512"/>
-        <image name="gymWhiteBack" width="512" height="512"/>
-        <image name="bgblur.png" width="240" height="320"/>
-        <image name="Triangle.png" width="54" height="36"/>
-        <image name="user.png" width="18" height="18"/>
+        <image name="homeCal" width="256" height="256"/>
+        <image name="homeDefaultImage" width="256" height="256"/>
+        <image name="homeNextArrow" width="256" height="256"/>
     </resources>
 </document>

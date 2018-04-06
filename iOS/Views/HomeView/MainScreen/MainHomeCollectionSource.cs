@@ -24,6 +24,7 @@ namespace Mobius.iOS.Views
                 if (collectionView.Tag == 1)
                 {
                     var cell = (HomeCell4)collectionView.DequeueReusableCell(HomeCell4.Key, indexPath);
+                cell.ConstraintOfferHeight.Constant = 25;
                     return cell;
                 }
                 else if (collectionView.Tag == 2)
