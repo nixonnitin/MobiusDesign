@@ -41,8 +41,6 @@ namespace Mobius.iOS.Views
             TableViewHome.Source = new HomeViewTable(TableViewHome, sections);
 
             TableViewHome.Delegate = new HomeViewTableCellLayout(TableViewHome,View.Frame.Size);
-
-
         }
     }
 

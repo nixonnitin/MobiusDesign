@@ -37,7 +37,7 @@ namespace Mobius.iOS.Views
             {
                 var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
+                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
                 cell.CollectionViewHomeCell14.Tag = 1;
                 cell.CollectionViewHomeCell14.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell14);
                 cell.CollectionViewHomeCell14.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell14); 
@@ -46,7 +46,7 @@ namespace Mobius.iOS.Views
             {
                 var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
+                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
                 cell.CollectionViewHomeCell14.Tag = 2;
                 cell.CollectionViewHomeCell14.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell14);
                 cell.CollectionViewHomeCell14.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell14);
@@ -98,11 +98,11 @@ namespace Mobius.iOS.Views
         public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
         {
             if(collectionView.Tag == 1){
-                var cell = (HomeCell2)collectionView.DequeueReusableCell(HomeCell2.Key, indexPath);
+                var cell = (HomeCell4)collectionView.DequeueReusableCell(HomeCell4.Key, indexPath);
                 return cell;
             }else if (collectionView.Tag == 2)
             {
-                var cell = (HomeCell4)collectionView.DequeueReusableCell(HomeCell4.Key, indexPath);
+                var cell = (HomeCell2)collectionView.DequeueReusableCell(HomeCell2.Key, indexPath);
                 return cell;
 
             }else{
@@ -136,10 +136,11 @@ namespace Mobius.iOS.Views
                 return (viewSize.Height * (nfloat)0.10);
             }else if (indexPath.Section == 2)
             {
-                return (viewSize.Height * (nfloat)0.35);
+                
+                return (viewSize.Height * (nfloat)0.25);
             }else if (indexPath.Section == 3)
             {
-                return (viewSize.Height * (nfloat)0.25);
+                return (viewSize.Height * (nfloat)0.35);
             }else 
             {
                 return (viewSize.Height * (nfloat)0.35);

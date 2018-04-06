@@ -368,6 +368,39 @@
     <ImageAsset Include="Resources\Assets.xcassets\tag.imageset\tag.png" />
     <ImageAsset Include="Resources\Assets.xcassets\wifi-1.imageset\Contents.json" />
     <ImageAsset Include="Resources\Assets.xcassets\wifi-1.imageset\wifi-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.dataset\BuildingMobius" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.dataset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.imageset\BuildingMobius.jpeg" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\calWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\calWhite.imageset\cal-01 - Copy.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\handicaped-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\handicaped-white.imageset\handicaped-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart-line.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart-line.imageset\heart-line.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart.imageset\heart-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\hotel-calendar-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\hotel-calendar-white.imageset\hotel-calendar-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\locationWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\locationWhite.imageset\location-01 - Copy.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\lock-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\lock-white.imageset\lock-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\moon-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\moon-white.imageset\moon-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\personWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\personWhite.imageset\person-01 - Copy.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\pet-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\pet-white.imageset\pet-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\spoon-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\spoon-white.imageset\spoon-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\top-bar-calendar.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\top-bar-calendar.imageset\top-bar-calendar-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -383,6 +416,7 @@
     <Folder Include="Views\HomeView\Screen5\" />
     <Folder Include="Views\HomeView\Cells\" />
     <Folder Include="Views\HomeView\Screen6\" />
+    <Folder Include="Views\HomeView\MainScreen\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -423,6 +457,13 @@
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell7.xib" />
     <InterfaceDefinition Include="Views\HomeView\Screen6\HomeViewControllerScreen6.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell16.xib" />
+    <InterfaceDefinition Include="Views\HomeView\MainScreen\MainHomeViewController.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultHotelCountCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultViewController.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Preferences\PreferencesCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Preferences\PreferncesViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -560,6 +601,26 @@
     <Compile Include="Views\HomeView\Cells\HomeCell16.designer.cs">
       <DependentUpon>HomeCell16.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\HomeView\MainScreen\MainHomeViewController.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeViewController.designer.cs">
+      <DependentUpon>MainHomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\MainScreen\MainHomeTableSource.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeCollectionSource.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeTableDelegate.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeCollectionLayoutDelegate.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultCell.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultCell.designer.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultHotelCountCell.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultHotelCountCell.designer.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.designer.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultViewController.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultViewController.designer.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferencesCell.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferencesCell.designer.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferncesViewController.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferncesViewController.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
