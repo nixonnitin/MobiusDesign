@@ -18,6 +18,13 @@ namespace Mobius.iOS.Views
         protected HomeCell1(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
+
         }
-    }
+
+		public override void AwakeFromNib()
+		{
+            base.AwakeFromNib();
+            BookYourStay.Layer.CornerRadius = 5;
+		}
+	}
 }

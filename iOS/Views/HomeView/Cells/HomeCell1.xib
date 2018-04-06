@@ -41,6 +41,9 @@
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="-43" y="-164"/>
+            <connections>
+                <outlet property="BookYourStay" destination="bFP-ZR-QgW" id="name-outlet-bFP-ZR-QgW"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
@@ -92,5 +95,33 @@
         <image name="homeWiFi" width="512" height="512"/>
         <image name="homeicon" width="32" height="32"/>
         <image name="nextarrow" width="32" height="32"/>
+        <image name="hotelRoomTest" width="1920" height="1200"/>
+        <image name="add-1" width="512" height="512"/>
+        <image name="arrow-white" width="50" height="34"/>
+        <image name="arrow" width="50" height="34"/>
+        <image name="best-offer" width="512" height="512"/>
+        <image name="check-white" width="512" height="512"/>
+        <image name="clock-white" width="2134" height="2134"/>
+        <image name="empty" width="512" height="512"/>
+        <image name="food-1" width="512" height="512"/>
+        <image name="full" width="512" height="512"/>
+        <image name="grey-cross-1" width="512" height="512"/>
+        <image name="gym-1" width="512" height="512"/>
+        <image name="half" width="512" height="512"/>
+        <image name="img" width="512" height="512"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="moon-1" width="512" height="512"/>
+        <image name="next-arrrow-1" width="512" height="512"/>
+        <image name="parking-1" width="512" height="512"/>
+        <image name="pencil-1" width="512" height="512"/>
+        <image name="person-1" width="512" height="512"/>
+        <image name="person-white" width="512" height="512"/>
+        <image name="red-cross-1" width="512" height="512"/>
+        <image name="room-1" width="512" height="512"/>
+        <image name="search-1" width="512" height="512"/>
+        <image name="settings-1" width="512" height="512"/>
+        <image name="swim-1" width="512" height="512"/>
+        <image name="tag" width="512" height="515"/>
+        <image name="wifi-1" width="512" height="512"/>
     </resources>
 </document>
