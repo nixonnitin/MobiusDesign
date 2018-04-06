@@ -54,7 +54,7 @@ namespace Mobius.iOS.Views
             this.Layer.ShadowPath = UIBezierPath.FromRect(this.Layer.Bounds).CGPath;
             //UIBezierPath.
             //UIBezierPath.FromRoundedRect(this.Layer.Bounds, UIRectCorner.BottomRight | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
-            this.Layer.ShouldRasterize = true;
+            //this.Layer.ShouldRasterize = true;
 
 
 

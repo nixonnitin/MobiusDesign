@@ -19,5 +19,11 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
-    }
+		public override void AwakeFromNib()
+		{
+            base.AwakeFromNib();
+            LblCityName.Text = "City Name";
+            LblRegionName.Text = "Region Name";
+		}
+	}
 }

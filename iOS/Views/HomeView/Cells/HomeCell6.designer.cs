@@ -13,8 +13,34 @@ namespace Mobius.iOS.Views
     [Register ("HomeCell6")]
     partial class HomeCell6
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView DestinationMainImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LblCityName { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LblRegionName { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (DestinationMainImage != null) {
+                DestinationMainImage.Dispose ();
+                DestinationMainImage = null;
+            }
+
+            if (LblCityName != null) {
+                LblCityName.Dispose ();
+                LblCityName = null;
+            }
+
+            if (LblRegionName != null) {
+                LblRegionName.Dispose ();
+                LblRegionName = null;
+            }
         }
     }
 }
