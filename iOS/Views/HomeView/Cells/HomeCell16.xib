@@ -27,13 +27,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLACEHOLDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBt-de-9Ck">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                        <rect key="frame" x="2" y="2" width="316" height="65.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="32"/>
                         <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcS-Xu-dTM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                        <rect key="frame" x="2" y="2" width="316" height="65.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                         <state key="normal" title="Door opening widget">
                             <color key="titleColor" red="0.25490196079999999" green="0.69411764710000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,14 +41,14 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="RBt-de-9Ck" secondAttribute="bottom" id="8Vh-tp-vc7"/>
-                    <constraint firstItem="fcS-Xu-dTM" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="Dls-cs-ML2"/>
-                    <constraint firstItem="RBt-de-9Ck" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="PP9-MC-Vlo"/>
-                    <constraint firstAttribute="trailing" secondItem="fcS-Xu-dTM" secondAttribute="trailing" id="aUc-dL-gBb"/>
-                    <constraint firstAttribute="bottom" secondItem="fcS-Xu-dTM" secondAttribute="bottom" id="hUU-lh-gyP"/>
-                    <constraint firstItem="fcS-Xu-dTM" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="shh-JG-vRa"/>
-                    <constraint firstAttribute="trailing" secondItem="RBt-de-9Ck" secondAttribute="trailing" id="uv8-OW-0mI"/>
-                    <constraint firstItem="RBt-de-9Ck" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="zLu-AB-cHN"/>
+                    <constraint firstAttribute="bottom" secondItem="RBt-de-9Ck" secondAttribute="bottom" id="8Vh-tp-vc7" constant="2"/>
+                    <constraint firstItem="fcS-Xu-dTM" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="Dls-cs-ML2" constant="2"/>
+                    <constraint firstItem="RBt-de-9Ck" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="PP9-MC-Vlo" constant="2"/>
+                    <constraint firstAttribute="trailing" secondItem="fcS-Xu-dTM" secondAttribute="trailing" id="aUc-dL-gBb" constant="2"/>
+                    <constraint firstAttribute="bottom" secondItem="fcS-Xu-dTM" secondAttribute="bottom" id="hUU-lh-gyP" constant="2"/>
+                    <constraint firstItem="fcS-Xu-dTM" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="shh-JG-vRa" constant="2"/>
+                    <constraint firstAttribute="trailing" secondItem="RBt-de-9Ck" secondAttribute="trailing" id="uv8-OW-0mI" constant="2"/>
+                    <constraint firstItem="RBt-de-9Ck" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="zLu-AB-cHN" constant="2"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="25" y="65"/>

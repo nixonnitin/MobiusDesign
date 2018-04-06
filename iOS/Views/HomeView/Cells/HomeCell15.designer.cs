@@ -16,11 +16,20 @@ namespace Mobius.iOS.Views
         [Outlet]
         public UIKit.NSLayoutConstraint ConstraintImageHeight { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView LblLimitedOffer { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (ConstraintImageHeight != null) {
                 ConstraintImageHeight.Dispose ();
                 ConstraintImageHeight = null;
+            }
+
+            if (LblLimitedOffer != null) {
+                LblLimitedOffer.Dispose ();
+                LblLimitedOffer = null;
             }
         }
     }
