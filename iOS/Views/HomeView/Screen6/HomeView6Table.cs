@@ -111,6 +111,8 @@ namespace Mobius.iOS.Views
         public override string TitleForHeader(UITableView tableView, nint section)
         {
             var titleHeader = sections[(int)section];
+            tableView.BackgroundColor = UIColor.Clear;
+            //tableView.TableHeaderView.BackgroundColor = UIColor.Clear;
             return titleHeader;
         }
     }

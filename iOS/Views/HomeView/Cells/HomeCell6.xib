@@ -28,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="moo-Hs-FXp" misplaced="YES" image="hotelRoomTest">
-                        <rect key="frame" x="0.0" y="0.0" width="271" height="164"/>
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="157"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlJ-0M-wSw">
                         <rect key="frame" x="269" y="193" width="100" height="18"/>
@@ -49,7 +49,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2bH-AI-Gzg" misplaced="YES" image="hotelRoomTest">
-                        <rect key="frame" x="271" y="80" width="132" height="84"/>
+                        <rect key="frame" x="271" y="80" width="132" height="80"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gu-xi-lYI" misplaced="YES">
                         <rect key="frame" x="27" y="193" width="234" height="18"/>
@@ -95,6 +95,11 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="BRo-nE-ckD"/>
             <point key="canvasLocation" x="21.5" y="422.5"/>
+            <connections>
+                <outlet property="DestinationMainImage" destination="moo-Hs-FXp" id="name-outlet-moo-Hs-FXp"/>
+                <outlet property="LblCityName" destination="FTu-vh-NaO" id="name-outlet-FTu-vh-NaO"/>
+                <outlet property="LblRegionName" destination="7gu-xi-lYI" id="name-outlet-7gu-xi-lYI"/>
+            </connections>
         </collectionViewCell>
     </objects>
     <resources>

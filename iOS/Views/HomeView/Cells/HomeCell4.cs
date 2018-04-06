@@ -29,9 +29,9 @@ namespace Mobius.iOS.Views
 
             offerLayout.Layer.MasksToBounds = false;
             offerLayout.Layer.ShadowColor = UIColor.Black.CGColor;
-            offerLayout.Layer.ShadowOpacity = 0.4f;
-            offerLayout.Layer.ShadowOffset = new CGSize(1, 1);
-            offerLayout.Layer.ShadowRadius = 2;
+            offerLayout.Layer.ShadowOpacity = 0.1f;
+            offerLayout.Layer.ShadowOffset = new CGSize(3, 1);
+            offerLayout.Layer.ShadowRadius = 100;
             offerLayout.Layer.CornerRadius = 5;
             offerLayout.Layer.BackgroundColor = UIColor.White.CGColor;
 
@@ -40,13 +40,13 @@ namespace Mobius.iOS.Views
             //UIBezierPath.FromRoundedRect(this.Layer.Bounds, UIRectCorner.BottomRight | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
             offerLayout.Layer.ShouldRasterize = true;
 
-            /*
+
             UIBezierPath maskPath = UIBezierPath.FromRoundedRect(OfferImage.Bounds, UIRectCorner.TopLeft | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
             CAShapeLayer maskLayer = new CAShapeLayer();
             maskLayer.Frame = OfferImage.Bounds;
             maskLayer.Path = maskPath.CGPath;
             OfferImage.Layer.Mask = maskLayer;
-            */
+
 
 		}
 	}

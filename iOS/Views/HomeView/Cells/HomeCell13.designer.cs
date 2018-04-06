@@ -22,8 +22,25 @@ namespace Mobius.iOS.Views
         [Outlet]
         public UIKit.NSLayoutConstraint ConstraintOfferHeight { get; private set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton CheckInButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView LblLimitedTimeOffer { get; set; }
+
+        [Action ("CheckInButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void CheckInButton_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
+            if (CheckInButton != null) {
+                CheckInButton.Dispose ();
+                CheckInButton = null;
+            }
+
             if (ConstraintButtonCheckinHeight != null) {
                 ConstraintButtonCheckinHeight.Dispose ();
                 ConstraintButtonCheckinHeight = null;
@@ -37,6 +54,11 @@ namespace Mobius.iOS.Views
             if (ConstraintOfferHeight != null) {
                 ConstraintOfferHeight.Dispose ();
                 ConstraintOfferHeight = null;
+            }
+
+            if (LblLimitedTimeOffer != null) {
+                LblLimitedTimeOffer.Dispose ();
+                LblLimitedTimeOffer = null;
             }
         }
     }

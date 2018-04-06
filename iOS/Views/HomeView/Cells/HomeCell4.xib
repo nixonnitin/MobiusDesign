@@ -29,19 +29,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onM-Hr-3tQ">
-                        <rect key="frame" x="23" y="19" width="377" height="125"/>
+                        <rect key="frame" x="1" y="13" width="421" height="135"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelRoomTest" translatesAutoresizingMaskIntoConstraints="NO" id="Cu0-hM-wvP">
-                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelRoomTest" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cu0-hM-wvP">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jd-Of-NLS">
-                                <rect key="frame" x="140" y="30" width="219" height="33"/>
+                                <rect key="frame" x="150" y="30" width="253" height="33"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpH-kI-kzC">
-                                <rect key="frame" x="140" y="71" width="189" height="16.5"/>
+                                <rect key="frame" x="150" y="71" width="223" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" red="0.25490196078431371" green="0.69411764705882351" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIMITED TIME OFFER" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMx-9P-7Ud">
                                 <rect key="frame" x="38" y="2" width="153" height="21"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -95,20 +95,19 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="onM-Hr-3tQ" secondAttribute="bottom" constant="5" id="5pP-m8-BxB"/>
+                <constraint firstAttribute="bottom" secondItem="onM-Hr-3tQ" secondAttribute="bottom" constant="1" id="5pP-m8-BxB"/>
                 <constraint firstItem="NUj-zA-LOj" firstAttribute="top" secondItem="d5E-hK-mF7" secondAttribute="top" id="8YD-fz-gru"/>
                 <constraint firstItem="onM-Hr-3tQ" firstAttribute="centerX" secondItem="d5E-hK-mF7" secondAttribute="centerX" id="JdW-BF-jpc"/>
-                <constraint firstItem="onM-Hr-3tQ" firstAttribute="top" secondItem="d5E-hK-mF7" secondAttribute="top" constant="19" id="KZa-cJ-Ndp"/>
+                <constraint firstItem="onM-Hr-3tQ" firstAttribute="top" secondItem="d5E-hK-mF7" secondAttribute="top" constant="13" id="KZa-cJ-Ndp"/>
                 <constraint firstItem="NUj-zA-LOj" firstAttribute="leading" secondItem="d5E-hK-mF7" secondAttribute="leading" constant="23" id="WmT-MJ-jL8"/>
-                <constraint firstItem="onM-Hr-3tQ" firstAttribute="leading" secondItem="d5E-hK-mF7" secondAttribute="leading" constant="23" id="aSp-ZE-gti"/>
+                <constraint firstItem="onM-Hr-3tQ" firstAttribute="leading" secondItem="d5E-hK-mF7" secondAttribute="leading" constant="1" id="aSp-ZE-gti"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="eF0-je-k1t"/>
             <connections>
                 <outlet property="ConstraintOfferHeight" destination="laP-QJ-WkD" id="vHI-JB-55o"/>
-                <outlet property="LimitedOfferLayout" destination="8jd-Of-NLS" id="name-outlet-8jd-Of-NLS"/>
                 <outlet property="LimitedOfferLayout" destination="NUj-zA-LOj" id="name-outlet-NUj-zA-LOj"/>
-                <outlet property="offerLayout" destination="onM-Hr-3tQ" id="name-outlet-onM-Hr-3tQ"/>
                 <outlet property="OfferImage" destination="Cu0-hM-wvP" id="name-outlet-Cu0-hM-wvP"/>
+                <outlet property="offerLayout" destination="onM-Hr-3tQ" id="name-outlet-onM-Hr-3tQ"/>
             </connections>
             <point key="canvasLocation" x="-9.5" y="294.5"/>
         </collectionViewCell>
@@ -187,6 +186,20 @@
         <image name="swim-1" width="512" height="512"/>
         <image name="tag" width="512" height="515"/>
         <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
         <image name="bgblur.png" width="240" height="320"/>
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>
