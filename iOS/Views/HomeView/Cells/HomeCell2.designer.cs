@@ -13,8 +13,25 @@ namespace Mobius.iOS.Views
     [Register ("HomeCell2")]
     partial class HomeCell2
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView HotelImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView LabelOuterLayout { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (HotelImage != null) {
+                HotelImage.Dispose ();
+                HotelImage = null;
+            }
+
+            if (LabelOuterLayout != null) {
+                LabelOuterLayout.Dispose ();
+                LabelOuterLayout = null;
+            }
         }
     }
 }

@@ -136,11 +136,11 @@ namespace Mobius.iOS.Views
                 return (viewSize.Height * (nfloat)0.10);
             }else if (indexPath.Section == 2)
             {
-                
                 return (viewSize.Height * (nfloat)0.25);
             }else if (indexPath.Section == 3)
             {
-                return (viewSize.Height * (nfloat)0.35);
+
+                return (viewSize.Height * (nfloat)0.45);
             }else 
             {
                 return (viewSize.Height * (nfloat)0.35);

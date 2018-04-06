@@ -1,5 +1,6 @@
 ﻿using System;
-
+using CoreAnimation;
+using CoreGraphics;
 using Foundation;
 using UIKit;
 
@@ -19,5 +20,34 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
-    }
+		public override void AwakeFromNib()
+		{
+            base.AwakeFromNib();
+            LimitedOfferLayout.Layer.CornerRadius = 12;
+            offerLayout.Layer.BackgroundColor = UIColor.White.CGColor;
+            offerLayout.Layer.CornerRadius = 5;
+
+            offerLayout.Layer.MasksToBounds = false;
+            offerLayout.Layer.ShadowColor = UIColor.Black.CGColor;
+            offerLayout.Layer.ShadowOpacity = 0.4f;
+            offerLayout.Layer.ShadowOffset = new CGSize(1, 1);
+            offerLayout.Layer.ShadowRadius = 2;
+            offerLayout.Layer.CornerRadius = 5;
+            offerLayout.Layer.BackgroundColor = UIColor.White.CGColor;
+
+            offerLayout.Layer.ShadowPath = UIBezierPath.FromRect(offerLayout.Layer.Bounds).CGPath;
+            //UIBezierPath.
+            //UIBezierPath.FromRoundedRect(this.Layer.Bounds, UIRectCorner.BottomRight | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
+            offerLayout.Layer.ShouldRasterize = true;
+
+            /*
+            UIBezierPath maskPath = UIBezierPath.FromRoundedRect(OfferImage.Bounds, UIRectCorner.TopLeft | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
+            CAShapeLayer maskLayer = new CAShapeLayer();
+            maskLayer.Frame = OfferImage.Bounds;
+            maskLayer.Path = maskPath.CGPath;
+            OfferImage.Layer.Mask = maskLayer;
+            */
+
+		}
+	}
 }
