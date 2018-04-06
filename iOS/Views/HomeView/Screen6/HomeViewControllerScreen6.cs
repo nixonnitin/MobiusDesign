@@ -28,7 +28,7 @@ namespace Mobius.iOS.Views
 
         private void initData()
         {
-            sections = new List<string> { "", "Your Reservation:" ,""};
+            sections = new List<string> { "", "Your Reservation:" ,"","Select your welcome benefit:","","",""};
         }
 
         private void initUI()
@@ -38,6 +38,9 @@ namespace Mobius.iOS.Views
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell1", NSBundle.MainBundle), "HomeCell1");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell13", NSBundle.MainBundle), "HomeCell13");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell16", NSBundle.MainBundle), "HomeCell16");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell10", NSBundle.MainBundle), "HomeCell10");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell11", NSBundle.MainBundle), "HomeCell11");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell15", NSBundle.MainBundle), "HomeCell15");
             TableViewHome.Source = new HomeView6Table(TableViewHome, sections);
             TableViewHome.Delegate = new HomeView6TableCellLayout(TableViewHome, View.Frame.Size);
         }

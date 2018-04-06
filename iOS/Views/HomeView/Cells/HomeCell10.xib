@@ -91,6 +91,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="ConstraintSelectedViewWidth" destination="ITs-u6-wuJ" id="2QV-7j-G40"/>
+                <outlet property="LabelPointsDetail" destination="v9x-vp-zl1" id="aPC-Wd-9MG"/>
             </connections>
             <point key="canvasLocation" x="80.5" y="-54.5"/>
         </tableViewCell>

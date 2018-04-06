@@ -295,5 +295,19 @@
         <image name="swim-1" width="512" height="512"/>
         <image name="tag" width="512" height="515"/>
         <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
     </resources>
 </document>

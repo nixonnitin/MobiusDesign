@@ -20,7 +20,6 @@ namespace Mobius.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel LimitedOfferLayout { get; set; }
 
-      
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView OfferImage { get; set; }
@@ -36,7 +35,11 @@ namespace Mobius.iOS.Views
                 ConstraintOfferHeight = null;
             }
 
-           
+            if (LimitedOfferLayout != null) {
+                LimitedOfferLayout.Dispose ();
+                LimitedOfferLayout = null;
+            }
+
             if (LimitedOfferLayout != null) {
                 LimitedOfferLayout.Dispose ();
                 LimitedOfferLayout = null;
