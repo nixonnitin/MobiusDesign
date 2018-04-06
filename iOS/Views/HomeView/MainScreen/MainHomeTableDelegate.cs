@@ -9,12 +9,38 @@ namespace Mobius.iOS.Views
     {
         UITableView table;
         CGSize viewSize;
-        public MainHomeTableDelegate(UITableView tableView, CGSize viewSize)
+        List<string> sections;
+        public MainHomeTableDelegate(UITableView tableView, CGSize viewSize, List<string> sections)
         {
             this.table = tableView;
             this.viewSize = viewSize;
+            this.sections = sections;
         }
+        public override UIView GetViewForHeader(UITableView tableView, nint section)
+        {
+            var headerText = sections[(int)section];
+            var headerHeight = 22;
 
+
+            var headerView = new UIView(new CGRect(0, 0, tableView.Frame.Size.Width, headerHeight));
+            if (headerText == "")
+            {
+                headerView.BackgroundColor = UIColor.Clear;
+            }else{
+                headerView.BackgroundColor = UIColor.White;
+            }
+
+            var headerLabel = new UILabel(new CGRect(5, 2, tableView.Frame.Size.Width - 5, 18));
+            headerLabel.BackgroundColor = UIColor.Clear;
+            headerLabel.TextColor = UIColor.Black;
+            headerLabel.Font = UIFont.BoldSystemFontOfSize(16);
+
+            headerLabel.Text = headerText;
+            headerLabel.TextAlignment = UITextAlignment.Left;
+            //headerLabel.Center.Y = headerView.Center.Y;
+            headerView.AddSubview(headerLabel);
+            return headerView;
+        }
         //public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
         //{
         //    if (indexPath.Section == 0)

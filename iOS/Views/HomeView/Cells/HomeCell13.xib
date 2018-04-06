@@ -77,8 +77,10 @@
                             <constraint firstItem="xC4-WS-sOA" firstAttribute="centerY" secondItem="iXi-yy-AZE" secondAttribute="centerY" id="tI7-UK-kuU"/>
                         </constraints>
                     </view>
+
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advance Purchase Rate" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZM-wd-c47">
                         <rect key="frame" x="27" y="169" width="243" height="16.5"/>
+
                         <constraints>
                             <constraint firstAttribute="height" constant="16.5" id="Gc4-Js-6c7"/>
                         </constraints>
@@ -86,8 +88,10 @@
                         <color key="textColor" red="0.25490196079999999" green="0.69411764710000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calgary City Centre" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-ls-f0l">
                         <rect key="frame" x="27" y="187.5" width="232" height="21.5"/>
+
                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
                         <nil key="textColor"/>
                     </label>
@@ -422,8 +426,10 @@
                             <action selector="CheckInButton_TouchUpInside:" destination="Bbh-7R-9M7" eventType="touchUpInside" id="3679"/>
                         </connections>
                     </button>
+
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Queen Double Deluxe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-77-FR5">
                         <rect key="frame" x="27" y="210" width="232" height="18"/>
+
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
