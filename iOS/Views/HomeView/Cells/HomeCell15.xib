@@ -94,6 +94,9 @@
                     <constraint firstItem="YMa-fh-nar" firstAttribute="top" secondItem="pCo-9Y-2J7" secondAttribute="bottom" constant="4" id="fI3-Px-hxP"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="ConstraintImageHeight" destination="exM-VH-fS6" id="uWQ-17-IiM"/>
+            </connections>
             <point key="canvasLocation" x="-43.5" y="89"/>
         </tableViewCell>
     </objects>

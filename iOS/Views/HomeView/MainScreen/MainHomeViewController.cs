@@ -29,13 +29,13 @@ namespace Mobius.iOS.Views
         private void initData()
         {
             sections = new List<string> { "", "", "Offers", "Hotels Near You", "Popular Destinations","","", "", 
-                "Selected Offers:", "Your Up Coming Stay:", "Your Purchased Enhancements:", "Recommended Enhancements:", "Your Reservation:", "Your Reservation:" ,"" };
+                "Selected Offers:", "Your Up Coming Stay:", "Your Purchased Enhancements:", "Recommended Enhancements:", "Your Reservation:", "Your Reservation:" ,"","Select your welcome benefit:","","","" };
         }
 
         private void initUI()
         {
             TableViewHome.RowHeight = UITableView.AutomaticDimension;
-            TableViewHome.EstimatedRowHeight = 64;
+            TableViewHome.EstimatedRowHeight = 100;
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell3", NSBundle.MainBundle), "HomeCell3");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell1", NSBundle.MainBundle), "HomeCell1");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell14", NSBundle.MainBundle), "HomeCell14");
@@ -44,6 +44,7 @@ namespace Mobius.iOS.Views
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell10", NSBundle.MainBundle), "HomeCell10");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell13", NSBundle.MainBundle), "HomeCell13");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell16", NSBundle.MainBundle), "HomeCell16");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell11", NSBundle.MainBundle), "HomeCell11");
             TableViewHome.Source = new MainHomeTableSource(TableViewHome, sections);
 
             TableViewHome.Delegate = new MainHomeTableDelegate(TableViewHome, View.Frame.Size);

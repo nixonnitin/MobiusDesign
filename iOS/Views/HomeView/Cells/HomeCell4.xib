@@ -203,5 +203,19 @@
         <image name="bgblur.png" width="240" height="320"/>
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
     </resources>
 </document>
