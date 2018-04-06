@@ -208,10 +208,69 @@ namespace Mobius.iOS.Views
             return sections.Count;
         }
 
-        public override string TitleForHeader(UITableView tableView, nint section)
-        {
-            var titleHeader = sections[(int)section];
-            return titleHeader;
-        }
-    }
+		//public override string TitleForHeader(UITableView tableView, nint section)
+		//{
+		//    var titleHeader = sections[(int)section];
+		//    return titleHeader;
+		//}
+		//public override UIView GetViewForHeader(UITableView tableView, nint section)
+		//{
+  //          UIView v = new UIView(new System.Drawing.RectangleF(0, 0, (float)tableView.Frame.Size.Width, 44));
+  //          v.BackgroundColor = UIColor.Red;
+  //          return v;
+		//}
+		//public override UIView GetViewForHeader(UITableView tableView, int section)
+        //{
+        //    UIView v = new UIView(new System.Drawing.RectangleF(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height));
+        //    v.BackgroundColor = UIColor.Red;
+        //    return v;
+        //}
+		//public override
+		public override UIView GetViewForHeader(UITableView tableView, nint section)
+		{
+            
+            //return base.GetViewForHeader(tableView, section);
+
+
+
+
+
+            // 1. The view for the header
+
+            //        UIView* headerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, tableView.frame.size.width, 22)];
+            var headerView = new UIView(new CGRect(0, 0, tableView.Frame.Size.Width, 22));
+
+            headerView.BackgroundColor = UIColor.Clear;
+
+            //        // 2. Set a custom background color and a border 
+            //        headerView.backgroundColor = [UIColor colorWithWhite: 0.5f alpha: 1.0f];
+            //        headerView.layer.borderColor = [UIColor colorWithWhite: 0.5 alpha: 1.0].CGColor;
+            //        headerView.layer.borderWidth = 1.0;
+
+            //        // 3. Add a label
+            var headerLabel = new UILabel(new CGRect(5, 2, tableView.Frame.Size.Width - 5, 18));
+            headerLabel.BackgroundColor = UIColor.Clear;
+            headerLabel.TextColor = UIColor.Black;
+            headerLabel.Font = UIFont.BoldSystemFontOfSize(14);
+            headerLabel.Text = sections[(int)section];
+            headerLabel.TextAlignment = UITextAlignment.Left;
+
+            headerView.AddSubview(headerLabel);
+            return headerView;
+    //        UILabel* headerLabel = [[UILabel alloc] init];
+    //        headerLabel.frame = CGRectMake(5, 2, tableView.frame.size.width - 5, 18);
+    //        headerLabel.backgroundColor = [UIColor clearColor];
+    //        headerLabel.textColor = [UIColor whiteColor];
+    //        headerLabel.font = [UIFont boldSystemFontOfSize: 16.0];
+    //        headerLabel.text = @"This is the custom header view";
+    //        headerLabel.textAlignment = NSTextAlignmentLeft;
+
+    //// 4. Add the label to the header view
+    //    [headerView addSubview:headerLabel];
+
+    //// 5. Finally return
+    //return headerView;
+
+		}
+	}
 }

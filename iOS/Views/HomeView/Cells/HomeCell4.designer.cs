@@ -40,11 +40,6 @@ namespace Mobius.iOS.Views
                 LimitedOfferLayout = null;
             }
 
-            if (LimitedOfferLayout != null) {
-                LimitedOfferLayout.Dispose ();
-                LimitedOfferLayout = null;
-            }
-
             if (OfferImage != null) {
                 OfferImage.Dispose ();
                 OfferImage = null;
