@@ -22,7 +22,7 @@ namespace Mobius.iOS.Views
 
             if (indexPath.Section == 0)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.BookYourStay.BackgroundColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f);
                 //cell.BookYourStay.Layer.BorderWidth = 1;
@@ -61,7 +61,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 5)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ConstraintSelectedViewWidth.Constant = 0;
                 //cell.LabelPointsDetail.Hidden = true;
