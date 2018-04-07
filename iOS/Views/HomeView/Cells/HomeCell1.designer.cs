@@ -15,7 +15,7 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton BookYourStay { get; set; }
+        public UIKit.UIButton BookYourStay { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
