@@ -51,8 +51,8 @@ namespace Mobius.iOS
             //var controller = new Views.HomeViewControllerScreen4();
             //var controller = new Views.HomeViewControllerScreen5();
             //var controller = new Views.HomeViewControllerScreen6();
-            //var controller = new Views.MainHomeViewController();
-            var controller = new Views.RoomViewController();
+            var controller = new Views.MainHomeViewController();
+            //var controller = new Views.RoomViewController();
             //var controller = new Views.MainResultViewController();
             //var controller = new Views.BookSearch();
 			var navController = new UINavigationController(controller);

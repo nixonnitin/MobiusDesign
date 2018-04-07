@@ -471,13 +471,10 @@
     <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultViewController.xib" />
     <InterfaceDefinition Include="Views\Search Result\Preferences\PreferencesCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Preferences\PreferncesViewController.xib" />
-<<<<<<< HEAD
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell11.xib" />
     <InterfaceDefinition Include="Views\RoomView\Cells\SelectedRoomCell.xib" />
     <InterfaceDefinition Include="Views\RoomView\MainScreen\RoomViewController.xib" />
     <InterfaceDefinition Include="Views\RoomView\Cells\RoomNameCell.xib" />
     <InterfaceDefinition Include="Views\RoomView\Cells\DirectBookCell.xib" />
-=======
     <InterfaceDefinition Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.xib" />
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.xib" />
@@ -485,7 +482,6 @@
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterViewController.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomePopularDestinationsCell.xib" />
->>>>>>> dadc6896229dc961d04bd206b4d9285dbca43cc1
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -645,11 +641,6 @@
     <Compile Include="Views\Search Result\Preferences\PreferencesCell.designer.cs" />
     <Compile Include="Views\Search Result\Preferences\PreferncesViewController.cs" />
     <Compile Include="Views\Search Result\Preferences\PreferncesViewController.designer.cs" />
-<<<<<<< HEAD
-    <Compile Include="Views\HomeView\Cells\HomeCell11.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell11.designer.cs">
-      <DependentUpon>HomeCell11.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\RoomView\Cells\SelectedRoomCell.cs" />
     <Compile Include="Views\RoomView\Cells\SelectedRoomCell.designer.cs">
       <DependentUpon>SelectedRoomCell.cs</DependentUpon>
@@ -668,7 +659,6 @@
     <Compile Include="Views\RoomView\Cells\DirectBookCell.designer.cs">
       <DependentUpon>DirectBookCell.cs</DependentUpon>
     </Compile>
-=======
     <Compile Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.cs" />
     <Compile Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.designer.cs" />
     <Compile Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.cs" />
@@ -682,7 +672,6 @@
     <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.cs" />
     <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.designer.cs" />
     <Compile Include="Helper\UIViewHelper.cs" />
->>>>>>> dadc6896229dc961d04bd206b4d9285dbca43cc1
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
