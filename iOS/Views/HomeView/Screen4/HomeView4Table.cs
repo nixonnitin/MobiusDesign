@@ -29,7 +29,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 1)
             {
-                var cell = (HomeCell13)tableView.DequeueReusableCell(HomeCell13.Key, indexPath);
+                var cell = (HomeRateCell)tableView.DequeueReusableCell(HomeRateCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ConstraintSelectedViewWidth.Constant = 0;
                 //cell.ConstraintOfferHeight.Constant =
@@ -39,14 +39,14 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 2)
             {
-                var cell = (HomeCell10)tableView.DequeueReusableCell(HomeCell10.Key, indexPath);
+                var cell = (HomeEnhancementsCell)tableView.DequeueReusableCell(HomeEnhancementsCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.ConstraintSelectedViewWidth.Constant = 85;
                 return cell;
             }
             else 
             {
-                var cell = (HomeCell10)tableView.DequeueReusableCell(HomeCell10.Key, indexPath);
+                var cell = (HomeEnhancementsCell)tableView.DequeueReusableCell(HomeEnhancementsCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.ConstraintSelectedViewWidth.Constant = 0;
                 return cell;

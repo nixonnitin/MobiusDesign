@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="cxk-wN-pdQ" customClass="SearchFilterResetApplyCell">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-n7-mYQ">
+                        <rect key="frame" x="15" y="15" width="130" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="pro-GX-S3S"/>
+                        </constraints>
+                        <state key="normal" title="Reset">
+                            <color key="titleColor" red="0.20392156859999999" green="0.55294117649999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-du-4um">
+                        <rect key="frame" x="150" y="16" width="130" height="60"/>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.55294117649999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Apply">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NTb-n7-mYQ" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="6ws-27-dHZ"/>
+                    <constraint firstItem="NUo-du-4um" firstAttribute="leading" secondItem="NTb-n7-mYQ" secondAttribute="trailing" constant="5" id="I2w-sr-WPU"/>
+                    <constraint firstItem="NTb-n7-mYQ" firstAttribute="height" secondItem="NUo-du-4um" secondAttribute="height" id="SjO-g5-Mr1"/>
+                    <constraint firstItem="NTb-n7-mYQ" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="15" id="V8M-Vf-uCF"/>
+                    <constraint firstItem="NUo-du-4um" firstAttribute="leading" secondItem="NTb-n7-mYQ" secondAttribute="trailing" constant="5" id="eCc-Xe-Isn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NUo-du-4um" secondAttribute="trailing" constant="9" id="sKq-e5-gth"/>
+                    <constraint firstItem="NUo-du-4um" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="5" id="sea-b3-VW4"/>
+                    <constraint firstItem="NTb-n7-mYQ" firstAttribute="width" secondItem="NUo-du-4um" secondAttribute="width" id="uh7-GL-C4y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ButtonApply" destination="NUo-du-4um" id="wQU-vo-83B"/>
+                <outlet property="ButtonReset" destination="NTb-n7-mYQ" id="r5o-3S-WMh"/>
+            </connections>
+            <point key="canvasLocation" x="17.5" y="52"/>
+        </tableViewCell>
+    </objects>
+</document>

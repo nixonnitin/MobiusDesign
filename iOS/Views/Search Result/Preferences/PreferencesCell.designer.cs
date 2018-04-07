@@ -14,10 +14,26 @@ namespace Mobius.iOS.Views
     partial class PreferencesCell
     {
         [Outlet]
-        public UIKit.UILabel LabelPreferences { get; set; }
+        public UIKit.UIImageView ImageViewLast { get; set; }
+
+        [Outlet]
+        public UIKit.UILabel LabelData { get; private set; }
+
+        [Outlet]
+        public UIKit.UILabel LabelPreferences { get; private set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (ImageViewLast != null) {
+                ImageViewLast.Dispose ();
+                ImageViewLast = null;
+            }
+
+            if (LabelData != null) {
+                LabelData.Dispose ();
+                LabelData = null;
+            }
+
             if (LabelPreferences != null) {
                 LabelPreferences.Dispose ();
                 LabelPreferences = null;

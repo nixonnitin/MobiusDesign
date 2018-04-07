@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Italic.ttf">
+            <string>Roboto-Italic</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeNearHotelCell" id="1a2-aC-NYS" customClass="HomeNearHotelCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelRoomTest" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJa-cU-ihF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="P0V-PE-5Ab"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABe-D3-nJF">
+                        <rect key="frame" x="20" y="0.0" width="216" height="29"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSettings" translatesAutoresizingMaskIntoConstraints="NO" id="IIW-aC-b1S">
+                                <rect key="frame" x="10" y="4" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7kJ-j7-o8f"/>
+                                    <constraint firstAttribute="width" constant="20" id="K7v-cm-t1y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGM-Op-t3H">
+                                <rect key="frame" x="38" y="4" width="170" height="21"/>
+                                <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.47058823529411764" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="216" id="5r7-jg-OtP"/>
+                            <constraint firstItem="vGM-Op-t3H" firstAttribute="top" secondItem="ABe-D3-nJF" secondAttribute="top" constant="4" id="L9x-TL-u3K"/>
+                            <constraint firstItem="IIW-aC-b1S" firstAttribute="top" secondItem="ABe-D3-nJF" secondAttribute="top" constant="4" id="MsB-Ec-c7A"/>
+                            <constraint firstAttribute="bottom" secondItem="IIW-aC-b1S" secondAttribute="bottom" constant="5" id="Nyq-nX-YYU"/>
+                            <constraint firstAttribute="trailing" secondItem="vGM-Op-t3H" secondAttribute="trailing" constant="8" id="ReH-1X-lUU"/>
+                            <constraint firstAttribute="bottom" secondItem="vGM-Op-t3H" secondAttribute="bottom" constant="4" id="X3r-af-1Gl"/>
+                            <constraint firstItem="IIW-aC-b1S" firstAttribute="leading" secondItem="ABe-D3-nJF" secondAttribute="leading" constant="10" id="fVq-S9-aQZ"/>
+                            <constraint firstItem="vGM-Op-t3H" firstAttribute="leading" secondItem="IIW-aC-b1S" secondAttribute="trailing" constant="8" id="mDu-ZX-Xz4"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORe-zt-C4R">
+                        <rect key="frame" x="20" y="80" width="130" height="35"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeGym" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-mL-f94">
+                                <rect key="frame" x="8" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="KIL-nY-OLV"/>
+                                    <constraint firstAttribute="width" constant="20" id="haD-xA-j3O"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeWiFi" translatesAutoresizingMaskIntoConstraints="NO" id="Gza-vn-Awd">
+                                <rect key="frame" x="31" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4Js-8M-otz"/>
+                                    <constraint firstAttribute="height" constant="20" id="wr2-dv-2cB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSwim" translatesAutoresizingMaskIntoConstraints="NO" id="RHg-1o-lBv">
+                                <rect key="frame" x="54" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ecs-n9-xIC"/>
+                                    <constraint firstAttribute="height" constant="20" id="pq5-je-AV6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFood" translatesAutoresizingMaskIntoConstraints="NO" id="Y8B-fS-s5v">
+                                <rect key="frame" x="77" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="5ib-M3-AU7"/>
+                                    <constraint firstAttribute="height" constant="20" id="Ng0-QD-EBc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeParking" translatesAutoresizingMaskIntoConstraints="NO" id="ZrX-d2-10Q">
+                                <rect key="frame" x="100" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LEa-tn-Dia"/>
+                                    <constraint firstAttribute="width" constant="20" id="fgF-Px-kRk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WSf-mL-f94" firstAttribute="leading" secondItem="ORe-zt-C4R" secondAttribute="leading" constant="8" id="Au0-9F-3VR"/>
+                            <constraint firstItem="WSf-mL-f94" firstAttribute="centerY" secondItem="ORe-zt-C4R" secondAttribute="centerY" id="Dhi-6f-XDP"/>
+                            <constraint firstAttribute="width" constant="130" id="OQt-wZ-RAx"/>
+                            <constraint firstItem="RHg-1o-lBv" firstAttribute="centerY" secondItem="ORe-zt-C4R" secondAttribute="centerY" id="PTq-dS-ECw"/>
+                            <constraint firstItem="Gza-vn-Awd" firstAttribute="centerY" secondItem="ORe-zt-C4R" secondAttribute="centerY" id="Pjr-FU-yc3"/>
+                            <constraint firstAttribute="height" constant="35" id="QpZ-lF-lxs"/>
+                            <constraint firstItem="RHg-1o-lBv" firstAttribute="leading" secondItem="Gza-vn-Awd" secondAttribute="trailing" constant="3" id="WxZ-wV-ojp"/>
+                            <constraint firstItem="ZrX-d2-10Q" firstAttribute="leading" secondItem="Y8B-fS-s5v" secondAttribute="trailing" constant="3" id="ZM9-mv-aya"/>
+                            <constraint firstItem="Y8B-fS-s5v" firstAttribute="leading" secondItem="RHg-1o-lBv" secondAttribute="trailing" constant="3" id="hs8-Jl-oCJ"/>
+                            <constraint firstItem="Gza-vn-Awd" firstAttribute="leading" secondItem="WSf-mL-f94" secondAttribute="trailing" constant="3" id="rGz-k0-sdj"/>
+                            <constraint firstItem="Y8B-fS-s5v" firstAttribute="centerY" secondItem="ORe-zt-C4R" secondAttribute="centerY" id="xXi-QM-OrV"/>
+                            <constraint firstItem="ZrX-d2-10Q" firstAttribute="centerY" secondItem="ORe-zt-C4R" secondAttribute="centerY" id="xbr-QT-fbP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipq-YI-c4p">
+                        <rect key="frame" x="20" y="186" width="211" height="36"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n84-PZ-Nkp">
+                        <rect key="frame" x="20" y="128" width="339" height="50"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hod-S6-lWT">
+                        <rect key="frame" x="239" y="186" width="130" height="36"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRatingFull" translatesAutoresizingMaskIntoConstraints="NO" id="1V6-JT-5ci">
+                                <rect key="frame" x="8" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="N3A-gY-NTM"/>
+                                    <constraint firstAttribute="height" constant="20" id="f84-cH-FBD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRatingFull" translatesAutoresizingMaskIntoConstraints="NO" id="LvL-Yf-kIB">
+                                <rect key="frame" x="31" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3Li-rq-30I"/>
+                                    <constraint firstAttribute="width" constant="20" id="JNc-kG-jvh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRatingFull" translatesAutoresizingMaskIntoConstraints="NO" id="ysX-Dk-4Iy">
+                                <rect key="frame" x="54" y="7.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="YbO-eh-v1q"/>
+                                    <constraint firstAttribute="width" constant="20" id="ZXP-jV-3pq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRatingHalf" translatesAutoresizingMaskIntoConstraints="NO" id="VDb-vD-wKD">
+                                <rect key="frame" x="77" y="8" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0OU-KS-P9C"/>
+                                    <constraint firstAttribute="width" constant="20" id="148-7r-Nei"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRatingEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="4dy-wl-8LD">
+                                <rect key="frame" x="100" y="8" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4gF-ut-6bP"/>
+                                    <constraint firstAttribute="width" constant="20" id="UEP-gw-pD0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LvL-Yf-kIB" firstAttribute="leading" secondItem="1V6-JT-5ci" secondAttribute="trailing" constant="3" id="3ZT-vB-7Pj"/>
+                            <constraint firstItem="VDb-vD-wKD" firstAttribute="centerY" secondItem="Hod-S6-lWT" secondAttribute="centerY" id="43U-9M-Z12"/>
+                            <constraint firstItem="VDb-vD-wKD" firstAttribute="leading" secondItem="ysX-Dk-4Iy" secondAttribute="trailing" constant="3" id="9Vd-Iu-lHj"/>
+                            <constraint firstItem="ysX-Dk-4Iy" firstAttribute="centerY" secondItem="Hod-S6-lWT" secondAttribute="centerY" id="Gvc-qm-aD2"/>
+                            <constraint firstItem="ysX-Dk-4Iy" firstAttribute="leading" secondItem="LvL-Yf-kIB" secondAttribute="trailing" constant="3" id="I6E-ah-tUf"/>
+                            <constraint firstAttribute="height" constant="36" id="VYm-d4-42c"/>
+                            <constraint firstAttribute="width" constant="130" id="iFA-qP-RHv"/>
+                            <constraint firstItem="LvL-Yf-kIB" firstAttribute="centerY" secondItem="Hod-S6-lWT" secondAttribute="centerY" id="kGE-7V-koy"/>
+                            <constraint firstItem="1V6-JT-5ci" firstAttribute="leading" secondItem="Hod-S6-lWT" secondAttribute="leading" constant="8" id="r1Q-xv-zyV"/>
+                            <constraint firstItem="4dy-wl-8LD" firstAttribute="centerY" secondItem="Hod-S6-lWT" secondAttribute="centerY" id="vSG-0k-v7t"/>
+                            <constraint firstItem="1V6-JT-5ci" firstAttribute="centerY" secondItem="Hod-S6-lWT" secondAttribute="centerY" id="vdd-Fw-MCs"/>
+                            <constraint firstItem="4dy-wl-8LD" firstAttribute="leading" secondItem="VDb-vD-wKD" secondAttribute="trailing" constant="3" id="zpw-NK-7iF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="n84-PZ-Nkp" firstAttribute="top" secondItem="VJa-cU-ihF" secondAttribute="bottom" constant="8" id="3hK-Bg-Lod"/>
+                <constraint firstAttribute="bottom" secondItem="Hod-S6-lWT" secondAttribute="bottom" constant="8" id="9fk-K6-xQs"/>
+                <constraint firstItem="VJa-cU-ihF" firstAttribute="top" secondItem="1a2-aC-NYS" secondAttribute="top" id="HRF-34-Xdl"/>
+                <constraint firstItem="Hod-S6-lWT" firstAttribute="leading" secondItem="Ipq-YI-c4p" secondAttribute="trailing" constant="8" id="IhK-QB-e2j"/>
+                <constraint firstItem="ABe-D3-nJF" firstAttribute="top" secondItem="1a2-aC-NYS" secondAttribute="top" id="Mmh-Ul-Nd9"/>
+                <constraint firstAttribute="trailing" secondItem="n84-PZ-Nkp" secondAttribute="trailing" constant="16" id="Oiw-zF-Ncl"/>
+                <constraint firstItem="ABe-D3-nJF" firstAttribute="leading" secondItem="1a2-aC-NYS" secondAttribute="leading" constant="20" id="PtB-us-blu"/>
+                <constraint firstAttribute="trailing" secondItem="VJa-cU-ihF" secondAttribute="trailing" id="X3n-jw-XiS"/>
+                <constraint firstItem="n84-PZ-Nkp" firstAttribute="leading" secondItem="1a2-aC-NYS" secondAttribute="leading" constant="20" id="dsC-ta-KgO"/>
+                <constraint firstItem="Ipq-YI-c4p" firstAttribute="top" secondItem="n84-PZ-Nkp" secondAttribute="bottom" constant="8" id="gvY-VP-g5m"/>
+                <constraint firstItem="VJa-cU-ihF" firstAttribute="leading" secondItem="1a2-aC-NYS" secondAttribute="leading" id="htc-QC-Nyx"/>
+                <constraint firstAttribute="trailing" secondItem="Hod-S6-lWT" secondAttribute="trailing" constant="6" id="oXJ-m1-B3Z"/>
+                <constraint firstItem="Ipq-YI-c4p" firstAttribute="leading" secondItem="1a2-aC-NYS" secondAttribute="leading" constant="20" id="qfE-hU-7ci"/>
+                <constraint firstItem="n84-PZ-Nkp" firstAttribute="top" secondItem="ORe-zt-C4R" secondAttribute="bottom" constant="13" id="s6o-Yh-Xid"/>
+                <constraint firstItem="ORe-zt-C4R" firstAttribute="leading" secondItem="1a2-aC-NYS" secondAttribute="leading" constant="20" id="tbU-I8-HFF"/>
+                <constraint firstAttribute="bottom" secondItem="Ipq-YI-c4p" secondAttribute="bottom" constant="8" id="xlO-PY-Qx8"/>
+                <constraint firstItem="Hod-S6-lWT" firstAttribute="top" secondItem="n84-PZ-Nkp" secondAttribute="bottom" constant="8" id="ykO-Az-dQI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ehY-Si-EFj"/>
+            <size key="customSize" width="375" height="230"/>
+            <connections>
+                <outlet property="HotelImage" destination="VJa-cU-ihF" id="name-outlet-VJa-cU-ihF"/>
+                <outlet property="LabelOuterLayout" destination="ABe-D3-nJF" id="name-outlet-ABe-D3-nJF"/>
+            </connections>
+            <point key="canvasLocation" x="-83.5" y="405"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeFood" width="512" height="512"/>
+        <image name="homeGym" width="512" height="512"/>
+        <image name="homeParking" width="512" height="512"/>
+        <image name="homeRatingEmpty" width="512" height="512"/>
+        <image name="homeRatingFull" width="512" height="512"/>
+        <image name="homeRatingHalf" width="512" height="512"/>
+        <image name="homeSettings" width="512" height="512"/>
+        <image name="homeSwim" width="512" height="512"/>
+        <image name="homeWiFi" width="512" height="512"/>
+        <image name="hotelRoomTest" width="1920" height="1200"/>
+        <image name="homeIcon" width="32" height="32"/>
+        <image name="nextArrow" width="32" height="32"/>
+        <image name="cal" width="512" height="512"/>
+        <image name="check" width="512" height="512"/>
+        <image name="checkwhite" width="512" height="512"/>
+        <image name="clock" width="2134" height="2134"/>
+        <image name="clockwhite" width="2134" height="2134"/>
+        <image name="defaultimage" width="512" height="512"/>
+        <image name="fb" width="512" height="512"/>
+        <image name="food" width="512" height="512"/>
+        <image name="gym" width="512" height="512"/>
+        <image name="homeAdd" width="512" height="512"/>
+        <image name="homeBestOffer" width="512" height="512"/>
+        <image name="location" width="512" height="512"/>
+        <image name="moon" width="512" height="512"/>
+        <image name="nextarrowhome" width="512" height="512"/>
+        <image name="ratingempty" width="512" height="512"/>
+        <image name="ratingfull" width="512" height="512"/>
+        <image name="ratinghalf" width="512" height="512"/>
+        <image name="homeCal" width="512" height="512"/>
+        <image name="homeCheck" width="512" height="512"/>
+        <image name="homeCheckWhite" width="512" height="512"/>
+        <image name="homeClock" width="2134" height="2134"/>
+        <image name="homeClockWhite" width="2134" height="2134"/>
+        <image name="homeDefaultImage" width="512" height="512"/>
+        <image name="homeFB" width="512" height="512"/>
+        <image name="homeLocation" width="512" height="512"/>
+        <image name="homeMoon" width="512" height="512"/>
+        <image name="homeNextArrow" width="32" height="32"/>
+        <image name="homeNextArrowHome" width="512" height="512"/>
+        <image name="homePencil" width="512" height="512"/>
+        <image name="homePerson" width="512" height="512"/>
+        <image name="homePersonWhite" width="512" height="512"/>
+        <image name="homeRoom" width="512" height="512"/>
+        <image name="homeicon" width="32" height="32"/>
+        <image name="nextarrow" width="32" height="32"/>
+        <image name="add-1" width="512" height="512"/>
+        <image name="arrow-white" width="50" height="34"/>
+        <image name="arrow" width="50" height="34"/>
+        <image name="best-offer" width="512" height="512"/>
+        <image name="check-white" width="512" height="512"/>
+        <image name="clock-white" width="2134" height="2134"/>
+        <image name="empty" width="512" height="512"/>
+        <image name="food-1" width="512" height="512"/>
+        <image name="full" width="512" height="512"/>
+        <image name="grey-cross-1" width="512" height="512"/>
+        <image name="gym-1" width="512" height="512"/>
+        <image name="half" width="512" height="512"/>
+        <image name="img" width="512" height="512"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="moon-1" width="512" height="512"/>
+        <image name="next-arrrow-1" width="512" height="512"/>
+        <image name="parking-1" width="512" height="512"/>
+        <image name="pencil-1" width="512" height="512"/>
+        <image name="person-1" width="512" height="512"/>
+        <image name="person-white" width="512" height="512"/>
+        <image name="red-cross-1" width="512" height="512"/>
+        <image name="room-1" width="512" height="512"/>
+        <image name="search-1" width="512" height="512"/>
+        <image name="settings-1" width="512" height="512"/>
+        <image name="swim-1" width="512" height="512"/>
+        <image name="tag" width="512" height="515"/>
+        <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="bgblur.png" width="240" height="320"/>
+        <image name="Triangle.png" width="54" height="36"/>
+        <image name="user.png" width="18" height="18"/>
+    </resources>
+</document>

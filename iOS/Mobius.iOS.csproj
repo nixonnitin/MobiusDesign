@@ -401,6 +401,10 @@
     <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -446,25 +450,31 @@
     <InterfaceDefinition Include="Views\HomeView\Screen4\HomeViewControllerScreen4.xib" />
     <InterfaceDefinition Include="Views\HomeView\Screen5\HomeViewControllerScreen5.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeButtonCell.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell10.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell13.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeEnhancementsCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeRateCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCollectionContainerCell.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell15.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell2.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeOfferCellLarge.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeNearHotelCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeIntroductionCell.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell4.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell6.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeOfferCellSmall.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeLastSearchCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Screen6\HomeViewControllerScreen6.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell16.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeWidgetCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\MainScreen\MainHomeViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeNotificationCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultHotelCountCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultViewController.xib" />
     <InterfaceDefinition Include="Views\Search Result\Preferences\PreferencesCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Preferences\PreferncesViewController.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell11.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterResetApplyCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomePopularDestinationsCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -479,8 +489,6 @@
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\BaseViewController.cs" />
-    <Compile Include="Helper\UIViewHelper.cs" />
-
     <Compile Include="Services\PlatformService.cs" />
     <Compile Include="Views\LoginViewController.cs" />
     <Compile Include="Views\LoginViewController.designer.cs">
@@ -557,37 +565,37 @@
     <Compile Include="Views\HomeView\Cells\HomeButtonCell.designer.cs">
       <DependentUpon>HomeButtonCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell10.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell10.designer.cs">
-      <DependentUpon>HomeCell10.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeEnhancementsCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeEnhancementsCell.designer.cs">
+      <DependentUpon>HomeEnhancementsCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell13.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell13.designer.cs">
-      <DependentUpon>HomeCell13.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeRateCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeRateCell.designer.cs">
+      <DependentUpon>HomeRateCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Cells\HomeCollectionContainerCell.cs" />
     <Compile Include="Views\HomeView\Cells\HomeCollectionContainerCell.designer.cs">
       <DependentUpon>HomeCollectionContainerCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell15.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell15.designer.cs">
-      <DependentUpon>HomeCell15.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellLarge.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellLarge.designer.cs">
+      <DependentUpon>HomeOfferCellLarge.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell2.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell2.designer.cs">
-      <DependentUpon>HomeCell2.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeNearHotelCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeNearHotelCell.designer.cs">
+      <DependentUpon>HomeNearHotelCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Cells\HomeIntroductionCell.cs" />
     <Compile Include="Views\HomeView\Cells\HomeIntroductionCell.designer.cs">
       <DependentUpon>HomeIntroductionCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell4.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell4.designer.cs">
-      <DependentUpon>HomeCell4.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellSmall.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellSmall.designer.cs">
+      <DependentUpon>HomeOfferCellSmall.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell6.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell6.designer.cs">
-      <DependentUpon>HomeCell6.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomePopularDestinationsCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomePopularDestinationsCell.designer.cs">
+      <DependentUpon>HomePopularDestinationsCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Cells\HomeLastSearchCell.cs" />
     <Compile Include="Views\HomeView\Cells\HomeLastSearchCell.designer.cs">
@@ -598,9 +606,9 @@
       <DependentUpon>HomeViewControllerScreen6.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Screen6\HomeView6Table.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell16.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell16.designer.cs">
-      <DependentUpon>HomeCell16.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeWidgetCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeWidgetCell.designer.cs">
+      <DependentUpon>HomeWidgetCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\MainScreen\MainHomeViewController.cs" />
     <Compile Include="Views\HomeView\MainScreen\MainHomeViewController.designer.cs">
@@ -610,6 +618,10 @@
     <Compile Include="Views\HomeView\MainScreen\MainHomeCollectionSource.cs" />
     <Compile Include="Views\HomeView\MainScreen\MainHomeTableDelegate.cs" />
     <Compile Include="Views\HomeView\MainScreen\MainHomeCollectionLayoutDelegate.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeNotificationCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeNotificationCell.designer.cs">
+      <DependentUpon>HomeNotificationCell.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Search Result\Main Result\MainResultCell.cs" />
     <Compile Include="Views\Search Result\Main Result\MainResultCell.designer.cs" />
     <Compile Include="Views\Search Result\Main Result\MainResultHotelCountCell.cs" />
@@ -622,10 +634,19 @@
     <Compile Include="Views\Search Result\Preferences\PreferencesCell.designer.cs" />
     <Compile Include="Views\Search Result\Preferences\PreferncesViewController.cs" />
     <Compile Include="Views\Search Result\Preferences\PreferncesViewController.designer.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell11.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell11.designer.cs">
-      <DependentUpon>HomeCell11.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.cs" />
+    <Compile Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterResetApplyCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterResetApplyCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.designer.cs" />
+    <Compile Include="Helper\UIViewHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
@@ -649,7 +670,7 @@
     <BundleResource Include="Resources\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
-    <BundleResource Include="Resources\Assets.xcassets.zip" />
+    <BundleResource Include="Resources\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

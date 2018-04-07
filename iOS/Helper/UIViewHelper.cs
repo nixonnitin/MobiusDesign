@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using CoreGraphics;
 using UIKit;
 
 namespace Mobius.iOS.Helpers
@@ -47,6 +49,74 @@ namespace Mobius.iOS.Helpers
 
 			return null;
 		}
+
+        /// <summary>
+        /// Gets the colored image.
+        /// </summary>
+        /// <returns>The colored image.</returns>
+        /// <param name="imageName">Image name.</param>
+        /// <param name="color">Color.</param>
+        public static UIImage GetColoredImage(string imageName, UIColor color)
+        {
+            UIImage image = UIImage.FromFile(imageName);
+            UIImage coloredImage = null;
+
+            UIGraphics.BeginImageContext(image.Size);
+            using (CGContext context = UIGraphics.GetCurrentContext())
+            {
+
+                context.TranslateCTM(0, image.Size.Height);
+                context.ScaleCTM(1.0f, -1.0f);
+
+                var rect = new RectangleF(0, 0, (float)image.Size.Width, (float)image.Size.Height);
+
+                // draw image, (to get transparancy mask)
+                context.SetBlendMode(CGBlendMode.Normal);
+                context.DrawImage(rect, image.CGImage);
+
+                // draw the color using the sourcein blend mode so its only draw on the non-transparent pixels
+                context.SetBlendMode(CGBlendMode.SourceIn);
+                context.SetFillColor(color.CGColor);
+                context.FillRect(rect);
+
+                coloredImage = UIGraphics.GetImageFromCurrentImageContext();
+                UIGraphics.EndImageContext();
+            }
+            return coloredImage;
+        }
+
+        /// <summary>
+        /// Sets the shadow.
+        /// </summary>
+        /// <param name="view">View.</param>
+        public static void SetShadow(UIView view, int cornerRadius = 0)
+        {
+            view.Layer.CornerRadius = cornerRadius;
+            view.Layer.ShadowColor = UIColor.Black.CGColor;
+            view.Layer.ShadowOpacity = 1.0f;
+            view.Layer.ShadowRadius = 5.0f;
+            view.Layer.ShadowOffset = new System.Drawing.SizeF(5f, 5f);
+        }
+
+        /// <summary>
+        /// Gets the navigation controller.
+        /// </summary>
+        /// <returns>The navigation controller.</returns>
+        public static UINavigationController GetNavigationController()
+        {
+            return UIApplication.SharedApplication.Windows[0].RootViewController as UINavigationController;
+        }
+
+        /// <summary>
+        /// Makes as root view controller.
+        /// </summary>
+        /// <param name="controller">Controller.</param>
+        public static void MakeAsRootViewController(UIViewController controller)
+        {
+            var navController = new UINavigationController(controller);
+            AppDelegate objAppDelegate = (AppDelegate)UIApplication.SharedApplication.Delegate;
+            objAppDelegate.Window.RootViewController = navController;
+        }
 	}
 
 	/// <summary>
@@ -54,6 +124,13 @@ namespace Mobius.iOS.Helpers
 	/// </summary>
 	public static class UIColorExtensions
 	{
+        /// <summary>
+        /// Froms the hex string.
+        /// </summary>
+        /// <returns>The hex string.</returns>
+        /// <param name="color">Color.</param>
+        /// <param name="hexValue">Hex value.</param>
+        /// <param name="alpha">Alpha.</param>
 		public static UIColor FromHexString(this UIColor color, string hexValue, float alpha = 1.0f)
 		{
 			var colorString = hexValue.Replace("#", "");

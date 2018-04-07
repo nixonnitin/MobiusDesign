@@ -98,15 +98,15 @@ namespace Mobius.iOS.Views
         public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
         {
             if(collectionView.Tag == 1){
-                var cell = (HomeCell4)collectionView.DequeueReusableCell(HomeCell4.Key, indexPath);
+                var cell = (HomeOfferCellSmall)collectionView.DequeueReusableCell(HomeOfferCellSmall.Key, indexPath);
                 return cell;
             }else if (collectionView.Tag == 2)
             {
-                var cell = (HomeCell2)collectionView.DequeueReusableCell(HomeCell2.Key, indexPath);
+                var cell = (HomeNearHotelCell)collectionView.DequeueReusableCell(HomeNearHotelCell.Key, indexPath);
                 return cell;
 
             }else{
-                var cell = (HomeCell6)collectionView.DequeueReusableCell(HomeCell6.Key, indexPath);
+                var cell = (HomePopularDestinationsCell)collectionView.DequeueReusableCell(HomePopularDestinationsCell.Key, indexPath);
                 return cell;
             }
         }
