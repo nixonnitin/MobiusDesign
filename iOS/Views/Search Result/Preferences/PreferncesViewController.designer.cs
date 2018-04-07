@@ -14,10 +14,19 @@ namespace Mobius.iOS.Views
     partial class PreferncesViewController
     {
         [Outlet]
-        public UIKit.UITableView TableViewPreferences { get; set; }
+        public UIKit.UILabel LabelHotelPriceCurrency { get; set; }
+
+
+        [Outlet]
+        public UIKit.UITableView TableViewPreferences { get; private set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (LabelHotelPriceCurrency != null) {
+                LabelHotelPriceCurrency.Dispose ();
+                LabelHotelPriceCurrency = null;
+            }
+
             if (TableViewPreferences != null) {
                 TableViewPreferences.Dispose ();
                 TableViewPreferences = null;

@@ -82,7 +82,7 @@ namespace Mobius.iOS.Views
 
         public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
         {
-                var cell = (HomeCell4)collectionView.DequeueReusableCell(HomeCell4.Key, indexPath);
+                var cell = (HomeOfferCellSmall)collectionView.DequeueReusableCell(HomeOfferCellSmall.Key, indexPath);
             if(indexPath.Row % 2 == 0){
                 cell.ConstraintOfferHeight.Constant = 25;
             }else{

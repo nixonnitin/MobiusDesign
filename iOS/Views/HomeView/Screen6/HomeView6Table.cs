@@ -34,20 +34,20 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 1)
             {
-                var cell = (HomeCell13)tableView.DequeueReusableCell(HomeCell13.Key, indexPath);
+                var cell = (HomeRateCell)tableView.DequeueReusableCell(HomeRateCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ConstraintOfferHeight.Constant = 0;
                 return cell;
             }
             else if (indexPath.Section == 2)
             {
-                var cell = (HomeCell16)tableView.DequeueReusableCell(HomeCell16.Key, indexPath);
+                var cell = (HomeWidgetCell)tableView.DequeueReusableCell(HomeWidgetCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }
             else if (indexPath.Section == 3)
             {
-                var cell = (HomeCell10)tableView.DequeueReusableCell(HomeCell10.Key, indexPath);
+                var cell = (HomeEnhancementsCell)tableView.DequeueReusableCell(HomeEnhancementsCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.ConstraintSelectedViewWidth.Constant = 0;
                 cell.LabelPointsDetail.Hidden = true;
@@ -55,7 +55,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 4)
             {
-                var cell = (HomeCell11)tableView.DequeueReusableCell(HomeCell11.Key, indexPath);
+                var cell = (HomeNotificationCell)tableView.DequeueReusableCell(HomeNotificationCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }
@@ -75,7 +75,7 @@ namespace Mobius.iOS.Views
             }
             else
             {
-                var cell = (HomeCell15)tableView.DequeueReusableCell(HomeCell15.Key, indexPath);
+                var cell = (HomeOfferCellLarge)tableView.DequeueReusableCell(HomeOfferCellLarge.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.ConstraintImageHeight.Constant = 0;
                 return cell;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Foundation;
 using UIKit;
 using CoreAnimation;
+using Mobius.iOS.Helpers;
 
 namespace Mobius.iOS.Views
 {
@@ -102,11 +103,18 @@ namespace Mobius.iOS.Views
                 cell.ViewMain.Layer.Mask = maskLayer2;
 
                 //Show select date for price view and hide other labels
+                /*
                 cell.ViewSelectDateForPrice.Hidden = false;
                 cell.LabelSelectDateForPrice.Text = "Select dates for price";
                 cell.LabelActualCostPerNight.Hidden = true;
                 cell.LabelDiscountCostPerNight.Hidden = true;
                 cell.LabelPerNight.Hidden = true;
+                */
+
+                //Adding Shadow to cell
+                cell.ViewMain.BackgroundColor = UIColor.White;
+                UIViewHelper.SetShadow(cell.ViewMain, 10);
+
 
                 return cell;
             }

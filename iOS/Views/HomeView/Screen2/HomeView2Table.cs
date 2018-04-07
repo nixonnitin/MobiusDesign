@@ -35,7 +35,7 @@ namespace Mobius.iOS.Views
             }
             else
             {
-                var cell = (HomeCell15)tableView.DequeueReusableCell(HomeCell15.Key, indexPath);
+                var cell = (HomeOfferCellLarge)tableView.DequeueReusableCell(HomeOfferCellLarge.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }

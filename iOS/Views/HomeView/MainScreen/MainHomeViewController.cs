@@ -40,11 +40,11 @@ namespace Mobius.iOS.Views
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeButtonCell", NSBundle.MainBundle), "HomeButtonCell");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCollectionContainerCell", NSBundle.MainBundle), "HomeCollectionContainerCell");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeLastSearchCell", NSBundle.MainBundle), "HomeLastSearchCell");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell15", NSBundle.MainBundle), "HomeCell15");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell10", NSBundle.MainBundle), "HomeCell10");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell13", NSBundle.MainBundle), "HomeCell13");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell16", NSBundle.MainBundle), "HomeCell16");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell11", NSBundle.MainBundle), "HomeCell11");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeOfferCellLarge", NSBundle.MainBundle), "HomeOfferCellLarge");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeEnhancementsCell", NSBundle.MainBundle), "HomeEnhancementsCell");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeRateCell", NSBundle.MainBundle), "HomeRateCell");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeWidgetCell", NSBundle.MainBundle), "HomeWidgetCell");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeNotificationCell", NSBundle.MainBundle), "HomeNotificationCell");
             TableViewHome.Source = new MainHomeTableSource(TableViewHome, sections);
             TableViewHome.Delegate = new MainHomeTableDelegate(TableViewHome, View.Frame.Size,sections);
         }
