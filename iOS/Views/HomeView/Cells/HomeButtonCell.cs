@@ -5,17 +5,17 @@ using UIKit;
 
 namespace Mobius.iOS.Views
 {
-    public partial class HomeCell1 : UITableViewCell
+    public partial class HomeButtonCell : UITableViewCell
     {
-        public static readonly NSString Key = new NSString("HomeCell1");
+        public static readonly NSString Key = new NSString("HomeButtonCell");
         public static readonly UINib Nib;
 
-        static HomeCell1()
+        static HomeButtonCell()
         {
-            Nib = UINib.FromName("HomeCell1", NSBundle.MainBundle);
+            Nib = UINib.FromName("HomeButtonCell", NSBundle.MainBundle);
         }
 
-        protected HomeCell1(IntPtr handle) : base(handle)
+        protected HomeButtonCell(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
 

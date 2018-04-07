@@ -445,16 +445,16 @@
     <InterfaceDefinition Include="Views\HomeView\Screen3\HomeViewControllerScreen3.xib" />
     <InterfaceDefinition Include="Views\HomeView\Screen4\HomeViewControllerScreen4.xib" />
     <InterfaceDefinition Include="Views\HomeView\Screen5\HomeViewControllerScreen5.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell1.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeButtonCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell10.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell13.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell14.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCollectionContainerCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell15.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell2.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell3.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeIntroductionCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell4.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell6.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell7.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeLastSearchCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Screen6\HomeViewControllerScreen6.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell16.xib" />
     <InterfaceDefinition Include="Views\HomeView\MainScreen\MainHomeViewController.xib" />
@@ -553,9 +553,9 @@
     <Compile Include="Views\HomeView\Screen5\HomeViewControllerScreen5.designer.cs">
       <DependentUpon>HomeViewControllerScreen5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell1.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell1.designer.cs">
-      <DependentUpon>HomeCell1.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeButtonCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeButtonCell.designer.cs">
+      <DependentUpon>HomeButtonCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Cells\HomeCell10.cs" />
     <Compile Include="Views\HomeView\Cells\HomeCell10.designer.cs">
@@ -565,9 +565,9 @@
     <Compile Include="Views\HomeView\Cells\HomeCell13.designer.cs">
       <DependentUpon>HomeCell13.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell14.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell14.designer.cs">
-      <DependentUpon>HomeCell14.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeCollectionContainerCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeCollectionContainerCell.designer.cs">
+      <DependentUpon>HomeCollectionContainerCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Cells\HomeCell15.cs" />
     <Compile Include="Views\HomeView\Cells\HomeCell15.designer.cs">
@@ -577,9 +577,9 @@
     <Compile Include="Views\HomeView\Cells\HomeCell2.designer.cs">
       <DependentUpon>HomeCell2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell3.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell3.designer.cs">
-      <DependentUpon>HomeCell3.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeIntroductionCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeIntroductionCell.designer.cs">
+      <DependentUpon>HomeIntroductionCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Cells\HomeCell4.cs" />
     <Compile Include="Views\HomeView\Cells\HomeCell4.designer.cs">
@@ -589,9 +589,9 @@
     <Compile Include="Views\HomeView\Cells\HomeCell6.designer.cs">
       <DependentUpon>HomeCell6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView\Cells\HomeCell7.cs" />
-    <Compile Include="Views\HomeView\Cells\HomeCell7.designer.cs">
-      <DependentUpon>HomeCell7.cs</DependentUpon>
+    <Compile Include="Views\HomeView\Cells\HomeLastSearchCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeLastSearchCell.designer.cs">
+      <DependentUpon>HomeLastSearchCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HomeView\Screen6\HomeViewControllerScreen6.cs" />
     <Compile Include="Views\HomeView\Screen6\HomeViewControllerScreen6.designer.cs">

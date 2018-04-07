@@ -10,18 +10,17 @@ using System.CodeDom.Compiler;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("HomeCell1")]
-    partial class HomeCell1
+    [Register ("HomeLastSearchCell")]
+    partial class HomeLastSearchCell
     {
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton BookYourStay { get; set; }
+        public UIKit.NSLayoutConstraint ConstraintImageWidth { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (BookYourStay != null) {
-                BookYourStay.Dispose ();
-                BookYourStay = null;
+            if (ConstraintImageWidth != null) {
+                ConstraintImageWidth.Dispose ();
+                ConstraintImageWidth = null;
             }
         }
     }

@@ -36,10 +36,10 @@ namespace Mobius.iOS.Views
         {
             TableViewHome.RowHeight = UITableView.AutomaticDimension;
             TableViewHome.EstimatedRowHeight = 100;
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell3", NSBundle.MainBundle), "HomeCell3");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell1", NSBundle.MainBundle), "HomeCell1");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell14", NSBundle.MainBundle), "HomeCell14");
-            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell7", NSBundle.MainBundle), "HomeCell7");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeIntroductionCell", NSBundle.MainBundle), "HomeIntroductionCell");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeButtonCell", NSBundle.MainBundle), "HomeButtonCell");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCollectionContainerCell", NSBundle.MainBundle), "HomeCollectionContainerCell");
+            TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeLastSearchCell", NSBundle.MainBundle), "HomeLastSearchCell");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell15", NSBundle.MainBundle), "HomeCell15");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell10", NSBundle.MainBundle), "HomeCell10");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell13", NSBundle.MainBundle), "HomeCell13");

@@ -22,7 +22,7 @@ namespace Mobius.iOS.Views
 
             if (indexPath.Section == 0)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
 
                 return cell;

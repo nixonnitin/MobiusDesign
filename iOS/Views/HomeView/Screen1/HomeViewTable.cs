@@ -22,20 +22,20 @@ namespace Mobius.iOS.Views
             
             if (indexPath.Section == 0)
             {
-                var cell = (HomeCell3)tableView.DequeueReusableCell(HomeCell3.Key, indexPath);
+                var cell = (HomeIntroductionCell)tableView.DequeueReusableCell(HomeIntroductionCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
                 return cell;
             }
             else if (indexPath.Section == 1)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }
             else if (indexPath.Section == 2)
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
                 cell.CollectionViewHomeCell14.Tag = 1;
@@ -44,7 +44,7 @@ namespace Mobius.iOS.Views
                 return cell;
             }else if (indexPath.Section == 3)
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
                 cell.CollectionViewHomeCell14.Tag = 2;
@@ -53,7 +53,7 @@ namespace Mobius.iOS.Views
                 return cell;
             }else 
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell6", NSBundle.MainBundle), "HomeCell6");
                 cell.CollectionViewHomeCell14.Tag = 3;

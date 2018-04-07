@@ -10,8 +10,8 @@ using System.CodeDom.Compiler;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("HomeCell3")]
-    partial class HomeCell3
+    [Register ("HomeIntroductionCell")]
+    partial class HomeIntroductionCell
     {
         [Outlet]
         public UIKit.UILabel LabelText { get; set; }

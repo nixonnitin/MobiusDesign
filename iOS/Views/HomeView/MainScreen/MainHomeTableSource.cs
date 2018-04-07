@@ -22,14 +22,14 @@ namespace Mobius.iOS.Views
 
             if (indexPath.Section == 0)
             {
-                var cell = (HomeCell3)tableView.DequeueReusableCell(HomeCell3.Key, indexPath);
+                var cell = (HomeIntroductionCell)tableView.DequeueReusableCell(HomeIntroductionCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
                 return cell;
             }
             else if (indexPath.Section == 1)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.BookYourStay.BackgroundColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f);
                 //cell.BookYourStay.Layer.BorderWidth = 1;
@@ -41,7 +41,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 2)
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
                 cell.CollectionViewHomeCell14.Tag = 1;
@@ -57,7 +57,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 3)
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
                 var layout = new UICollectionViewFlowLayout();
@@ -72,7 +72,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 4)
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell6", NSBundle.MainBundle), "HomeCell6");
                 var layout = new UICollectionViewFlowLayout();
@@ -87,7 +87,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 5)
             {
-                var cell = (HomeCell7)tableView.DequeueReusableCell(HomeCell7.Key, indexPath);
+                var cell = (HomeLastSearchCell)tableView.DequeueReusableCell(HomeLastSearchCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.ConstraintImageWidth.Constant = 0;
                 return cell;
@@ -101,13 +101,13 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 7)
             {
-                var cell = (HomeCell7)tableView.DequeueReusableCell(HomeCell7.Key, indexPath);
+                var cell = (HomeLastSearchCell)tableView.DequeueReusableCell(HomeLastSearchCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }
             else if (indexPath.Section == 8)
             {
-                var cell = (HomeCell14)tableView.DequeueReusableCell(HomeCell14.Key, indexPath);
+                var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
                 cell.CollectionViewHomeCell14.Tag = 4;
@@ -185,7 +185,7 @@ namespace Mobius.iOS.Views
             }
             else if (indexPath.Section == 17)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ConstraintSelectedViewWidth.Constant = 0;
                 //cell.LabelPointsDetail.Hidden = true;

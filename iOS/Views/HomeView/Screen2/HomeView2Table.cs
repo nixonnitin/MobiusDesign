@@ -22,13 +22,13 @@ namespace Mobius.iOS.Views
             
             if (indexPath.Section == 0)
             {
-                var cell = (HomeCell1)tableView.DequeueReusableCell(HomeCell1.Key, indexPath);
+                var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }
             else if (indexPath.Section == 1)
             {
-                var cell = (HomeCell7)tableView.DequeueReusableCell(HomeCell7.Key, indexPath);
+                var cell = (HomeLastSearchCell)tableView.DequeueReusableCell(HomeLastSearchCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.ConstraintImageWidth.Constant = 0;
                 return cell;
