@@ -7,21 +7,22 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("HomeButtonCell")]
-    partial class HomeButtonCell
+    [Register ("RoomViewController")]
+    partial class RoomViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-       public UIKit.UIButton BookYourStay { get; set; }
+        UIKit.UITableView TableRoomView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (BookYourStay != null) {
-                BookYourStay.Dispose ();
-                BookYourStay = null;
+            if (TableRoomView != null) {
+                TableRoomView.Dispose ();
+                TableRoomView = null;
             }
         }
     }

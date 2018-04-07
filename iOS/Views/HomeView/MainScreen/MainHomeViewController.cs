@@ -46,7 +46,6 @@ namespace Mobius.iOS.Views
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell16", NSBundle.MainBundle), "HomeCell16");
             TableViewHome.RegisterNibForCellReuse(UINib.FromName("HomeCell11", NSBundle.MainBundle), "HomeCell11");
             TableViewHome.Source = new MainHomeTableSource(TableViewHome, sections);
-
             TableViewHome.Delegate = new MainHomeTableDelegate(TableViewHome, View.Frame.Size,sections);
         }
     }

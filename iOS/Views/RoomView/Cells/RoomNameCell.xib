@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="cxk-wN-pdQ" customClass="RoomNameCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaZ-i8-Z3M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen Double Deluxe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mk-cG-xyN">
+                                <rect key="frame" x="20" y="11" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-3h-atl">
+                                <rect key="frame" x="212.5" y="15" width="29" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$73.75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVV-UO-oLV">
+                                <rect key="frame" x="246.5" y="11" width="53.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QVV-UO-oLV" firstAttribute="centerY" secondItem="oaZ-i8-Z3M" secondAttribute="centerY" id="B7h-T9-R91"/>
+                            <constraint firstAttribute="trailing" secondItem="QVV-UO-oLV" secondAttribute="trailing" constant="20" id="Ckk-Sq-DaE"/>
+                            <constraint firstItem="5Mk-cG-xyN" firstAttribute="centerY" secondItem="oaZ-i8-Z3M" secondAttribute="centerY" id="H1z-eb-jh2"/>
+                            <constraint firstItem="5Mk-cG-xyN" firstAttribute="leading" secondItem="oaZ-i8-Z3M" secondAttribute="leading" constant="20" id="Kvk-cD-FyI"/>
+                            <constraint firstItem="WdC-3h-atl" firstAttribute="centerY" secondItem="oaZ-i8-Z3M" secondAttribute="centerY" id="L8W-TR-400"/>
+                            <constraint firstItem="QVV-UO-oLV" firstAttribute="leading" secondItem="WdC-3h-atl" secondAttribute="trailing" constant="5" id="dqb-pk-kTz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oaZ-i8-Z3M" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="TWb-Nb-AkB"/>
+                    <constraint firstAttribute="trailing" secondItem="oaZ-i8-Z3M" secondAttribute="trailing" id="jh8-gw-gaJ"/>
+                    <constraint firstItem="oaZ-i8-Z3M" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="uLH-Uz-o2Q"/>
+                    <constraint firstAttribute="bottom" secondItem="oaZ-i8-Z3M" secondAttribute="bottom" id="xag-rG-5m9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="LabelRoomName" destination="5Mk-cG-xyN" id="name-outlet-5Mk-cG-xyN"/>
+                <outlet property="LabelRoomPrice" destination="QVV-UO-oLV" id="name-outlet-QVV-UO-oLV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homeIcon" width="32" height="32"/>
+        <image name="nextArrow" width="32" height="32"/>
+        <image name="cal" width="512" height="512"/>
+        <image name="check" width="512" height="512"/>
+        <image name="checkwhite" width="512" height="512"/>
+        <image name="clock" width="2134" height="2134"/>
+        <image name="clockwhite" width="2134" height="2134"/>
+        <image name="defaultimage" width="512" height="512"/>
+        <image name="fb" width="512" height="512"/>
+        <image name="food" width="512" height="512"/>
+        <image name="gym" width="512" height="512"/>
+        <image name="homeAdd" width="512" height="512"/>
+        <image name="homeBestOffer" width="512" height="512"/>
+        <image name="location" width="512" height="512"/>
+        <image name="moon" width="512" height="512"/>
+        <image name="nextarrowhome" width="512" height="512"/>
+        <image name="ratingempty" width="512" height="512"/>
+        <image name="ratingfull" width="512" height="512"/>
+        <image name="ratinghalf" width="512" height="512"/>
+        <image name="homeCal" width="512" height="512"/>
+        <image name="homeCheck" width="512" height="512"/>
+        <image name="homeCheckWhite" width="512" height="512"/>
+        <image name="homeClock" width="2134" height="2134"/>
+        <image name="homeClockWhite" width="2134" height="2134"/>
+        <image name="homeDefaultImage" width="512" height="512"/>
+        <image name="homeFB" width="512" height="512"/>
+        <image name="homeFood" width="512" height="512"/>
+        <image name="homeGym" width="512" height="512"/>
+        <image name="homeLocation" width="512" height="512"/>
+        <image name="homeMoon" width="512" height="512"/>
+        <image name="homeNextArrow" width="32" height="32"/>
+        <image name="homeNextArrowHome" width="512" height="512"/>
+        <image name="homeRatingEmpty" width="512" height="512"/>
+        <image name="homeRatingFull" width="512" height="512"/>
+        <image name="homeRatingHalf" width="512" height="512"/>
+        <image name="homeParking" width="512" height="512"/>
+        <image name="homePencil" width="512" height="512"/>
+        <image name="homePerson" width="512" height="512"/>
+        <image name="homePersonWhite" width="512" height="512"/>
+        <image name="homeRoom" width="512" height="512"/>
+        <image name="homeSettings" width="512" height="512"/>
+        <image name="homeSwim" width="512" height="512"/>
+        <image name="homeWiFi" width="512" height="512"/>
+        <image name="homeicon" width="32" height="32"/>
+        <image name="nextarrow" width="32" height="32"/>
+        <image name="hotelRoomTest" width="1920" height="1200"/>
+        <image name="add-1" width="512" height="512"/>
+        <image name="arrow-white" width="50" height="34"/>
+        <image name="arrow" width="50" height="34"/>
+        <image name="best-offer" width="512" height="512"/>
+        <image name="check-white" width="512" height="512"/>
+        <image name="clock-white" width="2134" height="2134"/>
+        <image name="empty" width="512" height="512"/>
+        <image name="food-1" width="512" height="512"/>
+        <image name="full" width="512" height="512"/>
+        <image name="grey-cross-1" width="512" height="512"/>
+        <image name="gym-1" width="512" height="512"/>
+        <image name="half" width="512" height="512"/>
+        <image name="img" width="512" height="512"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="moon-1" width="512" height="512"/>
+        <image name="next-arrrow-1" width="512" height="512"/>
+        <image name="parking-1" width="512" height="512"/>
+        <image name="pencil-1" width="512" height="512"/>
+        <image name="person-1" width="512" height="512"/>
+        <image name="person-white" width="512" height="512"/>
+        <image name="red-cross-1" width="512" height="512"/>
+        <image name="room-1" width="512" height="512"/>
+        <image name="search-1" width="512" height="512"/>
+        <image name="settings-1" width="512" height="512"/>
+        <image name="swim-1" width="512" height="512"/>
+        <image name="tag" width="512" height="515"/>
+        <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="bgblur.png" width="240" height="320"/>
+        <image name="Triangle.png" width="54" height="36"/>
+        <image name="user.png" width="18" height="18"/>
+    </resources>
+</document>

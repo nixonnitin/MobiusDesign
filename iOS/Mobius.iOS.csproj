@@ -417,6 +417,9 @@
     <Folder Include="Views\HomeView\Cells\" />
     <Folder Include="Views\HomeView\Screen6\" />
     <Folder Include="Views\HomeView\MainScreen\" />
+    <Folder Include="Views\RoomView\" />
+    <Folder Include="Views\RoomView\Cells\" />
+    <Folder Include="Views\RoomView\MainScreen\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -465,6 +468,10 @@
     <InterfaceDefinition Include="Views\Search Result\Preferences\PreferencesCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Preferences\PreferncesViewController.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCell11.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\SelectedRoomCell.xib" />
+    <InterfaceDefinition Include="Views\RoomView\MainScreen\RoomViewController.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\RoomNameCell.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\DirectBookCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -625,6 +632,24 @@
     <Compile Include="Views\HomeView\Cells\HomeCell11.cs" />
     <Compile Include="Views\HomeView\Cells\HomeCell11.designer.cs">
       <DependentUpon>HomeCell11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\Cells\SelectedRoomCell.cs" />
+    <Compile Include="Views\RoomView\Cells\SelectedRoomCell.designer.cs">
+      <DependentUpon>SelectedRoomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\MainScreen\RoomViewController.cs" />
+    <Compile Include="Views\RoomView\MainScreen\RoomViewController.designer.cs">
+      <DependentUpon>RoomViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\MainScreen\RoomTableSource.cs" />
+    <Compile Include="Views\RoomView\MainScreen\RoomTableDelegate.cs" />
+    <Compile Include="Views\RoomView\Cells\RoomNameCell.cs" />
+    <Compile Include="Views\RoomView\Cells\RoomNameCell.designer.cs">
+      <DependentUpon>RoomNameCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\Cells\DirectBookCell.cs" />
+    <Compile Include="Views\RoomView\Cells\DirectBookCell.designer.cs">
+      <DependentUpon>DirectBookCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

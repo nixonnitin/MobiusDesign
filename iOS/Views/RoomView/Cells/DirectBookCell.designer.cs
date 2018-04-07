@@ -10,19 +10,11 @@ using System.CodeDom.Compiler;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("HomeButtonCell")]
-    partial class HomeButtonCell
+    [Register ("DirectBookCell")]
+    partial class DirectBookCell
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-       public UIKit.UIButton BookYourStay { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (BookYourStay != null) {
-                BookYourStay.Dispose ();
-                BookYourStay = null;
-            }
         }
     }
 }
