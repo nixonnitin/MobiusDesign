@@ -55,6 +55,7 @@ namespace Mobius.iOS
             var controller = new Views.RoomViewController();
             //var controller = new Views.MainResultViewController();
             //var controller = new Views.BookSearch();
+            //var controller = new Views.CheckoutViewController();
 			var navController = new UINavigationController(controller);
 
 			Window.RootViewController = navController;

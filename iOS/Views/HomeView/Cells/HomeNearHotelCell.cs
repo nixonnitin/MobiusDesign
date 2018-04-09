@@ -26,18 +26,18 @@ namespace Mobius.iOS.Views
             base.AwakeFromNib();
             //LabelOuterLayout.Layer.CornerRadius = 5;
 
-            UIBezierPath maskPath = UIBezierPath.FromRoundedRect(LabelOuterLayout.Bounds, UIRectCorner.BottomRight | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
-            CAShapeLayer maskLayer = new CAShapeLayer();
-            maskLayer.Frame = LabelOuterLayout.Bounds;
-            maskLayer.Path = maskPath.CGPath;
-            LabelOuterLayout.Layer.Mask = maskLayer;
+            //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(LabelOuterLayout.Bounds, UIRectCorner.BottomRight | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
+            //CAShapeLayer maskLayer = new CAShapeLayer();
+            //maskLayer.Frame = LabelOuterLayout.Bounds;
+            //maskLayer.Path = maskPath.CGPath;
+            //LabelOuterLayout.Layer.Mask = maskLayer;
 
 
-            UIBezierPath maskPathImage = UIBezierPath.FromRoundedRect(HotelImage.Bounds, UIRectCorner.TopLeft | UIRectCorner.TopRight, new CoreGraphics.CGSize(5, 5));
-            CAShapeLayer maskLayerImage = new CAShapeLayer();
-            maskLayerImage.Frame = HotelImage.Bounds;
-            maskLayerImage.Path = maskPathImage.CGPath;
-            HotelImage.Layer.Mask = maskLayerImage;
+            //UIBezierPath maskPathImage = UIBezierPath.FromRoundedRect(HotelImage.Bounds, UIRectCorner.TopLeft | UIRectCorner.TopRight, new CoreGraphics.CGSize(5, 5));
+            //CAShapeLayer maskLayerImage = new CAShapeLayer();
+            //maskLayerImage.Frame = HotelImage.Bounds;
+            //maskLayerImage.Path = maskPathImage.CGPath;
+            //HotelImage.Layer.Mask = maskLayerImage;
             //HotelImage.Layer.FillMode = "";
 
 

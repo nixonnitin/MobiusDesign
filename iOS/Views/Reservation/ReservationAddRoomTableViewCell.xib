@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="cxk-wN-pdQ" customClass="ReservationAddRoomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queen Double Deluxe Suite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2671">
+                        <rect key="frame" x="20" y="5" width="280" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="On2-nu-ji9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Bed guaranteed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3407">
+                        <rect key="frame" x="20" y="24" width="280" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5OS-Wv-OJ9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6691">
+                        <rect key="frame" x="20" y="44" width="280" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="yiY-wa-pf0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                        <color key="textColor" red="0.25300052760000002" green="0.68220543860000005" blue="0.74342769379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7819">
+                        <rect key="frame" x="20" y="67" width="300" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666696" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8xE-DY-4wX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="yn8-I3-3xG">
+                        <rect key="frame" x="288" y="24.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="J7U-WA-vxh"/>
+                            <constraint firstAttribute="width" constant="20" id="hDt-Br-wsd"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7819" secondAttribute="trailing" id="C18-j5-R74"/>
+                    <constraint firstItem="3407" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="24" id="CBp-SX-4hB"/>
+                    <constraint firstItem="yn8-I3-3xG" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="Phr-f0-8m7"/>
+                    <constraint firstAttribute="bottom" secondItem="7819" secondAttribute="bottom" constant="2.5" id="QEo-76-r9I"/>
+                    <constraint firstAttribute="trailing" secondItem="yn8-I3-3xG" secondAttribute="trailing" constant="12" id="Rrg-g0-wUL"/>
+                    <constraint firstItem="6691" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="S0U-jm-T8f"/>
+                    <constraint firstItem="2671" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="bro-t2-RYR"/>
+                    <constraint firstItem="2671" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="egu-mn-XdU"/>
+                    <constraint firstItem="7819" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="hOD-et-Fyq"/>
+                    <constraint firstItem="6691" firstAttribute="top" secondItem="2671" secondAttribute="bottom" constant="18" id="iY4-Xi-TNX"/>
+                    <constraint firstAttribute="trailing" secondItem="3407" secondAttribute="trailing" constant="20" id="ica-e0-IJo"/>
+                    <constraint firstItem="3407" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="jRC-FK-oYq"/>
+                    <constraint firstAttribute="trailing" secondItem="6691" secondAttribute="trailing" constant="20" id="sLk-xr-ogU"/>
+                    <constraint firstAttribute="trailing" secondItem="2671" secondAttribute="trailing" constant="20" id="vao-fR-pRE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImageSelectionStatus" destination="yn8-I3-3xG" id="Am2-L4-LC1"/>
+                <outlet property="LabelAvailableBeds" destination="3407" id="7ka-7W-RB6"/>
+                <outlet property="LabelPrice" destination="6691" id="w0l-Xa-d3v"/>
+                <outlet property="LabelRoomName" destination="2671" id="waI-r6-7aX"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="-4.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="256" height="256"/>
+    </resources>
+</document>

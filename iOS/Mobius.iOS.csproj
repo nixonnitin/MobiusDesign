@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -736,4 +737,822 @@
     <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{29464A62-0B91-4A9B-A9DC-0C2445C335D8}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mobius.iOS</RootNamespace>
+    <AssemblyName>Mobius.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>27151</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.4.6.2\lib\netstandard1.1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mobius\Mobius.csproj">
+      <Project>{7FC3B988-9190-4E56-99C1-4ED797EF443C}</Project>
+      <Name>Mobius</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobius.Core\Mobius.Core.csproj">
+      <Project>{B735BA3B-9446-4C3B-807C-36A96EDDE439}</Project>
+      <Name>Mobius.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobius.Data\Mobius.Data.csproj">
+      <Project>{1782841D-5938-4E86-ADAC-53D64C9744E3}</Project>
+      <Name>Mobius.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobius.Services\Mobius.Services.csproj">
+      <Project>{BFA28288-36EA-43D0-8467-0559B4D1C319}</Project>
+      <Name>Mobius.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobius.Entities\Mobius.Entities.csproj">
+      <Project>{CDEEB67B-1397-433E-AD66-E4F7493C40E6}</Project>
+      <Name>Mobius.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeIcon.imageset\171424-32.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeIcon.imageset\171424-64 %281%29-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeIcon.imageset\171424-64 %281%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeIcon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextArrow.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextArrow.imageset\if_arrow-right-01_186409 %281%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextArrow.imageset\if_arrow-right-01_186409 %282%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextArrow.imageset\if_arrow-right-01_186409-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cal.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\cal.imageset\cal-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cal.imageset\cal-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cal.imageset\cal-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\check.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\check.imageset\check-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\check.imageset\check-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\check.imageset\check-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkwhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkwhite.imageset\check-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkwhite.imageset\check-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkwhite.imageset\check-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clock.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\clock.imageset\clock-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clock.imageset\clock-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clock.imageset\clock-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clockwhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\clockwhite.imageset\clock-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clockwhite.imageset\clock-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clockwhite.imageset\clock-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\defaultimage.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\defaultimage.imageset\img-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\defaultimage.imageset\img-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\defaultimage.imageset\img.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\fb.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\fb.imageset\fb-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\fb.imageset\fb-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\fb.imageset\fb.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\food.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\food.imageset\food-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\food.imageset\food-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\food.imageset\food-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gym.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\gym.imageset\gym-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gym.imageset\gym-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gym.imageset\gym-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeAdd.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeAdd.imageset\add-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeAdd.imageset\add-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeAdd.imageset\add-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeBestOffer.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeBestOffer.imageset\best-offer-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeBestOffer.imageset\best-offer-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeBestOffer.imageset\best-offer.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\location.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\location.imageset\location-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\location.imageset\location-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\location.imageset\location-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\moon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\moon.imageset\moon-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\moon.imageset\moon-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\moon.imageset\moon-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrowhome.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrowhome.imageset\next-arrrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrowhome.imageset\next-arrrow-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrowhome.imageset\next-arrrow-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingempty.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingempty.imageset\empty-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingempty.imageset\empty-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingempty.imageset\empty.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingfull.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingfull.imageset\full-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingfull.imageset\full-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratingfull.imageset\full.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratinghalf.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratinghalf.imageset\half-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratinghalf.imageset\half-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ratinghalf.imageset\half.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCal.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCal.imageset\cal-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCal.imageset\cal-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCal.imageset\cal-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheck.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheck.imageset\check-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheck.imageset\check-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheck.imageset\check-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheckWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheckWhite.imageset\check-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheckWhite.imageset\check-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeCheckWhite.imageset\check-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClock.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClock.imageset\clock-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClock.imageset\clock-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClock.imageset\clock-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClockWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClockWhite.imageset\clock-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClockWhite.imageset\clock-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeClockWhite.imageset\clock-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeDefaultImage.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeDefaultImage.imageset\img-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeDefaultImage.imageset\img-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeDefaultImage.imageset\img.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFB.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFB.imageset\fb-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFB.imageset\fb-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFB.imageset\fb.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFood.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFood.imageset\food-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFood.imageset\food-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeFood.imageset\food-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeGym.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeGym.imageset\gym-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeGym.imageset\gym-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeGym.imageset\gym-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeLocation.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeLocation.imageset\location-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeLocation.imageset\location-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeLocation.imageset\location-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeMoon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeMoon.imageset\moon-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeMoon.imageset\moon-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeMoon.imageset\moon-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\if_arrow-right-01_186409 %281%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\if_arrow-right-01_186409 %282%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\if_arrow-right-01_186409-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrowHome.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrowHome.imageset\next-arrrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrowHome.imageset\next-arrrow-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrowHome.imageset\next-arrrow-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingEmpty.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingEmpty.imageset\empty-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingEmpty.imageset\empty-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingEmpty.imageset\empty.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingFull.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingFull.imageset\full-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingFull.imageset\full-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingFull.imageset\full.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingHalf.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingHalf.imageset\half-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingHalf.imageset\half-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRatingHalf.imageset\half.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\next-arrrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\next-arrrow-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeNextArrow.imageset\next-arrrow-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeParking.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeParking.imageset\parking-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeParking.imageset\parking-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeParking.imageset\parking-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencil.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencil.imageset\pencil-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencil.imageset\pencil-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencil.imageset\pencil-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePerson.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePerson.imageset\person-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePerson.imageset\person-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePerson.imageset\person-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePersonWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePersonWhite.imageset\person-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePersonWhite.imageset\person-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePersonWhite.imageset\person-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRoom.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRoom.imageset\room-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRoom.imageset\room-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeRoom.imageset\room-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSettings.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSettings.imageset\settings-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSettings.imageset\settings-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSettings.imageset\settings-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSwim.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSwim.imageset\swim-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSwim.imageset\swim-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSwim.imageset\swim-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeWiFi.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeWiFi.imageset\wifi-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeWiFi.imageset\wifi-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeWiFi.imageset\wifi-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeicon.imageset\171424-32.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeicon.imageset\171424-64 %281%29-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeicon.imageset\171424-64 %281%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeicon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrow.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrow.imageset\if_arrow-right-01_186409 %281%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrow.imageset\if_arrow-right-01_186409 %282%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\nextarrow.imageset\if_arrow-right-01_186409-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\food.imageset\food-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeGym.imageset\gym-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeParking.imageset\parking-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeSwim.imageset\swim-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homeWiFi.imageset\wifi-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\pictures_1920x1200_2012_Interior_Hotel_Room_033155_-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\pictures_1920x1200_2012_Interior_Hotel_Room_033155_-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\pictures_1920x1200_2012_Interior_Hotel_Room_033155_.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\Hotelroom-Alamy-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\Hotelroom-Alamy-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hotelRoomTest.imageset\Hotelroom-Alamy.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\add-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\add-1.imageset\add-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\arrow-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\arrow-white.imageset\arrow-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\arrow.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\arrow.imageset\arrow.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\best-offer.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\best-offer.imageset\best-offer.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\check-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\check-white.imageset\check-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\clock-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\clock-white.imageset\clock-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\empty.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\empty.imageset\empty.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\food-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\food-1.imageset\food-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\full.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\full.imageset\full.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\grey-cross-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\grey-cross-1.imageset\grey-cross-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gym-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\gym-1.imageset\gym-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\half.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\half.imageset\half.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\img.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\img.imageset\img.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\minus.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\minus.imageset\minus.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\moon-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\moon-1.imageset\moon-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\next-arrrow-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\next-arrrow-1.imageset\next-arrrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\parking-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\parking-1.imageset\parking-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\pencil-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\pencil-1.imageset\pencil-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\person-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\person-1.imageset\person-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\person-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\person-white.imageset\person-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\red-cross-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\red-cross-1.imageset\red-cross-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\room-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\room-1.imageset\room-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\search-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\search-1.imageset\search-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\settings-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\settings-1.imageset\settings-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\swim-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\swim-1.imageset\swim-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\tag.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\tag.imageset\tag.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\wifi-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\wifi-1.imageset\wifi-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.dataset\BuildingMobius" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.dataset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.imageset\BuildingMobius.jpeg" />
+    <ImageAsset Include="Resources\Assets.xcassets\BuildingMobius.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\calWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\calWhite.imageset\cal-01 - Copy.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\handicaped-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\handicaped-white.imageset\handicaped-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart-line.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart-line.imageset\heart-line.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\heart.imageset\heart-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\hotel-calendar-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\hotel-calendar-white.imageset\hotel-calendar-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\locationWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\locationWhite.imageset\location-01 - Copy.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\lock-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\lock-white.imageset\lock-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\moon-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\moon-white.imageset\moon-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\personWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\personWhite.imageset\person-01 - Copy.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\pet-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\pet-white.imageset\pet-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\spoon-white.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\spoon-white.imageset\spoon-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\top-bar-calendar.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search Result\top-bar-calendar.imageset\top-bar-calendar-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\gymWhiteBack.imageset\gym-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\128.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\256.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\512.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\american.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\american.imageset\american.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\chat.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\chat.imageset\chat.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\phone-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\phone-1.imageset\phone-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\red-bg.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\red-bg.imageset\red-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\lake-bg-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\lake-bg-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\lake-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\owl-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\owl-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\owl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Views\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\HomeView\" />
+    <Folder Include="Views\MenuView\" />
+    <Folder Include="Views\HomeView\Screen1\" />
+    <Folder Include="Views\HomeView\Screen2\" />
+    <Folder Include="Views\HomeView\Screen3\" />
+    <Folder Include="Views\HomeView\Screen4\" />
+    <Folder Include="Views\HomeView\Screen5\" />
+    <Folder Include="Views\HomeView\Cells\" />
+    <Folder Include="Views\HomeView\Screen6\" />
+    <Folder Include="Views\HomeView\MainScreen\" />
+    <Folder Include="Views\RoomView\" />
+    <Folder Include="Views\RoomView\Cells\" />
+    <Folder Include="Views\RoomView\MainScreen\" />
+    <Folder Include="Views\CheckoutView\" />
+    <Folder Include="Views\CheckoutView\MainView\" />
+    <Folder Include="Views\CheckoutView\Cells\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+
+    <InterfaceDefinition Include="Views\LoginViewController.xib" />
+    <InterfaceDefinition Include="Views\RegistrationViewController.xib" />
+
+    <InterfaceDefinition Include="Views\MyTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\MyViewController.xib" />
+    <InterfaceDefinition Include="Views\MenuView\MenuExistingUserCell1.xib" />
+    <InterfaceDefinition Include="Views\MenuView\MenuViewController.xib" />
+    <InterfaceDefinition Include="Views\Book Search\BookSeacrhCell2.xib" />
+    <InterfaceDefinition Include="Views\Book Search\BookSearch.xib" />
+    <InterfaceDefinition Include="Views\Book Search\BookSearchAvailabilityCell.xib" />
+    <InterfaceDefinition Include="Views\Book Search\BookSearchCell1.xib" />
+    <InterfaceDefinition Include="Views\Book Search\BookSearchCell2.xib" />
+    <InterfaceDefinition Include="Views\Book Search\Guest Room picker\GuestRoomPicker.xib" />
+    <InterfaceDefinition Include="Views\Book Search\Guest Room picker\GuestRoomPickerAdultChildCell.xib" />
+    <InterfaceDefinition Include="Views\Book Search\Guest Room picker\GuestRoomPickerCancelDoneCell.xib" />
+    <InterfaceDefinition Include="Views\Book Search\Guest Room picker\GuestRoomPickerRoomCell.xib" />
+    <InterfaceDefinition Include="Views\Book Search\Location Choose\LocationChoose.xib" />
+    <InterfaceDefinition Include="Views\Book Search\Location Choose\LocationChooseCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Screen1\HomeViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Screen2\HomeViewControllerScreen2.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Screen3\HomeViewControllerScreen3.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Screen4\HomeViewControllerScreen4.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Screen5\HomeViewControllerScreen5.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeButtonCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeEnhancementsCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeRateCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeCollectionContainerCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeOfferCellLarge.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeIntroductionCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeOfferCellSmall.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeLastSearchCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Screen6\HomeViewControllerScreen6.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeWidgetCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\MainScreen\MainHomeViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeNotificationCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultHotelCountCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Main Result\MainResultViewController.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Preferences\PreferencesCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Preferences\PreferncesViewController.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\SelectedRoomCell.xib" />
+    <InterfaceDefinition Include="Views\RoomView\MainScreen\RoomViewController.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\RoomNameCell.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\DirectBookCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterResetApplyCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterViewController.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\MainView\CheckoutViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeNearHotelCell.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomePopularDestinationsCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookButCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookTopCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\PriceAndBookCheapCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Review User\HotelReviewUserViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Subpage\Hotel Subpage Cell\HotelSubPageCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Subpage\Hotel Subpage Controller\HotelSubPageViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel review\HotelReview Cell\HotelReviewCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel review\HotelReviewController\HotelReview.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationAddRoomTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\CancelReservation\CancelReservationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeDates\ReservationBookingUpdatedViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeDatesAmountConfirmation\EditReservationChangeDatesAmountConfirmationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeRoom\EditReservationChangeRoomViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeRoomAmountConfirmation\EditReservationChangeRoomAmountConfirmationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\MyReservations\MyReservationsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\MyReservations\MyReservationsViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\NoReservationPopUpScreen\NoReservationPopUpViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\BillingInformationTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\EditStayDatesRoomTypeTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\GuestInformationTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\PreferencesCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\PriceBreakDownTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\ReservationSummaryGuestInformationTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BaseViewController.cs" />
+    <Compile Include="Services\PlatformService.cs" />
+    <Compile Include="Views\LoginViewController.cs" />
+    <Compile Include="Views\LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I.cs" />
+    <Compile Include="I.designer.cs">
+      <DependentUpon>I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistrationViewController.cs" />
+    <Compile Include="Views\RegistrationViewController.designer.cs">
+      <DependentUpon>RegistrationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadingOverlay.cs" />
+    <Compile Include="Views\RootViewController.cs" />
+    <Compile Include="Views\NavController.cs" />
+    <Compile Include="Views\MyTableViewCell.cs" />
+    <Compile Include="Views\MyViewController.cs" />
+    <Compile Include="Views\MyViewController.designer.cs">
+      <DependentUpon>MyViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuView\MenuExistingUserCell1.cs" />
+    <Compile Include="Views\MenuView\MenuExistingUserCell1.designer.cs">
+      <DependentUpon>MenuExistingUserCell1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuView\MenuViewController.cs" />
+    <Compile Include="Views\MenuView\MenuViewController.designer.cs">
+      <DependentUpon>MenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Book Search\BookSearch.cs" />
+    <Compile Include="Views\Book Search\BookSearch.designer.cs" />
+    <Compile Include="Views\Book Search\BookSearchAvailabilityCell.cs" />
+    <Compile Include="Views\Book Search\BookSearchAvailabilityCell.designer.cs" />
+    <Compile Include="Views\Book Search\BookSearchCell1.cs" />
+    <Compile Include="Views\Book Search\BookSearchCell1.designer.cs" />
+    <Compile Include="Views\Book Search\BookSearchCell2.cs" />
+    <Compile Include="Views\Book Search\BookSearchCell2.designer.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPicker.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPicker.designer.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPickerAdultChildCell.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPickerAdultChildCell.designer.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPickerCancelDoneCell.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPickerCancelDoneCell.designer.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPickerRoomCell.cs" />
+    <Compile Include="Views\Book Search\Guest Room picker\GuestRoomPickerRoomCell.designer.cs" />
+    <Compile Include="Views\Book Search\Location Choose\LocationChoose.cs" />
+    <Compile Include="Views\Book Search\Location Choose\LocationChoose.designer.cs" />
+    <Compile Include="Views\Book Search\Location Choose\LocationChooseCell.cs" />
+    <Compile Include="Views\Book Search\Location Choose\LocationChooseCell.designer.cs" />
+    <Compile Include="Views\HomeView\Screen1\HomeViewController.cs" />
+    <Compile Include="Views\HomeView\Screen1\HomeViewController.designer.cs" />
+    <Compile Include="Views\HomeView\Screen1\HomeViewTable.cs" />
+    <Compile Include="Views\HomeView\Screen2\HomeView2Table.cs" />
+    <Compile Include="Views\HomeView\Screen2\HomeViewControllerScreen2.cs" />
+    <Compile Include="Views\HomeView\Screen2\HomeViewControllerScreen2.designer.cs">
+      <DependentUpon>HomeViewControllerScreen2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Screen3\HomeView3Table.cs" />
+    <Compile Include="Views\HomeView\Screen3\HomeViewControllerScreen3.cs" />
+    <Compile Include="Views\HomeView\Screen3\HomeViewControllerScreen3.designer.cs">
+      <DependentUpon>HomeViewControllerScreen3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Screen4\HomeView4Table.cs" />
+    <Compile Include="Views\HomeView\Screen4\HomeViewControllerScreen4.cs" />
+    <Compile Include="Views\HomeView\Screen4\HomeViewControllerScreen4.designer.cs">
+      <DependentUpon>HomeViewControllerScreen4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Screen5\HomeView5Table.cs" />
+    <Compile Include="Views\HomeView\Screen5\HomeViewControllerScreen5.cs" />
+    <Compile Include="Views\HomeView\Screen5\HomeViewControllerScreen5.designer.cs">
+      <DependentUpon>HomeViewControllerScreen5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeButtonCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeButtonCell.designer.cs">
+      <DependentUpon>HomeButtonCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeEnhancementsCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeEnhancementsCell.designer.cs">
+      <DependentUpon>HomeEnhancementsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeRateCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeRateCell.designer.cs">
+      <DependentUpon>HomeRateCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeCollectionContainerCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeCollectionContainerCell.designer.cs">
+      <DependentUpon>HomeCollectionContainerCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellLarge.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellLarge.designer.cs">
+      <DependentUpon>HomeOfferCellLarge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeNearHotelCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeNearHotelCell.designer.cs">
+      <DependentUpon>HomeNearHotelCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeIntroductionCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeIntroductionCell.designer.cs">
+      <DependentUpon>HomeIntroductionCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellSmall.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeOfferCellSmall.designer.cs">
+      <DependentUpon>HomeOfferCellSmall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomePopularDestinationsCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomePopularDestinationsCell.designer.cs">
+      <DependentUpon>HomePopularDestinationsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Cells\HomeLastSearchCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeLastSearchCell.designer.cs">
+      <DependentUpon>HomeLastSearchCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Screen6\HomeViewControllerScreen6.cs" />
+    <Compile Include="Views\HomeView\Screen6\HomeViewControllerScreen6.designer.cs">
+      <DependentUpon>HomeViewControllerScreen6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\Screen6\HomeView6Table.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeWidgetCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeWidgetCell.designer.cs">
+      <DependentUpon>HomeWidgetCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\MainScreen\MainHomeViewController.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeViewController.designer.cs">
+      <DependentUpon>MainHomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView\MainScreen\MainHomeTableSource.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeCollectionSource.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeTableDelegate.cs" />
+    <Compile Include="Views\HomeView\MainScreen\MainHomeCollectionLayoutDelegate.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeNotificationCell.cs" />
+    <Compile Include="Views\HomeView\Cells\HomeNotificationCell.designer.cs">
+      <DependentUpon>HomeNotificationCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Search Result\Main Result\MainResultCell.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultCell.designer.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultHotelCountCell.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultHotelCountCell.designer.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultNoResultFoundCell.designer.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultViewController.cs" />
+    <Compile Include="Views\Search Result\Main Result\MainResultViewController.designer.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferencesCell.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferencesCell.designer.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferncesViewController.cs" />
+    <Compile Include="Views\Search Result\Preferences\PreferncesViewController.designer.cs" />
+    <Compile Include="Views\RoomView\Cells\SelectedRoomCell.cs" />
+    <Compile Include="Views\RoomView\Cells\SelectedRoomCell.designer.cs">
+      <DependentUpon>SelectedRoomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\MainScreen\RoomViewController.cs" />
+    <Compile Include="Views\RoomView\MainScreen\RoomViewController.designer.cs">
+      <DependentUpon>RoomViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\MainScreen\RoomTableSource.cs" />
+    <Compile Include="Views\RoomView\MainScreen\RoomTableDelegate.cs" />
+    <Compile Include="Views\RoomView\Cells\RoomNameCell.cs" />
+    <Compile Include="Views\RoomView\Cells\RoomNameCell.designer.cs">
+      <DependentUpon>RoomNameCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\Cells\DirectBookCell.cs" />
+    <Compile Include="Views\RoomView\Cells\DirectBookCell.designer.cs">
+      <DependentUpon>DirectBookCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.cs" />
+    <Compile Include="Views\Search Result\Preferences SubPage\PreferencesSubPageViewController.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterDropDownCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterPriceRangeCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterResetApplyCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterResetApplyCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.designer.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.designer.cs" />
+    <Compile Include="Helper\UIViewHelper.cs" />
+    <Compile Include="Views\CheckoutView\MainView\CheckoutViewController.cs" />
+    <Compile Include="Views\CheckoutView\MainView\CheckoutViewController.designer.cs">
+      <DependentUpon>CheckoutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\MainView\CheckoutTableSource.cs" />
+    <Compile Include="Views\CheckoutView\MainView\CheckoutTableDelegate.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookButtonCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookTopCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookTopCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\PriceAndBookCheapCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\PriceAndBookCheapCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Review User\HotelReviewUserViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Review User\HotelReviewUserViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Cell\HotelSubPageCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Cell\HotelSubPageCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Controller\HotelSubPageViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Controller\HotelSubPageViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReview Cell\HotelReviewCell.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReview Cell\HotelReviewCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReviewController\HotelReview.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReviewController\HotelReview.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationAddRoomTableDataSourceDelegate.cs" />
+    <Compile Include="Views\Reservation\ReservationAddRoomTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationAddRoomTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationViewController.cs" />
+    <Compile Include="Views\Reservation\ReservationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\CancelReservation\CancelReservationViewController.cs" />
+    <Compile Include="Views\Reservation\CancelReservation\CancelReservationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDates\ReservationBookingUpdatedViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDates\ReservationBookingUpdatedViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDatesAmountConfirmation\EditReservationChangeDatesAmountConfirmationViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDatesAmountConfirmation\EditReservationChangeDatesAmountConfirmationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoom\EditReservationChangeRoomViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoom\EditReservationChangeRoomViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoomAmountConfirmation\EditReservationChangeRoomAmountConfirmationViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoomAmountConfirmation\EditReservationChangeRoomAmountConfirmationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsDataSourceDelegate.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsTableViewCell.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsViewController.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsViewController.designer.cs" />
+    <Compile Include="Views\Reservation\NoReservationPopUpScreen\NoReservationPopUpViewController.cs" />
+    <Compile Include="Views\Reservation\NoReservationPopUpScreen\NoReservationPopUpViewController.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysDelegateDataSource.cs" />
+    <Compile Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysViewController.cs" />
+    <Compile Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysViewController.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\BillingInformationTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\BillingInformationTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\EditStayDatesRoomTypeTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\EditStayDatesRoomTypeTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\GuestInformationTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\GuestInformationTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\PreferencesCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\PreferencesCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\PriceBreakDownTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\PriceBreakDownTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryDataSourceDelegate.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryGuestInformationTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bgblur.png" />
+    <BundleResource Include="Resources\bgblur%402x.png" />
+    <BundleResource Include="Resources\bgblur%403x.png" />
+    <BundleResource Include="Resources\Triangle.png" />
+    <BundleResource Include="Resources\Triangle%402x.png" />
+    <BundleResource Include="Resources\Triangle%403x.png" />
+    <BundleResource Include="Resources\user.png" />
+    <BundleResource Include="Resources\user%402x.png" />
+    <BundleResource Include="Resources\user%403x.png" />
+    <BundleResource Include="Resources\Roboto-Black.ttf" />
+    <BundleResource Include="Resources\Roboto-BlackItalic.ttf" />
+    <BundleResource Include="Resources\Roboto-Bold.ttf" />
+    <BundleResource Include="Resources\Roboto-BoldItalic.ttf" />
+    <BundleResource Include="Resources\Roboto-Italic.ttf" />
+    <BundleResource Include="Resources\Roboto-Light.ttf" />
+    <BundleResource Include="Resources\Roboto-LightItalic.ttf" />
+    <BundleResource Include="Resources\Roboto-Medium.ttf" />
+    <BundleResource Include="Resources\Roboto-MediumItalic.ttf" />
+    <BundleResource Include="Resources\Roboto-Regular.ttf" />
+    <BundleResource Include="Resources\Roboto-Thin.ttf" />
+    <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
+    <BundleResource Include="Resources\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+>>>>>>> c5f0967b4921b0231b1aefdf25ed9f01f353b4ec
 </Project>

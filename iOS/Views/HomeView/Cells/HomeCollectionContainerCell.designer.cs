@@ -14,7 +14,7 @@ namespace Mobius.iOS.Views
     partial class HomeCollectionContainerCell
     {
         [Outlet]
-        public UIKit.UICollectionView CollectionViewHomeCell14 { get; private set; }
+        public UIKit.UICollectionView CollectionViewHomeCell { get; private set; }
 
 
         [Outlet]
@@ -22,9 +22,9 @@ namespace Mobius.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
-            if (CollectionViewHomeCell14 != null) {
-                CollectionViewHomeCell14.Dispose ();
-                CollectionViewHomeCell14 = null;
+            if (CollectionViewHomeCell != null) {
+                CollectionViewHomeCell.Dispose ();
+                CollectionViewHomeCell = null;
             }
 
             if (ConstraintCollectionViewHeight != null) {

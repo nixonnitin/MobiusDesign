@@ -3,6 +3,7 @@ using UIKit;
 using System.Collections.Generic;
 using Foundation;
 using CoreGraphics;
+using CoreAnimation;
 namespace Mobius.iOS.Views
 {
         public class MainHomeCollectionSource : UICollectionViewSource
@@ -24,12 +25,24 @@ namespace Mobius.iOS.Views
                 if (collectionView.Tag == 1)
                 {
                     var cell = (HomeOfferCellSmall)collectionView.DequeueReusableCell(HomeOfferCellSmall.Key, indexPath);
-                cell.ConstraintOfferHeight.Constant = 25;
+                cell.ConstraintOfferHeight.Constant = 24;
                     return cell;
                 }
                 else if (collectionView.Tag == 2)
                 {
                     var cell = (HomeNearHotelCell)collectionView.DequeueReusableCell(HomeNearHotelCell.Key, indexPath);
+                //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(cell.LabelOuterLayout.Bounds, UIRectCorner.BottomRight | UIRectCorner.BottomLeft, new CoreGraphics.CGSize(5, 5));
+                //CAShapeLayer maskLayer = new CAShapeLayer();
+                //maskLayer.Frame = cell.LabelOuterLayout.Bounds;
+                //maskLayer.Path = maskPath.CGPath;
+                //cell.LabelOuterLayout.Layer.Mask = maskLayer;
+
+
+                //UIBezierPath maskPathImage = UIBezierPath.FromRoundedRect(cell.HotelImage.Bounds, UIRectCorner.TopLeft | UIRectCorner.TopRight, new CoreGraphics.CGSize(5, 5));
+                //CAShapeLayer maskLayerImage = new CAShapeLayer();
+                //maskLayerImage.Frame = cell.HotelImage.Bounds;
+                //maskLayerImage.Path = maskPathImage.CGPath;
+                //cell.HotelImage.Layer.Mask = maskLayerImage;
                     return cell;
 
                 }
@@ -43,7 +56,7 @@ namespace Mobius.iOS.Views
                     var cell = (HomeOfferCellSmall)collectionView.DequeueReusableCell(HomeOfferCellSmall.Key, indexPath);
                     if (indexPath.Row % 2 == 0)
                     {
-                        cell.ConstraintOfferHeight.Constant = 25;
+                        cell.ConstraintOfferHeight.Constant = 24;
                     }
                     else
                     {

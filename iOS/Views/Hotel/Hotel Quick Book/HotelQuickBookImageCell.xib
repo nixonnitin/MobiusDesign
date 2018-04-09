@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelQuickBookImageCell" rowHeight="292" id="sDO-lW-9V7" customClass="HotelQuickBookImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="604" height="292"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sDO-lW-9V7" id="c8y-X8-ga1">
+                <rect key="frame" x="0.0" y="0.0" width="604" height="291.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T89-Qw-lpe">
+                        <rect key="frame" x="1" y="1" width="602" height="271.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelRoomTest" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-9F-t2D">
+                                <rect key="frame" x="3" y="4" width="602" height="271.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq8-bI-gna">
+                                <rect key="frame" x="35" y="121" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="4Dp-am-J5c"/>
+                                    <constraint firstAttribute="height" constant="30" id="cEi-ph-FL6"/>
+                                </constraints>
+                                <state key="normal" image="nextArrow"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eR-aE-P3Y">
+                                <rect key="frame" x="521" y="121" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XA0-Nc-1Uj"/>
+                                    <constraint firstAttribute="width" constant="46" id="cpz-Mq-AhJ"/>
+                                </constraints>
+                                <state key="normal" image="nextArrow"/>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JH1-UB-oCa">
+                                <rect key="frame" x="35" y="214.5" width="532" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="a7S-Ee-W3S"/>
+                                </constraints>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kq8-bI-gna" firstAttribute="centerY" secondItem="T89-Qw-lpe" secondAttribute="centerY" id="Dqg-zr-sAl"/>
+                            <constraint firstAttribute="trailing" secondItem="9Io-9F-t2D" secondAttribute="trailing" constant="-3" id="OLf-nI-7xe"/>
+                            <constraint firstAttribute="bottom" secondItem="9Io-9F-t2D" secondAttribute="bottom" constant="-4" id="PbJ-xX-JE3"/>
+                            <constraint firstItem="9Io-9F-t2D" firstAttribute="top" secondItem="T89-Qw-lpe" secondAttribute="top" constant="4" id="QA3-0f-X1v"/>
+                            <constraint firstAttribute="trailing" secondItem="5eR-aE-P3Y" secondAttribute="trailing" constant="35" id="RdH-Ky-maJ"/>
+                            <constraint firstItem="9Io-9F-t2D" firstAttribute="leading" secondItem="T89-Qw-lpe" secondAttribute="leading" constant="3" id="Z2f-AS-60u">
+                                <string key="userLabel" base64-UTF8="YES">
+CQ
+</string>
+                            </constraint>
+                            <constraint firstItem="5eR-aE-P3Y" firstAttribute="centerY" secondItem="T89-Qw-lpe" secondAttribute="centerY" id="a3D-qn-p16"/>
+                            <constraint firstItem="kq8-bI-gna" firstAttribute="leading" secondItem="T89-Qw-lpe" secondAttribute="leading" constant="35" id="ea7-IV-mrU"/>
+                            <constraint firstItem="JH1-UB-oCa" firstAttribute="leading" secondItem="T89-Qw-lpe" secondAttribute="leading" constant="35" id="sQr-vV-e47"/>
+                            <constraint firstAttribute="bottom" secondItem="JH1-UB-oCa" secondAttribute="bottom" constant="20" id="uKK-zQ-KhN"/>
+                            <constraint firstAttribute="trailing" secondItem="JH1-UB-oCa" secondAttribute="trailing" constant="35" id="vyc-Fc-hNh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="T89-Qw-lpe" secondAttribute="bottom" constant="19" id="KGj-kk-wh0"/>
+                    <constraint firstItem="T89-Qw-lpe" firstAttribute="top" secondItem="c8y-X8-ga1" secondAttribute="top" constant="1" id="MzN-og-GxF"/>
+                    <constraint firstItem="T89-Qw-lpe" firstAttribute="leading" secondItem="c8y-X8-ga1" secondAttribute="leading" constant="1" id="ekP-Xx-RML"/>
+                    <constraint firstAttribute="trailing" secondItem="T89-Qw-lpe" secondAttribute="trailing" constant="1" id="oli-6O-qls"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ButtonLeft" destination="kq8-bI-gna" id="CAX-28-wkD"/>
+                <outlet property="ButtonRight" destination="5eR-aE-P3Y" id="Sbt-wZ-iDX"/>
+                <outlet property="ImageViewHotek" destination="9Io-9F-t2D" id="7RG-QU-a1c"/>
+                <outlet property="PageController" destination="JH1-UB-oCa" id="g3p-cy-oHb"/>
+                <outlet property="ViewMain" destination="T89-Qw-lpe" id="zSB-67-hTV"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-208"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotelRoomTest" width="525" height="394"/>
+        <image name="nextArrow" width="32" height="32"/>
+    </resources>
+</document>

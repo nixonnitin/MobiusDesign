@@ -36,13 +36,13 @@ namespace Mobius.iOS.Views
             {
                 var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
-                cell.CollectionViewHomeCell14.Tag = 1;
+                cell.CollectionViewHomeCell.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
+                cell.CollectionViewHomeCell.Tag = 1;
                 var layout = new UICollectionViewFlowLayout();
                 layout.ScrollDirection = UICollectionViewScrollDirection.Vertical;
-                cell.CollectionViewHomeCell14.CollectionViewLayout = layout;
-                cell.CollectionViewHomeCell14.Source = new HomeViewOffer3Cell(cell.CollectionViewHomeCell14);
-                cell.CollectionViewHomeCell14.Delegate = new HomeViewOffer3CellLayout(cell.CollectionViewHomeCell14);
+                cell.CollectionViewHomeCell.CollectionViewLayout = layout;
+                cell.CollectionViewHomeCell.Source = new HomeViewOffer3Cell(cell.CollectionViewHomeCell);
+                cell.CollectionViewHomeCell.Delegate = new HomeViewOffer3CellLayout(cell.CollectionViewHomeCell);
                 //cell.CollectionViewHomeCell14.scrol
                 return cell;
             }

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReservationBookingUpdatedViewController">
+            <connections>
+                <outlet property="BookUpdatedAlertView" destination="k5R-JH-2Wi" id="knc-xF-WeH"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5R-JH-2Wi">
+                    <rect key="frame" x="20" y="180.5" width="335" height="306"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="We3-6l-3SF">
+                            <rect key="frame" x="142" y="58" width="51" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="OuS-JX-ykV"/>
+                                <constraint firstAttribute="width" constant="51" id="aP7-Rh-EvO"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Booking Has Been " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yT-lb-Rem">
+                            <rect key="frame" x="54" y="128" width="227" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="5j1-EO-Rvp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.2267470956" green="0.61067146059999999" blue="0.66518545149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUA-9m-fjZ">
+                            <rect key="frame" x="54" y="153" width="227" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="kj1-sl-39X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.2267470956" green="0.61067146059999999" blue="0.66518545149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your New Stay Dates Are:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuO-r7-xv6">
+                            <rect key="frame" x="0.0" y="181" width="335" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ODU-MQ-lIZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSR-i4-U8m">
+                            <rect key="frame" x="20" y="208" width="295" height="41"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30th Aug - 5th Sep 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asm-Uz-A18">
+                                    <rect key="frame" x="20" y="10" width="257" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="4Ea-fv-PUD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                    <color key="textColor" red="0.22745098039215686" green="0.61176470588235299" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94264978170394897" green="0.98480254411697388" blue="0.99188262224197388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="asm-Uz-A18" firstAttribute="top" secondItem="NSR-i4-U8m" secondAttribute="top" constant="10" id="L9K-Xx-aMD"/>
+                                <constraint firstItem="asm-Uz-A18" firstAttribute="leading" secondItem="NSR-i4-U8m" secondAttribute="leading" constant="20" id="SE5-WD-ZTx"/>
+                                <constraint firstAttribute="trailing" secondItem="asm-Uz-A18" secondAttribute="trailing" constant="18" id="c0g-A1-Xuf"/>
+                                <constraint firstAttribute="height" constant="41" id="tTQ-ho-ws9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EuO-r7-xv6" secondAttribute="trailing" id="2Of-w2-riA"/>
+                        <constraint firstAttribute="trailing" secondItem="5yT-lb-Rem" secondAttribute="trailing" constant="54" id="3fU-5q-WPQ"/>
+                        <constraint firstItem="NSR-i4-U8m" firstAttribute="top" secondItem="EuO-r7-xv6" secondAttribute="bottom" constant="6" id="Dty-IM-KOd"/>
+                        <constraint firstItem="NSR-i4-U8m" firstAttribute="leading" secondItem="k5R-JH-2Wi" secondAttribute="leading" constant="20" id="EJo-1x-6EM"/>
+                        <constraint firstItem="5yT-lb-Rem" firstAttribute="leading" secondItem="k5R-JH-2Wi" secondAttribute="leading" constant="54" id="FOX-dJ-TXs"/>
+                        <constraint firstItem="hUA-9m-fjZ" firstAttribute="top" secondItem="We3-6l-3SF" secondAttribute="bottom" constant="41" id="PLn-ci-XKi"/>
+                        <constraint firstItem="We3-6l-3SF" firstAttribute="centerX" secondItem="k5R-JH-2Wi" secondAttribute="centerX" id="RLC-r7-3gX"/>
+                        <constraint firstItem="EuO-r7-xv6" firstAttribute="leading" secondItem="k5R-JH-2Wi" secondAttribute="leading" id="Y0n-B4-YaB"/>
+                        <constraint firstAttribute="trailing" secondItem="NSR-i4-U8m" secondAttribute="trailing" constant="20" id="hYD-Wa-XFv"/>
+                        <constraint firstItem="EuO-r7-xv6" firstAttribute="top" secondItem="hUA-9m-fjZ" secondAttribute="bottom" constant="2" id="haf-e8-BfW"/>
+                        <constraint firstAttribute="height" constant="306" id="iE3-BM-lLP"/>
+                        <constraint firstAttribute="trailing" secondItem="hUA-9m-fjZ" secondAttribute="trailing" constant="54" id="rOe-jl-C46"/>
+                        <constraint firstItem="5yT-lb-Rem" firstAttribute="top" secondItem="We3-6l-3SF" secondAttribute="bottom" constant="16" id="s8P-5y-Hrw"/>
+                        <constraint firstAttribute="width" constant="335" id="tnX-T3-rME"/>
+                        <constraint firstItem="We3-6l-3SF" firstAttribute="top" secondItem="k5R-JH-2Wi" secondAttribute="top" constant="58" id="vMY-Xz-dSM"/>
+                        <constraint firstItem="hUA-9m-fjZ" firstAttribute="leading" secondItem="k5R-JH-2Wi" secondAttribute="leading" constant="54" id="zQ5-PV-e8c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94503527879714966" green="0.94514483213424683" blue="0.94498616456985474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k5R-JH-2Wi" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="YgJ-53-2sx"/>
+                <constraint firstItem="k5R-JH-2Wi" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="smO-DT-6fH"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check" width="512" height="512"/>
+        <image name="homeIcon" width="32" height="32"/>
+        <image name="nextArrow" width="32" height="32"/>
+        <image name="cal" width="512" height="512"/>
+        <image name="checkwhite" width="512" height="512"/>
+        <image name="clock" width="2134" height="2134"/>
+        <image name="clockwhite" width="2134" height="2134"/>
+        <image name="defaultimage" width="512" height="512"/>
+        <image name="fb" width="512" height="512"/>
+        <image name="food" width="512" height="512"/>
+        <image name="gym" width="512" height="512"/>
+        <image name="homeAdd" width="512" height="512"/>
+        <image name="homeBestOffer" width="512" height="512"/>
+        <image name="location" width="512" height="512"/>
+        <image name="moon" width="512" height="512"/>
+        <image name="nextarrowhome" width="512" height="512"/>
+        <image name="ratingempty" width="512" height="512"/>
+        <image name="ratingfull" width="512" height="512"/>
+        <image name="ratinghalf" width="512" height="512"/>
+        <image name="homeCal" width="512" height="512"/>
+        <image name="homeCheck" width="512" height="512"/>
+        <image name="homeCheckWhite" width="512" height="512"/>
+        <image name="homeClock" width="2134" height="2134"/>
+        <image name="homeClockWhite" width="2134" height="2134"/>
+        <image name="homeDefaultImage" width="512" height="512"/>
+        <image name="homeFB" width="512" height="512"/>
+        <image name="homeFood" width="512" height="512"/>
+        <image name="homeGym" width="512" height="512"/>
+        <image name="homeLocation" width="512" height="512"/>
+        <image name="homeMoon" width="512" height="512"/>
+        <image name="homeNextArrow" width="32" height="32"/>
+        <image name="homeNextArrowHome" width="512" height="512"/>
+        <image name="homeRatingEmpty" width="512" height="512"/>
+        <image name="homeRatingFull" width="512" height="512"/>
+        <image name="homeRatingHalf" width="512" height="512"/>
+        <image name="homeParking" width="512" height="512"/>
+        <image name="homePencil" width="512" height="512"/>
+        <image name="homePerson" width="512" height="512"/>
+        <image name="homePersonWhite" width="512" height="512"/>
+        <image name="homeRoom" width="512" height="512"/>
+        <image name="homeSettings" width="512" height="512"/>
+        <image name="homeSwim" width="512" height="512"/>
+        <image name="homeWiFi" width="512" height="512"/>
+        <image name="homeicon" width="32" height="32"/>
+        <image name="nextarrow" width="32" height="32"/>
+        <image name="hotelRoomTest" width="1920" height="1200"/>
+        <image name="add-1" width="512" height="512"/>
+        <image name="arrow-white" width="50" height="34"/>
+        <image name="arrow" width="50" height="34"/>
+        <image name="best-offer" width="512" height="512"/>
+        <image name="check-white" width="512" height="512"/>
+        <image name="clock-white" width="2134" height="2134"/>
+        <image name="empty" width="512" height="512"/>
+        <image name="food-1" width="512" height="512"/>
+        <image name="full" width="512" height="512"/>
+        <image name="grey-cross-1" width="512" height="512"/>
+        <image name="gym-1" width="512" height="512"/>
+        <image name="half" width="512" height="512"/>
+        <image name="img" width="512" height="512"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="moon-1" width="512" height="512"/>
+        <image name="next-arrrow-1" width="512" height="512"/>
+        <image name="parking-1" width="512" height="512"/>
+        <image name="pencil-1" width="512" height="512"/>
+        <image name="person-1" width="512" height="512"/>
+        <image name="person-white" width="512" height="512"/>
+        <image name="red-cross-1" width="512" height="512"/>
+        <image name="room-1" width="512" height="512"/>
+        <image name="search-1" width="512" height="512"/>
+        <image name="settings-1" width="512" height="512"/>
+        <image name="swim-1" width="512" height="512"/>
+        <image name="tag" width="512" height="515"/>
+        <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="bgblur.png" width="240" height="320"/>
+        <image name="Triangle.png" width="54" height="36"/>
+        <image name="user.png" width="18" height="18"/>
+    </resources>
+</document>
