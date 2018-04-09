@@ -37,28 +37,28 @@ namespace Mobius.iOS.Views
             {
                 var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
-                cell.CollectionViewHomeCell14.Tag = 1;
-                cell.CollectionViewHomeCell14.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell14);
-                cell.CollectionViewHomeCell14.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell14); 
+                cell.CollectionViewHomeCell.RegisterNibForCell(UINib.FromName("HomeCell4", NSBundle.MainBundle), "HomeCell4");
+                cell.CollectionViewHomeCell.Tag = 1;
+                cell.CollectionViewHomeCell.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell);
+                cell.CollectionViewHomeCell.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell); 
                 return cell;
             }else if (indexPath.Section == 3)
             {
                 var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
-                cell.CollectionViewHomeCell14.Tag = 2;
-                cell.CollectionViewHomeCell14.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell14);
-                cell.CollectionViewHomeCell14.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell14);
+                cell.CollectionViewHomeCell.RegisterNibForCell(UINib.FromName("HomeCell2", NSBundle.MainBundle), "HomeCell2");
+                cell.CollectionViewHomeCell.Tag = 2;
+                cell.CollectionViewHomeCell.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell);
+                cell.CollectionViewHomeCell.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell);
                 return cell;
             }else 
             {
                 var cell = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.CollectionViewHomeCell14.RegisterNibForCell(UINib.FromName("HomeCell6", NSBundle.MainBundle), "HomeCell6");
-                cell.CollectionViewHomeCell14.Tag = 3;
-                cell.CollectionViewHomeCell14.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell14);
-                cell.CollectionViewHomeCell14.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell14);
+                cell.CollectionViewHomeCell.RegisterNibForCell(UINib.FromName("HomeCell6", NSBundle.MainBundle), "HomeCell6");
+                cell.CollectionViewHomeCell.Tag = 3;
+                cell.CollectionViewHomeCell.Source = new HomeViewOfferCell(cell.CollectionViewHomeCell);
+                cell.CollectionViewHomeCell.Delegate = new HomeViewOfferCellLayout(cell.CollectionViewHomeCell);
                 return cell;
             }
 

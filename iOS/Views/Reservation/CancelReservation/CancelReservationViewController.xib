@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelReservationViewController">
+            <connections>
+                <outlet property="ButtonNo" destination="RZh-S1-s1A" id="fki-JI-Uaz"/>
+                <outlet property="ButtonYes" destination="Sev-Qf-6WG" id="qJ8-UO-bW6"/>
+                <outlet property="ViewCancelReservation" destination="vVz-jJ-Hxr" id="e9N-YJ-6ym"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVz-jJ-Hxr">
+                    <rect key="frame" x="20" y="133" width="335" height="263"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRoom" translatesAutoresizingMaskIntoConstraints="NO" id="28Y-lF-2Wf">
+                            <rect key="frame" x="138" y="68" width="60" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="2nE-ca-7IB"/>
+                                <constraint firstAttribute="height" constant="54" id="Icu-vV-Cve"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel Reservation?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTx-0u-TbK">
+                            <rect key="frame" x="54" y="128" width="227" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="227" id="V7R-ew-bcq"/>
+                                <constraint firstAttribute="height" constant="26" id="hTR-IR-eZ9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.2267470956" green="0.61067146059999999" blue="0.66518545149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you would like to cancel your room reservation: NYC-JK-0192" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcJ-Xi-fWR">
+                            <rect key="frame" x="51" y="158" width="232" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="232" id="8rh-ce-ti3"/>
+                                <constraint firstAttribute="height" constant="42" id="bta-S6-xsv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="28Y-lF-2Wf" firstAttribute="centerX" secondItem="vVz-jJ-Hxr" secondAttribute="centerX" id="0Hl-BQ-sKF"/>
+                        <constraint firstItem="28Y-lF-2Wf" firstAttribute="top" secondItem="vVz-jJ-Hxr" secondAttribute="top" constant="68" id="C08-TI-5b4"/>
+                        <constraint firstAttribute="height" constant="263" id="I1Q-eJ-6xB"/>
+                        <constraint firstAttribute="width" constant="335" id="PwW-vA-TYn"/>
+                        <constraint firstItem="cTx-0u-TbK" firstAttribute="top" secondItem="28Y-lF-2Wf" secondAttribute="bottom" constant="6" id="XJf-gg-cx1"/>
+                        <constraint firstItem="OcJ-Xi-fWR" firstAttribute="top" secondItem="cTx-0u-TbK" secondAttribute="bottom" constant="4" id="mNl-I3-HMj"/>
+                        <constraint firstItem="OcJ-Xi-fWR" firstAttribute="centerX" secondItem="vVz-jJ-Hxr" secondAttribute="centerX" id="nUy-dp-qD1"/>
+                        <constraint firstItem="cTx-0u-TbK" firstAttribute="centerX" secondItem="vVz-jJ-Hxr" secondAttribute="centerX" id="rJN-Ml-gbu"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sev-Qf-6WG">
+                    <rect key="frame" x="19" y="524" width="335" height="44"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="REI-FT-nFi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Yes">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZh-S1-s1A">
+                    <rect key="frame" x="20" y="574" width="335" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ipl-dF-Uek"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="No">
+                        <color key="titleColor" red="0.22745098039215686" green="0.61176470588235299" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96464186906814575" green="0.96475356817245483" blue="0.96459180116653442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RZh-S1-s1A" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="0o8-go-HuF"/>
+                <constraint firstItem="vVz-jJ-Hxr" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="32g-7f-aDb"/>
+                <constraint firstItem="RZh-S1-s1A" firstAttribute="top" secondItem="Sev-Qf-6WG" secondAttribute="bottom" constant="6" id="Dwc-2F-ZYM"/>
+                <constraint firstItem="vVz-jJ-Hxr" firstAttribute="top" secondItem="2" secondAttribute="top" constant="133" id="aC5-oZ-xpH"/>
+                <constraint firstItem="Sev-Qf-6WG" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="19" id="als-25-ebE"/>
+                <constraint firstAttribute="trailing" secondItem="Sev-Qf-6WG" secondAttribute="trailing" constant="21" id="rCj-il-fpB"/>
+                <constraint firstAttribute="trailing" secondItem="RZh-S1-s1A" secondAttribute="trailing" constant="20" id="rVY-9r-qTz"/>
+                <constraint firstAttribute="bottom" secondItem="RZh-S1-s1A" secondAttribute="bottom" constant="49" id="zGG-bz-bfx"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeRoom" width="256" height="256"/>
+    </resources>
+</document>

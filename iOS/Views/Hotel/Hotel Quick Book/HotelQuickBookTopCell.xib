@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelQuickBookTopCell" rowHeight="106" id="cxk-wN-pdQ" customClass="HotelQuickBookTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Checkout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YId-4P-d9n">
+                        <rect key="frame" x="16" y="14" width="288" height="34"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Our Best Rate, Best Online Price Guarentee!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njz-1q-Xha">
+                        <rect key="frame" x="16" y="44" width="288" height="49"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.55294117649999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YId-4P-d9n" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailingMargin" id="0OG-j7-w2K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="njz-1q-Xha" secondAttribute="bottom" constant="2" id="1rh-Zp-I66"/>
+                    <constraint firstItem="YId-4P-d9n" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="4tv-sz-Qct"/>
+                    <constraint firstItem="njz-1q-Xha" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="FeS-ms-nE2"/>
+                    <constraint firstItem="YId-4P-d9n" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="3" id="dle-gN-upQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YId-4P-d9n" secondAttribute="bottom" constant="47" id="ihT-WX-tHw"/>
+                    <constraint firstItem="njz-1q-Xha" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="33" id="kSC-c9-6em"/>
+                    <constraint firstItem="njz-1q-Xha" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailingMargin" id="uqt-C6-mHt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="LabelBookOnlineGetBestPrice" destination="njz-1q-Xha" id="G1q-BS-Pr9"/>
+                <outlet property="LabelQuickCheckout" destination="YId-4P-d9n" id="8p9-d6-cHI"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="83"/>
+        </tableViewCell>
+    </objects>
+</document>

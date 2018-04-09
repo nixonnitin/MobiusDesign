@@ -15,11 +15,11 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIImageView HotelImage { get; set; }
+        public UIKit.UIImageView HotelImage { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView LabelOuterLayout { get; set; }
+        public UIKit.UIView LabelOuterLayout { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

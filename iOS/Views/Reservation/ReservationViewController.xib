@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReservationViewController">
+            <connections>
+                <outlet property="ButtonConfirmUpdates" destination="JnZ-L4-IlJ" id="hwK-b0-aJ4"/>
+                <outlet property="TableViewReservation" destination="R99-9a-wIY" id="U67-oi-rYH"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R99-9a-wIY">
+                    <rect key="frame" x="0.0" y="60" width="375" height="532"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnZ-L4-IlJ">
+                    <rect key="frame" x="20" y="612" width="335" height="39"/>
+                    <color key="backgroundColor" red="0.22674709558486938" green="0.61067146062850952" blue="0.66518545150756836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="gus-L1-hnv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="Confirm Updates">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JnZ-L4-IlJ" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="69z-ub-AmP"/>
+                <constraint firstItem="R99-9a-wIY" firstAttribute="top" secondItem="2" secondAttribute="top" constant="60" id="Gjn-oC-hQR"/>
+                <constraint firstAttribute="trailing" secondItem="R99-9a-wIY" secondAttribute="trailing" id="OYr-Lu-Db4"/>
+                <constraint firstItem="R99-9a-wIY" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="UmV-1A-Zxk"/>
+                <constraint firstItem="JnZ-L4-IlJ" firstAttribute="top" secondItem="R99-9a-wIY" secondAttribute="bottom" constant="20" id="eLS-nt-O5H"/>
+                <constraint firstAttribute="trailing" secondItem="JnZ-L4-IlJ" secondAttribute="trailing" constant="20" id="lkx-M7-mlp"/>
+                <constraint firstAttribute="bottom" secondItem="JnZ-L4-IlJ" secondAttribute="bottom" constant="16" id="wYe-aa-npC"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

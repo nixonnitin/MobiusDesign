@@ -54,18 +54,20 @@
                         <rect key="frame" x="10" y="10" width="85" height="64.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeCheckWhite" translatesAutoresizingMaskIntoConstraints="NO" id="OND-uA-rTV">
-                                <rect key="frame" x="23" y="12.5" width="40" height="40"/>
+                                <rect key="frame" x="22" y="12.5" width="41" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="TAs-0d-rpO"/>
                                     <constraint firstAttribute="height" constant="40" id="gH1-nA-fQK"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.69411764710000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OND-uA-rTV" firstAttribute="top" secondItem="PTi-b0-bkR" secondAttribute="top" constant="12" id="FHH-SG-sOL"/>
                             <constraint firstAttribute="width" constant="85" id="ITs-u6-wuJ"/>
                             <constraint firstItem="OND-uA-rTV" firstAttribute="centerY" secondItem="PTi-b0-bkR" secondAttribute="centerY" id="Qr2-7c-rgz"/>
-                            <constraint firstItem="OND-uA-rTV" firstAttribute="centerX" secondItem="PTi-b0-bkR" secondAttribute="centerX" id="iqQ-0k-rVf"/>
+                            <constraint firstItem="OND-uA-rTV" firstAttribute="leading" secondItem="PTi-b0-bkR" secondAttribute="leading" constant="22" id="eyb-cx-N6B"/>
+                            <constraint firstAttribute="bottom" secondItem="OND-uA-rTV" secondAttribute="bottom" constant="12" id="vyC-2m-TJz"/>
+                            <constraint firstAttribute="trailing" secondItem="OND-uA-rTV" secondAttribute="trailing" constant="22" id="w66-8z-oXL"/>
                         </constraints>
                     </view>
                 </subviews>

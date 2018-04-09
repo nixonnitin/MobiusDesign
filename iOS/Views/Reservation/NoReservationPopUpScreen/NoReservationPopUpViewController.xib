@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoReservationPopUpViewController">
+            <connections>
+                <outlet property="ButtonBookYourStay" destination="Xgl-NU-H8B" id="2IK-Pc-HwE"/>
+                <outlet property="NoReservationAlertPopUp" destination="x0l-Jt-wv9" id="JZr-aH-oxN"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-Jt-wv9">
+                    <rect key="frame" x="20" y="190.5" width="335" height="286"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="128" translatesAutoresizingMaskIntoConstraints="NO" id="oE9-8u-8I7">
+                            <rect key="frame" x="140" y="58" width="54" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54" id="CKd-hq-49y"/>
+                                <constraint firstAttribute="height" constant="54" id="IzG-7H-TdU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your haven't made any" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-1p-TDa">
+                            <rect key="frame" x="54" y="128" width="227" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="ZJB-JL-iaB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.2267470956" green="0.61067146059999999" blue="0.66518545149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bookings! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQa-U9-RQM">
+                            <rect key="frame" x="54" y="153" width="227" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="hF2-Ux-Vxm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.2267470956" green="0.61067146059999999" blue="0.66518545149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the book button below to find and book your next stay." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qop-A8-y5c">
+                            <rect key="frame" x="51" y="181" width="232" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="hkI-s5-p2X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oE9-8u-8I7" firstAttribute="top" secondItem="x0l-Jt-wv9" secondAttribute="top" constant="58" id="524-BC-HiZ"/>
+                        <constraint firstAttribute="trailing" secondItem="dSj-1p-TDa" secondAttribute="trailing" constant="54" id="5Dc-GJ-O3o"/>
+                        <constraint firstItem="qop-A8-y5c" firstAttribute="top" secondItem="PQa-U9-RQM" secondAttribute="bottom" constant="2" id="FWe-fw-3kK"/>
+                        <constraint firstAttribute="trailing" secondItem="qop-A8-y5c" secondAttribute="trailing" constant="52" id="GGf-Wo-BMj"/>
+                        <constraint firstItem="oE9-8u-8I7" firstAttribute="centerX" secondItem="x0l-Jt-wv9" secondAttribute="centerX" id="KgA-vs-i9c"/>
+                        <constraint firstItem="PQa-U9-RQM" firstAttribute="top" secondItem="oE9-8u-8I7" secondAttribute="bottom" constant="41" id="Omb-NL-Ff9"/>
+                        <constraint firstItem="PQa-U9-RQM" firstAttribute="leading" secondItem="x0l-Jt-wv9" secondAttribute="leading" constant="54" id="Sxh-tq-e92"/>
+                        <constraint firstItem="qop-A8-y5c" firstAttribute="leading" secondItem="x0l-Jt-wv9" secondAttribute="leading" constant="51" id="U3T-gU-TpO"/>
+                        <constraint firstAttribute="trailing" secondItem="PQa-U9-RQM" secondAttribute="trailing" constant="54" id="dfe-w3-c8n"/>
+                        <constraint firstAttribute="width" constant="335" id="ehW-Rq-I1w"/>
+                        <constraint firstItem="dSj-1p-TDa" firstAttribute="leading" secondItem="x0l-Jt-wv9" secondAttribute="leading" constant="54" id="kAQ-vC-IzU"/>
+                        <constraint firstItem="dSj-1p-TDa" firstAttribute="top" secondItem="oE9-8u-8I7" secondAttribute="bottom" constant="16" id="lVJ-oB-4aU"/>
+                        <constraint firstAttribute="height" constant="286" id="n2O-du-F25"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgl-NU-H8B">
+                    <rect key="frame" x="20" y="596" width="335" height="44"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="D41-Wi-16F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Book Your Stay">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96464186906814575" green="0.96475356817245483" blue="0.96459180116653442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xgl-NU-H8B" secondAttribute="trailing" constant="20" id="HE5-Qa-AMx"/>
+                <constraint firstAttribute="bottom" secondItem="Xgl-NU-H8B" secondAttribute="bottom" constant="27" id="XPM-9c-ojG"/>
+                <constraint firstItem="x0l-Jt-wv9" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="iGl-Nv-XYs"/>
+                <constraint firstItem="Xgl-NU-H8B" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="soB-mz-iyc"/>
+                <constraint firstItem="x0l-Jt-wv9" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="yaN-0y-PEK"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="128" width="128" height="128"/>
+    </resources>
+</document>

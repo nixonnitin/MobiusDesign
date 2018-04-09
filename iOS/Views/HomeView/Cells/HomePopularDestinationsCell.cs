@@ -25,6 +25,8 @@ namespace Mobius.iOS.Views
             base.AwakeFromNib();
             LblCityName.Text = "City Name";
             LblRegionName.Text = "Region Name";
+            //DestinationMainImage.Layer.CornerRadius = 5;
+            //DestinationSubImageTop.Layer.CornerRadius = 5;
             //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(DestinationMainImage.Bounds, UIRectCorner.TopLeft , new CoreGraphics.CGSize(5, 5));
             //CAShapeLayer maskLayer = new CAShapeLayer();
             //maskLayer.Frame = DestinationMainImage.Bounds;

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceAndBookCheapCell" rowHeight="102" id="SGd-gc-3ou" customClass="PriceAndBookCheapCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SGd-gc-3ou" id="deG-us-uag">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tt-sU-SrM">
+                        <rect key="frame" x="0.0" y="-1" width="375" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$65" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgK-JG-h9r">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="B5f-rk-6oe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOK CHEAPEST" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iz-3p-NMe">
+                                <rect key="frame" x="98" y="22" width="231" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancellable Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1K-eg-APX">
+                                <rect key="frame" x="98" y="45" width="231" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrowhome" translatesAutoresizingMaskIntoConstraints="NO" id="cKy-x1-SHg">
+                                <rect key="frame" x="338" y="33" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="52M-vF-th9"/>
+                                    <constraint firstAttribute="height" constant="20" id="IPb-SZ-Wpd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.55294117649999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZgK-JG-h9r" firstAttribute="leading" secondItem="3tt-sU-SrM" secondAttribute="leading" id="0ee-0m-K5k"/>
+                            <constraint firstItem="2iz-3p-NMe" firstAttribute="top" secondItem="3tt-sU-SrM" secondAttribute="top" constant="22" id="5RU-qx-xU8"/>
+                            <constraint firstAttribute="bottom" secondItem="ZgK-JG-h9r" secondAttribute="bottom" id="82c-LX-HTN"/>
+                            <constraint firstAttribute="bottom" secondItem="D1K-eg-APX" secondAttribute="bottom" constant="22" id="FwQ-dq-3Iq"/>
+                            <constraint firstAttribute="trailing" secondItem="cKy-x1-SHg" secondAttribute="trailing" constant="17" id="R9e-oe-7XN"/>
+                            <constraint firstItem="2iz-3p-NMe" firstAttribute="leading" secondItem="ZgK-JG-h9r" secondAttribute="trailing" constant="13" id="S4K-YL-NOR"/>
+                            <constraint firstItem="cKy-x1-SHg" firstAttribute="centerY" secondItem="3tt-sU-SrM" secondAttribute="centerY" id="U0m-EF-EnS"/>
+                            <constraint firstItem="cKy-x1-SHg" firstAttribute="leading" secondItem="D1K-eg-APX" secondAttribute="trailing" constant="9" id="VGe-Mh-spw"/>
+                            <constraint firstItem="cKy-x1-SHg" firstAttribute="leading" secondItem="2iz-3p-NMe" secondAttribute="trailing" constant="9" id="WW4-ps-jtC"/>
+                            <constraint firstItem="D1K-eg-APX" firstAttribute="leading" secondItem="ZgK-JG-h9r" secondAttribute="trailing" constant="13" id="mep-DT-dZ8"/>
+                            <constraint firstItem="ZgK-JG-h9r" firstAttribute="top" secondItem="3tt-sU-SrM" secondAttribute="top" id="yl8-yZ-eg6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3tt-sU-SrM" secondAttribute="trailing" id="Wm9-jH-s4S"/>
+                    <constraint firstAttribute="bottom" secondItem="3tt-sU-SrM" secondAttribute="bottom" constant="17.5" id="Yo9-Pk-3Bh"/>
+                    <constraint firstItem="3tt-sU-SrM" firstAttribute="leading" secondItem="deG-us-uag" secondAttribute="leading" id="nbD-N4-ErF"/>
+                    <constraint firstItem="3tt-sU-SrM" firstAttribute="top" secondItem="deG-us-uag" secondAttribute="top" constant="-1" id="tsQ-rQ-8ts"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ImageViewNext" destination="cKy-x1-SHg" id="eMn-fQ-p3H"/>
+                <outlet property="LabelBookCheapest" destination="2iz-3p-NMe" id="PQY-vp-uxh"/>
+                <outlet property="LabelCancellableOrNoRooms" destination="D1K-eg-APX" id="ld0-zx-vgk"/>
+                <outlet property="LabelPrice" destination="ZgK-JG-h9r" id="jgc-HE-yxy"/>
+                <outlet property="ViewMain" destination="3tt-sU-SrM" id="qcY-dZ-oVb"/>
+            </connections>
+            <point key="canvasLocation" x="-6.5" y="40"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nextarrowhome" width="256" height="256"/>
+    </resources>
+</document>
