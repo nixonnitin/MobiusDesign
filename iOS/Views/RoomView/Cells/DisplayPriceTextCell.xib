@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DisplayPriceTextCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DisplayPriceTextCell" rowHeight="44" id="cxk-wN-pdQ" customClass="DisplayPriceTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-td-4qA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CN-lk-1Z8">
+                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="43.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCz-8G-SwB">
+                                        <rect key="frame" x="20" y="12" width="102.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WCz-8G-SwB" firstAttribute="centerY" secondItem="2CN-lk-1Z8" secondAttribute="centerY" id="3Qo-qi-n2Z"/>
+                                    <constraint firstItem="WCz-8G-SwB" firstAttribute="leading" secondItem="2CN-lk-1Z8" secondAttribute="leading" constant="20" id="3hh-fH-r2x"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vs8-Eo-FAD">
+                                <rect key="frame" x="146.5" y="0.0" width="174.5" height="43.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUL-JM-0HJ">
+                                        <rect key="frame" x="5" y="5" width="70" height="34"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.55294117647058827" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                        <state key="normal" title="Money" image="dollarWhite"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xo-rC-y9C">
+                                        <rect key="frame" x="118.5" y="14" width="51" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Points" image="starRoundBlue">
+                                            <color key="titleColor" red="0.22352941176470587" green="0.55294117647058827" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7Xo-rC-y9C" firstAttribute="height" secondItem="QUL-JM-0HJ" secondAttribute="height" constant="-19" id="GlB-SC-LSZ"/>
+                                    <constraint firstItem="7Xo-rC-y9C" firstAttribute="centerY" secondItem="Vs8-Eo-FAD" secondAttribute="centerY" id="KDA-wH-8gM"/>
+                                    <constraint firstItem="QUL-JM-0HJ" firstAttribute="leading" secondItem="Vs8-Eo-FAD" secondAttribute="leading" constant="5" id="KVO-lB-wu6"/>
+                                    <constraint firstItem="QUL-JM-0HJ" firstAttribute="centerY" secondItem="Vs8-Eo-FAD" secondAttribute="centerY" id="hi1-lP-qbN"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Xo-rC-y9C" secondAttribute="trailing" constant="5" id="zE8-mK-ro7"/>
+                                    <constraint firstItem="7Xo-rC-y9C" firstAttribute="width" secondItem="QUL-JM-0HJ" secondAttribute="width" constant="-19" id="zGJ-xe-rJJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vs8-Eo-FAD" firstAttribute="leading" secondItem="2CN-lk-1Z8" secondAttribute="trailing" constant="1" id="3mc-gn-UqF"/>
+                            <constraint firstAttribute="trailing" secondItem="Vs8-Eo-FAD" secondAttribute="trailing" constant="-1" id="Dvc-Nh-GS4"/>
+                            <constraint firstAttribute="bottom" secondItem="Vs8-Eo-FAD" secondAttribute="bottom" id="EY1-Xl-fVt"/>
+                            <constraint firstItem="2CN-lk-1Z8" firstAttribute="top" secondItem="rdg-td-4qA" secondAttribute="top" id="dvn-au-daK"/>
+                            <constraint firstItem="2CN-lk-1Z8" firstAttribute="leading" secondItem="rdg-td-4qA" secondAttribute="leading" id="eSW-Ua-Ubj"/>
+                            <constraint firstItem="Vs8-Eo-FAD" firstAttribute="width" secondItem="2CN-lk-1Z8" secondAttribute="width" multiplier="1.2" id="fhx-sS-qx5"/>
+                            <constraint firstItem="Vs8-Eo-FAD" firstAttribute="top" secondItem="rdg-td-4qA" secondAttribute="top" id="lwb-8d-1MH"/>
+                            <constraint firstAttribute="bottom" secondItem="2CN-lk-1Z8" secondAttribute="bottom" id="tRk-Rt-xAm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rdg-td-4qA" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="VDN-K2-UWj"/>
+                    <constraint firstItem="rdg-td-4qA" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="bC4-Bo-qri"/>
+                    <constraint firstAttribute="bottom" secondItem="rdg-td-4qA" secondAttribute="bottom" id="gC0-Jz-30T"/>
+                    <constraint firstAttribute="trailing" secondItem="rdg-td-4qA" secondAttribute="trailing" id="ljt-VS-sye"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DisplayPricetextView" destination="2CN-lk-1Z8" id="name-outlet-2CN-lk-1Z8"/>
+                <outlet property="TextDisplayPrice" destination="WCz-8G-SwB" id="name-outlet-WCz-8G-SwB"/>
+                <outlet property="UiMainViewDisplayPriceButton" destination="rdg-td-4qA" id="name-outlet-rdg-td-4qA"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="-9"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dollarWhite" width="15" height="15"/>
+        <image name="starRoundBlue" width="15" height="15"/>
+    </resources>
+</document>

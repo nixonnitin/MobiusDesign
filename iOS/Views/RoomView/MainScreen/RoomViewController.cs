@@ -34,21 +34,19 @@ namespace Mobius.iOS.Views
         {
             TableRoomView.RowHeight = UITableView.AutomaticDimension;
             TableRoomView.EstimatedRowHeight = 100;
+
+
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("SelectedRoomCell", NSBundle.MainBundle), "SelectedRoomCell");
-            TableRoomView.Source = new RoomTableSource(TableRoomView, sections);
-            TableRoomView.Delegate = new RoomTableDelegate(TableRoomView, View.Frame.Size, sections);
-
-            TableRoomView.RowHeight = UITableView.AutomaticDimension;
-            TableRoomView.EstimatedRowHeight = 100;
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomNameCell", NSBundle.MainBundle), "RoomNameCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("DirectBookCell", NSBundle.MainBundle), "DirectBookCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("DisplayPriceTextCell", NSBundle.MainBundle), "DisplayPriceTextCell");
+
+
+
             TableRoomView.Source = new RoomTableSource(TableRoomView, sections);
             TableRoomView.Delegate = new RoomTableDelegate(TableRoomView, View.Frame.Size, sections);
 
-            TableRoomView.RowHeight = UITableView.AutomaticDimension;
-            TableRoomView.EstimatedRowHeight = 100;
-            TableRoomView.RegisterNibForCellReuse(UINib.FromName("DirectBookCell", NSBundle.MainBundle), "DirectBookCell");
-            TableRoomView.Source = new RoomTableSource(TableRoomView, sections);
-            TableRoomView.Delegate = new RoomTableDelegate(TableRoomView, View.Frame.Size, sections);
+
 
 
 

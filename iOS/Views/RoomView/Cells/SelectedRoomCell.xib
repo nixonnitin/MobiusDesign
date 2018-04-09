@@ -25,23 +25,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="602" height="271.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1454">
-                                <rect key="frame" x="35" y="121" width="46" height="30"/>
+                                <rect key="frame" x="15" y="121" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="54K-yT-CrH"/>
                                     <constraint firstAttribute="width" constant="46" id="mqL-Rl-DMs"/>
                                 </constraints>
-                                <state key="normal" image="nextArrow"/>
+                                <state key="normal" image="ArrowWhitePrevious"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1455">
-                                <rect key="frame" x="521" y="121" width="46" height="30"/>
+                                <rect key="frame" x="541" y="121" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Mbe-va-8fR"/>
                                     <constraint firstAttribute="height" constant="30" id="ayg-Cr-lgj"/>
                                 </constraints>
-                                <state key="normal" image="nextArrow"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="ArrowWhiteNext">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1456">
-                                <rect key="frame" x="35" y="214.5" width="532" height="37"/>
+                                <rect key="frame" x="35" y="224.5" width="532" height="37"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,12 +52,12 @@
                             <constraint firstAttribute="trailing" secondItem="1456" secondAttribute="trailing" constant="35" id="0aU-tL-7mQ"/>
                             <constraint firstItem="1453" firstAttribute="top" secondItem="1452" secondAttribute="top" id="1RE-aA-EXA"/>
                             <constraint firstAttribute="height" constant="271.5" id="4Q6-nj-8Ya"/>
-                            <constraint firstAttribute="bottom" secondItem="1456" secondAttribute="bottom" constant="20" id="4id-lV-Cxb"/>
-                            <constraint firstItem="1454" firstAttribute="leading" secondItem="1452" secondAttribute="leading" constant="35" id="75y-L6-dfW"/>
+                            <constraint firstAttribute="bottom" secondItem="1456" secondAttribute="bottom" constant="10" id="4id-lV-Cxb"/>
+                            <constraint firstItem="1454" firstAttribute="leading" secondItem="1452" secondAttribute="leading" constant="15" id="75y-L6-dfW"/>
                             <constraint firstAttribute="bottom" secondItem="1453" secondAttribute="bottom" id="FlS-m9-o73"/>
                             <constraint firstItem="1456" firstAttribute="centerX" secondItem="1452" secondAttribute="centerX" id="Fp1-1z-V6t"/>
                             <constraint firstItem="1454" firstAttribute="centerY" secondItem="1452" secondAttribute="centerY" id="J1t-Bl-WyF"/>
-                            <constraint firstAttribute="trailing" secondItem="1455" secondAttribute="trailing" constant="35" id="T6G-00-jiK"/>
+                            <constraint firstAttribute="trailing" secondItem="1455" secondAttribute="trailing" constant="15" id="T6G-00-jiK"/>
                             <constraint firstItem="1453" firstAttribute="leading" secondItem="1452" secondAttribute="leading" id="WHo-GK-wza"/>
                             <constraint firstItem="1455" firstAttribute="centerY" secondItem="1452" secondAttribute="centerY" id="iYW-En-Xlf"/>
                             <constraint firstAttribute="trailing" secondItem="1453" secondAttribute="trailing" id="moM-i1-Fsm"/>
@@ -76,9 +79,11 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="ArrowWhiteNext" width="50" height="50"/>
+        <image name="ArrowWhitePrevious" width="50" height="50"/>
         <image name="hotelRoomTest" width="1920" height="1200"/>
-        <image name="nextArrow" width="32" height="32"/>
         <image name="homeIcon" width="32" height="32"/>
+        <image name="nextArrow" width="32" height="32"/>
         <image name="cal" width="512" height="512"/>
         <image name="check" width="512" height="512"/>
         <image name="checkwhite" width="512" height="512"/>
@@ -163,8 +168,13 @@
         <image name="spoon-white" width="512" height="512"/>
         <image name="top-bar-calendar" width="512" height="512"/>
         <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="homePencilWhite" width="30" height="30"/>
         <image name="bgblur.png" width="240" height="320"/>
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>
+        <image name="Booking" width="509" height="85"/>
+        <image name="expedia" width="501" height="142"/>
+        <image name="expedio" width="50" height="50"/>
+        <image name="trivago" width="510" height="152"/>
     </resources>
 </document>

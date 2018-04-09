@@ -155,5 +155,12 @@
         <image name="bgblur.png" width="240" height="320"/>
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>
+        <image name="homePencilWhite" width="30" height="30"/>
+        <image name="ArrowWhiteNext" width="50" height="50"/>
+        <image name="ArrowWhitePrevious" width="50" height="50"/>
+        <image name="Booking" width="509" height="85"/>
+        <image name="expedia" width="501" height="142"/>
+        <image name="expedio" width="50" height="50"/>
+        <image name="trivago" width="510" height="152"/>
     </resources>
 </document>

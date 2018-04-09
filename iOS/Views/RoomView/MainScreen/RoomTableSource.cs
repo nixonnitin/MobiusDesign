@@ -30,19 +30,23 @@ namespace Mobius.iOS.Views
                 case 1:
                     var cell1 = (RoomNameCell)tableView.DequeueReusableCell(RoomNameCell.Key, indexPath);
                     cell1.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    //cell.ConstraintImageSliderHeight.Constant = 200;
+                   
                     return cell1;
                 case 2:
                     var cell2 = (DirectBookCell)tableView.DequeueReusableCell(DirectBookCell.Key, indexPath);
                     cell2.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    //cell.ConstraintImageSliderHeight.Constant = 200;
+                   
                     return cell2;
-                default: /* Optional */
+                case 3:
+                    var cell3 = (DisplayPriceTextCell)tableView.DequeueReusableCell(DisplayPriceTextCell.Key, indexPath);
+                    cell3.SelectionStyle = UITableViewCellSelectionStyle.None;
+                   
+                    return cell3;
+                default: 
                     var cellDefault = new UITableViewCell();
                     return cellDefault;
                    
             }
-
 
 
             /*

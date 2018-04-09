@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -405,6 +404,39 @@
     <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\homePencilWhite.imageset\pencil-white-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhiteNext.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhiteNext.imageset\next-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhiteNext.imageset\next-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhiteNext.imageset\next.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhitePrevious.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhitePrevious.imageset\previous-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhitePrevious.imageset\previous-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowWhitePrevious.imageset\previous.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Booking.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Booking.imageset\booking-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Booking.imageset\booking-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Booking.imageset\booking.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedia.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedia.imageset\expedio-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedia.imageset\expedio.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedio.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedio.imageset\expedio-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedio.imageset\expedio-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedio.imageset\expedio.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\trivago.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\trivago.imageset\trivago-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\trivago.imageset\trivago-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\trivago.imageset\trivago.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\expedia.imageset\expedio-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\dollarWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\dollarWhite.imageset\dollar-white-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\dollarWhite.imageset\dollar-white-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\dollarWhite.imageset\dollar-white.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\points-blue-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\points-blue-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\points-blue.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -428,10 +460,8 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
-
     <InterfaceDefinition Include="Views\LoginViewController.xib" />
     <InterfaceDefinition Include="Views\RegistrationViewController.xib" />
-
     <InterfaceDefinition Include="Views\MyTableViewCell.xib" />
     <InterfaceDefinition Include="Views\MyViewController.xib" />
     <InterfaceDefinition Include="Views\MenuView\MenuExistingUserCell1.xib" />
@@ -482,6 +512,7 @@
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterSwitchCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterViewController.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomePopularDestinationsCell.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\DisplayPriceTextCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -651,10 +682,10 @@
     </Compile>
     <Compile Include="Views\RoomView\MainScreen\RoomTableSource.cs" />
     <Compile Include="Views\RoomView\MainScreen\RoomTableDelegate.cs" />
-    <Compile Include="Views\RoomView\Cells\RoomNameCell.cs" />
     <Compile Include="Views\RoomView\Cells\RoomNameCell.designer.cs">
       <DependentUpon>RoomNameCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\RoomView\Cells\RoomNameCell.cs" />
     <Compile Include="Views\RoomView\Cells\DirectBookCell.cs" />
     <Compile Include="Views\RoomView\Cells\DirectBookCell.designer.cs">
       <DependentUpon>DirectBookCell.cs</DependentUpon>
@@ -672,6 +703,14 @@
     <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.cs" />
     <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.designer.cs" />
     <Compile Include="Helper\UIViewHelper.cs" />
+    <Compile Include="ViewMain_DirectBooking.cs" />
+    <Compile Include="ViewMain_DirectBooking.designer.cs">
+      <DependentUpon>ViewMain_DirectBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomView\Cells\DisplayPriceTextCell.cs" />
+    <Compile Include="Views\RoomView\Cells\DisplayPriceTextCell.designer.cs">
+      <DependentUpon>DisplayPriceTextCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
@@ -695,7 +734,6 @@
     <BundleResource Include="Resources\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
-    <BundleResource Include="Resources\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

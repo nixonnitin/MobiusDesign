@@ -1,5 +1,5 @@
 ﻿using System;
-
+using CoreAnimation;
 using Foundation;
 using UIKit;
 
@@ -22,6 +22,16 @@ namespace Mobius.iOS.Views
 		public override void AwakeFromNib()
 		{
             base.AwakeFromNib();
+
+            UIView_DirectBook.Layer.CornerRadius = 11;
+
+            UIBezierPath maskPath = UIBezierPath.FromRoundedRect(UiView_Price.Bounds, UIRectCorner.BottomRight | UIRectCorner.TopRight, new CoreGraphics.CGSize(10, 10));
+            CAShapeLayer maskLayer = new CAShapeLayer();
+            maskLayer.Frame = UiView_Price.Bounds;
+            maskLayer.Path = maskPath.CGPath;
+            UiView_Price.Layer.Mask = maskLayer;
+
+
 		}
 	}
 }
