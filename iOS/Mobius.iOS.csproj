@@ -436,7 +436,30 @@
     <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\points-blue-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\points-blue-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\starRoundBlue.imageset\points-blue.png" />
-    <ImageAsset Include="Resources\Assets.xcassets\.DS_Store" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\128.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\256.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\512.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\128.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\american.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\american.imageset\american.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\chat.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\chat.imageset\chat.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\phone-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\phone-1.imageset\phone-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\red-bg.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\red-bg.imageset\red-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\lake-bg-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\lake-bg-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lake-bg.imageset\lake-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\owl-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\owl-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\owl.imageset\owl.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\pencil-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\pencil-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\pencil-grey.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -456,6 +479,9 @@
     <Folder Include="Views\RoomView\" />
     <Folder Include="Views\RoomView\Cells\" />
     <Folder Include="Views\RoomView\MainScreen\" />
+    <Folder Include="Views\CheckoutView\" />
+    <Folder Include="Views\CheckoutView\MainView\" />
+    <Folder Include="Views\CheckoutView\Cells\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -487,7 +513,6 @@
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeRateCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeCollectionContainerCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeOfferCellLarge.xib" />
-    <InterfaceDefinition Include="Views\HomeView\Cells\HomeNearHotelCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeIntroductionCell.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeOfferCellSmall.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeLastSearchCell.xib" />
@@ -513,6 +538,40 @@
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchFilterViewController.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomePopularDestinationsCell.xib" />
     <InterfaceDefinition Include="Views\RoomView\Cells\DisplayPriceTextCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\MainView\CheckoutViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookButCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookTopCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\HotelQuickBookViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Quick Book\PriceAndBookCheapCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Review User\HotelReviewUserViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Subpage\Hotel Subpage Cell\HotelSubPageCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Subpage\Hotel Subpage Controller\HotelSubPageViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel review\HotelReview Cell\HotelReviewCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel review\HotelReviewController\HotelReview.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationAddRoomTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\CancelReservation\CancelReservationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeDates\ReservationBookingUpdatedViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeDatesAmountConfirmation\EditReservationChangeDatesAmountConfirmationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeRoom\EditReservationChangeRoomViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\EditReservationChangeRoomAmountConfirmation\EditReservationChangeRoomAmountConfirmationViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\MyReservations\MyReservationsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\MyReservations\MyReservationsViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\NoReservationPopUpScreen\NoReservationPopUpViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysViewController.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\BillingInformationTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\EditStayDatesRoomTypeTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\GuestInformationTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\PriceBreakDownTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\ReservationSummaryGuestInformationTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.xib" />
+    <InterfaceDefinition Include="Views\HomeView\Cells\HomeNearHotelCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutBookingDetailCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -703,6 +762,67 @@
     <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.cs" />
     <Compile Include="Views\Search Result\Search Filter\SearchFilterViewController.designer.cs" />
     <Compile Include="Helper\UIViewHelper.cs" />
+    <Compile Include="Views\CheckoutView\MainView\CheckoutViewController.cs" />
+    <Compile Include="Views\CheckoutView\MainView\CheckoutViewController.designer.cs">
+      <DependentUpon>CheckoutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\MainView\CheckoutTableSource.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookButtonCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookTopCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookTopCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\PriceAndBookCheapCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Quick Book\PriceAndBookCheapCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Review User\HotelReviewUserViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Review User\HotelReviewUserViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Cell\HotelSubPageCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Cell\HotelSubPageCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Controller\HotelSubPageViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Subpage\Hotel Subpage Controller\HotelSubPageViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReview Cell\HotelReviewCell.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReview Cell\HotelReviewCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReviewController\HotelReview.cs" />
+    <Compile Include="Views\Hotel\Hotel review\HotelReviewController\HotelReview.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationAddRoomTableDataSourceDelegate.cs" />
+    <Compile Include="Views\Reservation\ReservationAddRoomTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationAddRoomTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationViewController.cs" />
+    <Compile Include="Views\Reservation\ReservationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\CancelReservation\CancelReservationViewController.cs" />
+    <Compile Include="Views\Reservation\CancelReservation\CancelReservationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDates\ReservationBookingUpdatedViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDates\ReservationBookingUpdatedViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDatesAmountConfirmation\EditReservationChangeDatesAmountConfirmationViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeDatesAmountConfirmation\EditReservationChangeDatesAmountConfirmationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoom\EditReservationChangeRoomViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoom\EditReservationChangeRoomViewController.designer.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoomAmountConfirmation\EditReservationChangeRoomAmountConfirmationViewController.cs" />
+    <Compile Include="Views\Reservation\EditReservationChangeRoomAmountConfirmation\EditReservationChangeRoomAmountConfirmationViewController.designer.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsDataSourceDelegate.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsTableViewCell.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsViewController.cs" />
+    <Compile Include="Views\Reservation\MyReservations\MyReservationsViewController.designer.cs" />
+    <Compile Include="Views\Reservation\NoReservationPopUpScreen\NoReservationPopUpViewController.cs" />
+    <Compile Include="Views\Reservation\NoReservationPopUpScreen\NoReservationPopUpViewController.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysDelegateDataSource.cs" />
+    <Compile Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysViewController.cs" />
+    <Compile Include="Views\Reservation\ReservationPreviousStays\ReservationPerviousStaysViewController.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\BillingInformationTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\BillingInformationTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\EditStayDatesRoomTypeTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\EditStayDatesRoomTypeTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\GuestInformationTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\GuestInformationTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\PriceBreakDownTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\PriceBreakDownTableViewCell.designer.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryDataSourceDelegate.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryGuestInformationTableViewCell.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.cs" />
+    <Compile Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.designer.cs" />
     <Compile Include="ViewMain_DirectBooking.cs" />
     <Compile Include="ViewMain_DirectBooking.designer.cs">
       <DependentUpon>ViewMain_DirectBooking.cs</DependentUpon>
@@ -711,6 +831,19 @@
     <Compile Include="Views\RoomView\Cells\DisplayPriceTextCell.designer.cs">
       <DependentUpon>DisplayPriceTextCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutBookingDetailCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutBookingDetailCell.designer.cs">
+      <DependentUpon>CheckoutBookingDetailCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.designer.cs" />
+    <Compile Include="Helper\MobiusHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
@@ -734,6 +867,7 @@
     <BundleResource Include="Resources\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
+    <BundleResource Include="Resources\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
