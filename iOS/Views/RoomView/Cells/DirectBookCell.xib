@@ -224,5 +224,6 @@
         <image name="user.png" width="18" height="18"/>
         <image name="dollarWhite" width="30" height="30"/>
         <image name="starRoundBlue" width="30" height="30"/>
+        <image name="Exclamatory" width="30" height="30"/>
     </resources>
 </document>

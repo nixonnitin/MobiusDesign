@@ -40,7 +40,7 @@ namespace Mobius.iOS.Views
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomNameCell", NSBundle.MainBundle), "RoomNameCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("DirectBookCell", NSBundle.MainBundle), "DirectBookCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("DisplayPriceTextCell", NSBundle.MainBundle), "DisplayPriceTextCell");
-
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomRateCell", NSBundle.MainBundle), "RoomRateCell");
 
 
             TableRoomView.Source = new RoomTableSource(TableRoomView, sections);

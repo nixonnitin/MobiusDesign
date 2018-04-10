@@ -22,6 +22,11 @@ namespace Mobius.iOS.Views
 		public override void AwakeFromNib()
 		{
             base.AwakeFromNib();
+            Button_Money.Layer.CornerRadius = 5;
+            Button_Points.Layer.BorderWidth = 1;
+            Button_Points.Layer.BorderColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f).CGColor;
+            Button_Points.Layer.CornerRadius = 5;
+
 		}
 	}
 }

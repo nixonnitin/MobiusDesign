@@ -31,6 +31,8 @@ namespace Mobius.iOS.Views
             maskLayer.Path = maskPath.CGPath;
             UiView_Price.Layer.Mask = maskLayer;
 
+            UIMainView_DirectBook.Layer.BackgroundColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f).CGColor;
+
 
 		}
 	}

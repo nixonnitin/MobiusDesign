@@ -15,6 +15,14 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Button_Money { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Button_Points { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView DisplayPricetextView { get; set; }
 
         [Outlet]
@@ -27,6 +35,16 @@ namespace Mobius.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (Button_Money != null) {
+                Button_Money.Dispose ();
+                Button_Money = null;
+            }
+
+            if (Button_Points != null) {
+                Button_Points.Dispose ();
+                Button_Points = null;
+            }
+
             if (DisplayPricetextView != null) {
                 DisplayPricetextView.Dispose ();
                 DisplayPricetextView = null;

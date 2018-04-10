@@ -3,6 +3,7 @@ using UIKit;
 using System.Collections.Generic;
 using Foundation;
 using CoreGraphics;
+using Mobius.iOS.Helpers;
 
 namespace Mobius.iOS.Views
 {
@@ -40,8 +41,16 @@ namespace Mobius.iOS.Views
                 case 3:
                     var cell3 = (DisplayPriceTextCell)tableView.DequeueReusableCell(DisplayPriceTextCell.Key, indexPath);
                     cell3.SelectionStyle = UITableViewCellSelectionStyle.None;
-                   
+                    //UIViewHelper.SetShadow(cell3, 2); 
                     return cell3;
+                case 4:
+                    var cell4 = (RoomRateCell)tableView.DequeueReusableCell(RoomRateCell.Key, indexPath);
+                    cell4.SelectionStyle = UITableViewCellSelectionStyle.None;
+
+                    UIViewHelper.SetShadow(cell4, 2); 
+                    return cell4;
+
+
                 default: 
                     var cellDefault = new UITableViewCell();
                     return cellDefault;
