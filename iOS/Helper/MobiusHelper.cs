@@ -5,8 +5,7 @@ namespace Mobius.iOS.Helper
 {
     public static class MobiusHelper
     {
-        
-
+     
         public static UIColor GetColorDarkGreen(){
            return new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f); 
        }
@@ -30,7 +29,6 @@ namespace Mobius.iOS.Helper
        } 
 
 
-       
         /*
             Family:Roboto Font names:Roboto-Regular
             Family:Roboto Font names:Roboto-Black
@@ -46,86 +44,107 @@ namespace Mobius.iOS.Helper
             Family:Roboto Font names:Roboto-ThinItalic
         */
 
-        //public UIFont GetFontRegularWithSize(nfloat fontSize){
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //}
+        public static UIFont GetFontRegularWithSize(nfloat fontSize){
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Regular", fontSize);
+            return font;
+        }
 
-        //public UIFont GetFontBlackWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontBlackWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Black", fontSize);
+            return font;
+        }
 
-        //public UIFont GetFontLightWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontLightWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Light", fontSize);
+            return font;
+        }
 
-        //public UIFont GetFontBoldItalicWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontBoldItalicWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-BoldItalic", fontSize);
+            return font;
+        }
 
-        //public UIFont GetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontLightItalicWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-LightItalic", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontThinWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Thin", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontMediumItalicWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-MediumItalic", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontMediumWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Medium", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontBoldWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Bold", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontBlackItalicWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-BlackItalic", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontItalicWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-Italic", fontSize);
+            return font;
+        }
 
-        //public UIFont TableCheckoutGetBlackFontWithSize(nfloat fontSize)
-        //{
-        //    //var font = UIFont()
-        //    var font = UIFont.FromName("Roboto-Regular", fontSize);
-        //    return font;
-        //}
+        public static UIFont GetFontThinItalicWithSize(nfloat fontSize)
+        {
+            //var font = UIFont()
+            var font = UIFont.FromName("Roboto-ThinItalic", fontSize);
+            return font;
+        }
+
+        public static void GetRoundedCornerFromSideOfView(UIView view,UIRectCorner corners)
+        {
+            //UIBezierPath.FromRoundedRect()
+            //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, UIRectCorner.BottomRight | UIRectCorner.TopRight, new CoreGraphics.CGSize(5, 5));
+            //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, corners, new CoreGraphics.CGSize(5, 5));
+            //CAShapeLayer maskLayer = new CAShapeLayer();
+            //maskLayer.Frame = view.Bounds;
+            //maskLayer.Path = maskPath.CGPath;
+            //view.Layer.Mask = maskLayer;
+            //return view;
+
+
+            UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, corners, new CoreGraphics.CGSize(10, 10));
+           CAShapeLayer maskLayer = new CAShapeLayer();
+            maskLayer.Frame = view.Bounds;
+           maskLayer.Path = maskPath.CGPath;
+            view.Layer.Mask = maskLayer; 
+        }
+
     }
 }

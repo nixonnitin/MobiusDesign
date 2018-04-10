@@ -7,22 +7,20 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("CheckoutViewController")]
-    partial class CheckoutViewController
+    [Register ("HotelMainPageViewController")]
+    partial class HotelMainPageViewController
     {
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView TableCheckout { get; set; }
+        public UIKit.UITableView TableViewMainPage { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (TableCheckout != null) {
-                TableCheckout.Dispose ();
-                TableCheckout = null;
+            if (TableViewMainPage != null) {
+                TableViewMainPage.Dispose ();
+                TableViewMainPage = null;
             }
         }
     }

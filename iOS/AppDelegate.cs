@@ -43,6 +43,22 @@ namespace Mobius.iOS
 
 			Container = builder.Build();
 
+            //            for family in UIFont.familyNames.sorted() {
+            //                let names = UIFont.fontNames(forFamilyName: family)
+            //    print("Family: \(family) Font names: \(names)")
+            //}
+            //foreach (string family in UIFont.FamilyNames){
+            //    //System.Console.WriteLine(family);
+            //    //            let names = UIFont.fontNames(forFamilyName: family)
+            //    //print("Family: \(family) Font names: \(names)")
+            //    var names = UIFont.FontNamesForFamilyName(family);
+
+            //    foreach (string fontname in names)
+            //    {
+            //        System.Console.WriteLine("Family:" + family + " Font names:" + fontname);
+            //    }
+            //}
+
             //var controller = new Views.RegistrationViewController();
             //var controller = new Views.MenuViewController();
             //var controller = new Views.HomeViewController();
@@ -52,7 +68,9 @@ namespace Mobius.iOS
             //var controller = new Views.HomeViewControllerScreen5();
             //var controller = new Views.HomeViewControllerScreen6();
             //var controller = new Views.MainHomeViewController();
-            var controller = new Views.RoomViewController();
+            //var controller = new Views.RoomViewController();
+            //var controller = new Views.ReservationViewController();
+            var controller = new Views.CheckoutViewController();
             //var controller = new Views.MainResultViewController();
             //var controller = new Views.BookSearch();
             //var controller = new Views.CheckoutViewController();
