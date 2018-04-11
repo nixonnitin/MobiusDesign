@@ -3,7 +3,7 @@ using UIKit;
 using System.Collections.Generic;
 using Foundation;
 using CoreGraphics;
-using Mobius.iOS.Helper;
+using Mobius.iOS.Helpers;
 namespace Mobius.iOS.Views
 {
     public class CheckoutTableSource: UITableViewSource
@@ -20,20 +20,57 @@ namespace Mobius.iOS.Views
         {
             //var tableCell = new UITableViewCell();
             //return tableCell;
-            var cell = (CheckoutBookingDetailCell)tableView.DequeueReusableCell(CheckoutBookingDetailCell.Key, indexPath);
-            cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-            //cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-            //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
-            return cell;
+            if (indexPath.Section == 0)
+            {
+                var cell = (CheckoutBookingDetailCell)tableView.DequeueReusableCell(CheckoutBookingDetailCell.Key, indexPath);
+                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                cell.BackgroundColor = MobiusHelper.GetColorLightGrey();
+                //cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+                //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
+                return cell;
+            }else{
+                if(indexPath.Row == 0){
+                    var cell = (CheckoutInputTextCell)tableView.DequeueReusableCell(CheckoutInputTextCell.Key, indexPath);
+                    cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    //cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+                    //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
+                    cell.imageInputView.Image = UIImage.FromBundle("personGrey");
+                    cell.textInput.Placeholder = "First Name";
+                    cell.textSubInput.Placeholder = "Last Name";
+                    return cell;
+                }else if (indexPath.Row == 1)
+                {
+                    var cell = (CheckoutSingleInputTextCell)tableView.DequeueReusableCell(CheckoutSingleInputTextCell.Key, indexPath);
+                    cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    //cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+                    //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
+                    cell.ImageInput.Image = UIImage.FromBundle("emailGrey");
+                    cell.TextInput.Placeholder = "Email Address";
+                    return cell;
+                }else
+                {
+                    var cell = (CheckoutSingleInputTextCell)tableView.DequeueReusableCell(CheckoutSingleInputTextCell.Key, indexPath);
+                    cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    cell.ImageInput.Image = UIImage.FromBundle("phoneGrey");
+                    cell.TextInput.Placeholder = "Telephone Number";
+                    return cell;
+                }
+
+            }
         }
         public override nint RowsInSection(UITableView tableView, nint section)
         {
-            return 1;
+            if(section == 1){
+                return 3;
+            }else{
+                return 1;
+            }
+
         }
         public override nint NumberOfSections(UITableView tableView)
         {
             //return sections.Count;
-            return 1;
+            return 2;
         }
     }
 

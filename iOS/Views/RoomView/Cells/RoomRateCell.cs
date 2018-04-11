@@ -2,7 +2,7 @@
 
 using Foundation;
 using UIKit;
-using Mobius.iOS.Helper;
+using Mobius.iOS.Helpers;
 using CoreAnimation;
 
 namespace Mobius.iOS.Views

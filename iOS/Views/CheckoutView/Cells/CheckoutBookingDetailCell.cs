@@ -2,7 +2,7 @@
 
 using Foundation;
 using UIKit;
-using Mobius.iOS.Helper;
+using Mobius.iOS.Helpers;
 namespace Mobius.iOS.Views
 {
     public partial class CheckoutBookingDetailCell : UITableViewCell
@@ -23,10 +23,20 @@ namespace Mobius.iOS.Views
         public override void AwakeFromNib()
         {
             base.AwakeFromNib();
+            //UIViewHelper.SetShadow(ViewBookingDetailContainer, 50);
+
             ViewBookingDetailContainer.Layer.CornerRadius = 5;
+            //MobiusHelper.GetRoundedCornerFromSideOfView(ViewBookingDetailContainer, UIRectCorner.AllCorners);
+            UIViewHelper.SetShadow(ViewBookingDetailContainer, 5, 0.3f, 3f, 0.2f, 0.2f);
             //ViewOfferDetailContainer.Layer.CornerRadius = 5;
-            MobiusHelper.GetRoundedCornerFromSideOfView(ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
-            ImageHotel.Layer.CornerRadius = 5;
+            MobiusHelper.GetRoundedCornerFromSideOfView(ViewOfferDetailContainer, UIRectCorner.BottomLeft|UIRectCorner.BottomRight,10,10);
+            UIViewHelper.SetShadow(ViewOfferDetailContainer, 5, 0.3f, 3f, 0.2f, 0.2f);
+            //MobiusHelper.GetRoundedCornerFromSideOfView(ViewOfferDetailContainer, );
+            MobiusHelper.GetRoundedCornerFromSideOfView(ViewDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
+            //ViewDetailContainer.Layer.CornerRadius = 5;
+
+            MobiusHelper.GetRoundedCornerFromSideOfView(ImageHotel, UIRectCorner.TopRight);
+            //ImageHotel.Layer.CornerRadius = 5;
 
             ViewOfferDetailContainer.BackgroundColor = MobiusHelper.GetColorMaroonRed();
             LabelOffer.Font = MobiusHelper.GetFontMediumWithSize(14f);
@@ -52,6 +62,9 @@ namespace Mobius.iOS.Views
 
 
         }
+
+
+
     }
 
 

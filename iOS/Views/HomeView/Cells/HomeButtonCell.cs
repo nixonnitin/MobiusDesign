@@ -26,5 +26,11 @@ namespace Mobius.iOS.Views
             base.AwakeFromNib();
             BookYourStay.Layer.CornerRadius = 5;
 		}
+
+        public UIButton bookYourStay
+      {
+            get { return BookYourStay; }
+            set { BookYourStay = value; }
+      } 
 	}
 }

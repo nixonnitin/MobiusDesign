@@ -71,7 +71,11 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIView ViewOfferDetailContainer { get; set; }
+        UIKit.UIView ViewDetailContainer { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewOfferDetailContainer { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -143,6 +147,11 @@ namespace Mobius.iOS.Views
             if (ViewBookingDetailContainer != null) {
                 ViewBookingDetailContainer.Dispose ();
                 ViewBookingDetailContainer = null;
+            }
+
+            if (ViewDetailContainer != null) {
+                ViewDetailContainer.Dispose ();
+                ViewDetailContainer = null;
             }
 
             if (ViewOfferDetailContainer != null) {

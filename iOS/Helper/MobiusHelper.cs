@@ -1,33 +1,64 @@
 ﻿using System;
 using Foundation;
 using UIKit;
-namespace Mobius.iOS.Helper
+using CoreAnimation;
+namespace Mobius.iOS.Helpers
 {
     public static class MobiusHelper
     {
-     
+        //348d9b
         public static UIColor GetColorDarkGreen(){
            return new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f); 
        }
+        //#93222e
        public static UIColor GetColorMaroonRed()
        {
            return new UIColor(red: 0.58f, green: 0.13f, blue: 0.18f, alpha: 1.0f); 
        }
+        //333333
        public static UIColor GetColorTopHeadingBackground()
        {
            return new UIColor(red: 0.20f, green: 0.20f, blue: 0.20f, alpha: 1.0f); 
        }
+        //8c8c8c
        public static UIColor GetColorGray()
        {
            return new UIColor(red: 0.55f, green: 0.55f, blue: 0.55f, alpha: 1.0f);
        } 
-
-
+        //R:250,G:255,B:255
        public static UIColor GetColorLightBlue()
        {
             return new UIColor(red: 0.98f, green: 1.00f, blue: 1.00f, alpha: 1.0f);
        } 
+        //e6781e
+        public static UIColor GetColorDarkOrange()
+       {
+            return new UIColor(red: 0.90f, green: 0.47f, blue: 0.12f, alpha: 1.0f);
+       } 
 
+        //41b1c2
+        public static UIColor GetColorSeaBlue()
+        {
+            return new UIColor(red: 0.25f, green: 0.69f, blue: 0.76f, alpha: 1.0f);
+        }
+
+        //f6f6f6
+        public static UIColor GetColorLightGrey()
+        {
+            return new UIColor(red: 0.96f, green: 0.96f, blue: 0.96f, alpha: 1.0f);
+        }
+
+        //f6f6f6
+        public static UIColor GetColorBorderGrey()
+        {
+            return new UIColor(red: 0.90f, green: 0.90f, blue: 0.90f, alpha: 1.0f);
+        }
+
+        //c6e7ec
+        public static UIColor GetColorInformationBlue()
+        {
+            return new UIColor(red: 0.96f, green: 0.96f, blue: 0.96f, alpha: 1.0f);
+        }
 
         /*
             Family:Roboto Font names:Roboto-Regular
@@ -127,7 +158,7 @@ namespace Mobius.iOS.Helper
             return font;
         }
 
-        public static void GetRoundedCornerFromSideOfView(UIView view,UIRectCorner corners)
+        public static void GetRoundedCornerFromSideOfView(UIView view,UIRectCorner corners,float cornerWidth = 5f,float cornerHeight = 5f)
         {
             //UIBezierPath.FromRoundedRect()
             //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, UIRectCorner.BottomRight | UIRectCorner.TopRight, new CoreGraphics.CGSize(5, 5));
@@ -139,7 +170,7 @@ namespace Mobius.iOS.Helper
             //return view;
 
 
-            UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, corners, new CoreGraphics.CGSize(10, 10));
+            UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, corners, new CoreGraphics.CGSize(cornerWidth, cornerHeight));
            CAShapeLayer maskLayer = new CAShapeLayer();
             maskLayer.Frame = view.Bounds;
            maskLayer.Path = maskPath.CGPath;
