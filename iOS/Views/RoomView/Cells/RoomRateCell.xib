@@ -62,7 +62,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-eh-8GO">
-                                        <rect key="frame" x="10" y="50.5" width="268" height="88"/>
+                                        <rect key="frame" x="10" y="51" width="268" height="87.5"/>
                                         <string key="text">Best Available Rate. Save 22% Off Standarad Rate when you book today! As an added bonus pay at check-out to maximize your Savings when Sandman Hotels</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
@@ -133,18 +133,18 @@
                                 <rect key="frame" x="0.0" y="251.5" width="278" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAA-E0-qKa">
-                                        <rect key="frame" x="10" y="10" width="258" height="40"/>
+                                        <rect key="frame" x="10" y="5" width="258" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="n5x-vu-eDE"/>
+                                            <constraint firstAttribute="height" constant="50" id="n5x-vu-eDE"/>
                                         </constraints>
                                         <state key="normal" title="Book Now $73.75"/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="lAA-E0-qKa" firstAttribute="centerY" secondItem="02e-TX-zyh" secondAttribute="centerY" id="3gY-Dd-Vaa"/>
-                                    <constraint firstItem="lAA-E0-qKa" firstAttribute="top" secondItem="02e-TX-zyh" secondAttribute="top" constant="10" id="4Im-Ce-Omm"/>
+                                    <constraint firstItem="lAA-E0-qKa" firstAttribute="top" secondItem="02e-TX-zyh" secondAttribute="top" constant="5" id="4Im-Ce-Omm"/>
                                     <constraint firstItem="lAA-E0-qKa" firstAttribute="leading" secondItem="02e-TX-zyh" secondAttribute="leading" constant="10" id="BOL-TA-bom"/>
-                                    <constraint firstAttribute="bottom" secondItem="lAA-E0-qKa" secondAttribute="bottom" constant="10" id="FvB-tR-y2U"/>
+                                    <constraint firstAttribute="bottom" secondItem="lAA-E0-qKa" secondAttribute="bottom" constant="5" id="FvB-tR-y2U"/>
                                     <constraint firstItem="lAA-E0-qKa" firstAttribute="centerX" secondItem="02e-TX-zyh" secondAttribute="centerX" id="que-XC-uIu"/>
                                     <constraint firstAttribute="trailing" secondItem="lAA-E0-qKa" secondAttribute="trailing" constant="10" id="t7Y-pX-GPU"/>
                                 </constraints>

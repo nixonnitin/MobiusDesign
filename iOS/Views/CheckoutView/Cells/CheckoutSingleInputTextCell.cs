@@ -33,14 +33,14 @@ namespace Mobius.iOS.Views
         }
 
         public UIImageView imageInputView
-      {
-            get { return ImageInput; }
-            set { ImageInput = value; }
-      } 
-        public UITextField textInput
-      {
-            get { return TextInput; }
-            set { TextInput = value; }
-      } 
+     {
+           get { return ImageInput; }
+           set { ImageInput = value; }
+     } 
+       public UITextField textInput
+     {
+           get { return TextInput; }
+           set { TextInput = value; }
+     } 
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Foundation;
 using CoreGraphics;
 using CoreAnimation;
+using Mobius.iOS.Helper;
 
 namespace Mobius.iOS.Views
 {
@@ -31,7 +32,7 @@ namespace Mobius.iOS.Views
 
             //Amenities
             cell.LabelAmenities.Text = labels[indexPath.Row];
-            cell.LabelAmenities.Font = UIFont.SystemFontOfSize(13, UIFontWeight.Light);
+            cell.LabelAmenities.Font = MobiusHelper.GetFontRegularWithSize(10);
             cell.LabelAmenities.TextColor = UIColor.Black;
 
             cell.ImageViewAmenities.Image = UIImage.FromBundle(images[indexPath.Row]);

@@ -9,6 +9,9 @@ namespace Mobius.iOS.Views
     public partial class RoomViewController : UIViewController
     {
         List<string> sections;
+        List<string> collectionViewLabels;
+        List<string> collectionViewImages;
+
         public RoomViewController() : base("RoomViewController", null)
         {
         }
@@ -30,6 +33,8 @@ namespace Mobius.iOS.Views
         private void initData()
         {
             sections = new List<string> { "", "", "", "", "", "", "", "", "" };
+            collectionViewLabels = new List<string> { "On-Site Parking", "24-Hours Front Desk", "Complimentary Wireless Internet", "Denny's Restaurant" };
+            collectionViewImages = new List<string> { "parking-1", "food-1", "gym", "homeWiFi" };
         }
         private void initUI()
         {
@@ -44,11 +49,12 @@ namespace Mobius.iOS.Views
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomRateCell", NSBundle.MainBundle), "RoomRateCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomDescriptionCell", NSBundle.MainBundle), "RoomDescriptionCell");
 
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("HomeCollectionContainerCell", NSBundle.MainBundle), "HomeCollectionContainerCell");
 
 
 
 
-            TableRoomView.Source = new RoomTableSource(TableRoomView, sections);
+            TableRoomView.Source = new RoomTableSource(TableRoomView, sections,collectionViewLabels,collectionViewImages);
             TableRoomView.Delegate = new RoomTableDelegate(TableRoomView, View.Frame.Size, sections);
 
 

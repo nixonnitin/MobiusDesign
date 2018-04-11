@@ -15,6 +15,10 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LabelFrom { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel LabelRoomName { get; set; }
 
         [Outlet]
@@ -23,6 +27,11 @@ namespace Mobius.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (LabelFrom != null) {
+                LabelFrom.Dispose ();
+                LabelFrom = null;
+            }
+
             if (LabelRoomName != null) {
                 LabelRoomName.Dispose ();
                 LabelRoomName = null;

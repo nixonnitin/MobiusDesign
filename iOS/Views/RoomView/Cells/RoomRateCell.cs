@@ -55,24 +55,31 @@ namespace Mobius.iOS.Views
 
 
             LabelMemberLogo.TextColor = UIColor.White;
-            LabelMemberLogo.Font =  UIFont.SystemFontOfSize(10, UIFontWeight.Bold);
+            LabelMemberLogo.Font =  MobiusHelper.GetFontBoldWithSize(10);
 
-            LabelActualPrice.TextColor = UIColor.Red;
+           
+
             LabelPerNight.TextColor = UIColor.Gray;
-
             LabelPerNight.TextAlignment = UITextAlignment.Right;
-            LabelActualPrice.TextAlignment = UITextAlignment.Right;
-            LabelPriceNow.TextAlignment = UITextAlignment.Right;
+            LabelPerNight.Font=MobiusHelper.GetFontRegularWithSize(12);
 
-            LabelPriceNow.Font = UIFont.SystemFontOfSize(16, UIFontWeight.Bold);
-            LabelPerNight.Font = UIFont.SystemFontOfSize(12, UIFontWeight.Medium);
-            LabelMemberOnlyRate.Font = UIFont.SystemFontOfSize(14, UIFontWeight.Bold);
+            LabelActualPrice.TextAlignment = UITextAlignment.Right;
+            LabelActualPrice.Font = MobiusHelper.GetFontRegularWithSize(14);
+            LabelActualPrice.TextColor = UIColor.Red;
+
+            LabelPriceNow.TextAlignment = UITextAlignment.Right;
+            LabelPriceNow.Font = MobiusHelper.GetFontRegularWithSize(16);
+            LabelPriceNow.TextColor = UIColor.Black;
+
+
+           
+            LabelMemberOnlyRate.Font = MobiusHelper.GetFontBoldWithSize(14);
 
             LableContentHeading2.TextColor = MobiusHelper.GetColorDarkGreen();
             LableContentHeading.TextColor = MobiusHelper.GetColorDarkGreen();
 
-            LableContentHeading2.Font = UIFont.SystemFontOfSize(12, UIFontWeight.Bold);
-            LableContentHeading.Font = UIFont.SystemFontOfSize(12, UIFontWeight.Bold);
+            LableContentHeading2.Font = MobiusHelper.GetFontBoldWithSize(12);
+            LableContentHeading.Font = MobiusHelper.GetFontBoldWithSize(12);
 
 
             ButtonCancelPolicy.SetTitleColor(MobiusHelper.GetColorDarkGreen(), UIControlState.Normal);
@@ -81,7 +88,7 @@ namespace Mobius.iOS.Views
             //ButtonPriceBreakDown.TitleLabel.TextColor = MobiusHelper.GetColorDarkGreen();
 
             ButtonBookNow.SetTitleColor(UIColor.White, UIControlState.Normal);
-            ButtonBookNow.Font = UIFont.SystemFontOfSize(16, UIFontWeight.Bold);
+            ButtonBookNow.Font = MobiusHelper.GetFontBoldWithSize(16);
             ButtonBookNow.BackgroundColor = MobiusHelper.GetColorDarkGreen();
             ButtonBookNow.Layer.CornerRadius = 5;
 
@@ -91,7 +98,7 @@ namespace Mobius.iOS.Views
 
             LabelOfferBooking.BackgroundColor = MobiusHelper.GetColorYellow();
 
-            LabelOfferBooking.Font = UIFont.SystemFontOfSize(12, UIFontWeight.Regular);
+            LabelOfferBooking.Font = MobiusHelper.GetFontRegularWithSize(12);
             LabelOfferBooking.TextColor = UIColor.Gray;
 
             /*
