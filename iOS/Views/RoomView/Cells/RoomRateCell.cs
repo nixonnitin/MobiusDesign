@@ -2,7 +2,6 @@
 
 using Foundation;
 using UIKit;
-
 using CoreAnimation;
 using Mobius.iOS.Helper;
 

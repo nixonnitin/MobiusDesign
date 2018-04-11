@@ -474,6 +474,30 @@
     <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\up-arrow-grey-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\up-arrow-grey-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\up-arrow-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\personGrey.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\personGrey.imageset\person-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\personGrey.imageset\person-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\personGrey.imageset\person-grey-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxChecked.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxChecked.imageset\checked-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxChecked.imageset\checked-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxChecked.imageset\checked-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxUncheck.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxUncheck.imageset\checkbox-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxUncheck.imageset\checkbox-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\checkboxUncheck.imageset\checkbox-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\emailGrey.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\emailGrey.imageset\email-01-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\emailGrey.imageset\email-01-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\emailGrey.imageset\email-01-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lockGrey.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\lockGrey.imageset\lock-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lockGrey.imageset\lock-grey-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\lockGrey.imageset\lock-grey-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\phone-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\phone-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\phone-grey.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -588,6 +612,8 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
     <InterfaceDefinition Include="Views\RoomView\Cells\RoomDescriptionCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutInputTextCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSingleInputTextCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -867,6 +893,17 @@
     <Compile Include="Views\RoomView\Cells\RoomDescriptionCell.cs" />
     <Compile Include="Views\RoomView\Cells\RoomDescriptionCell.designer.cs">
       <DependentUpon>RoomDescriptionCell.cs</DependentUpon>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutInputTextCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutInputTextCell.designer.cs">
+      <DependentUpon>CheckoutInputTextCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personGrey.cs" />
+    <Compile Include="personGrey.designer.cs">
+      <DependentUpon>personGrey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutSingleInputTextCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutSingleInputTextCell.designer.cs">
+      <DependentUpon>CheckoutSingleInputTextCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

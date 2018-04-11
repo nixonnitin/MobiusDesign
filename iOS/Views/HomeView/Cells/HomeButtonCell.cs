@@ -27,8 +27,6 @@ namespace Mobius.iOS.Views
             bookYourStay.Layer.CornerRadius = 5;
 		}
 
-
-
         public UIKit.UIButton bookYourStay
        {
             get { return BookYourStay; }
