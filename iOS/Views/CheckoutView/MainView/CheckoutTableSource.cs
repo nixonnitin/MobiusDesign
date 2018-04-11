@@ -44,15 +44,15 @@ namespace Mobius.iOS.Views
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                     //cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
                     //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
-                    cell.ImageInput.Image = UIImage.FromBundle("emailGrey");
-                    cell.TextInput.Placeholder = "Email Address";
+                    cell.imageInputView.Image = UIImage.FromBundle("emailGrey");
+                    cell.textInput.Placeholder = "Email Address";
                     return cell;
                 }else
                 {
                     var cell = (CheckoutSingleInputTextCell)tableView.DequeueReusableCell(CheckoutSingleInputTextCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ImageInput.Image = UIImage.FromBundle("phoneGrey");
-                    cell.TextInput.Placeholder = "Telephone Number";
+                    cell.imageInputView.Image = UIImage.FromBundle("phoneGrey");
+                    cell.textInput.Placeholder = "Telephone Number";
                     return cell;
                 }
 

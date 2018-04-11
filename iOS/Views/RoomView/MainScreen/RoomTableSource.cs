@@ -11,15 +11,21 @@ namespace Mobius.iOS.Views
     {
         UITableView table;
         List<string> sections;
+        List<string> collectionViewLabels;
+        List<string> collectionViewImages;
 
-        public RoomTableSource(UITableView table, List<string> sections)
+        public RoomTableSource(UITableView table, List<string> sections, List<string> collectionViewLabels, List<string> collectionViewImages)
         {
             this.table = table;
             this.sections = sections;
+            this.collectionViewLabels = collectionViewLabels;
+            this.collectionViewImages = collectionViewImages;
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
+            
+
             switch (indexPath.Section)
             {
                 case 0:
@@ -49,12 +55,28 @@ namespace Mobius.iOS.Views
 
                     //UIViewHelper.SetShadow(cell4, 2); 
                     return cell4;
-                case 5:
-                    var cell5 = (RoomDescriptionCell)tableView.DequeueReusableCell(RoomDescriptionCell.Key, indexPath);
-                    cell5.SelectionStyle = UITableViewCellSelectionStyle.None;
+                case 6:
+                    var cell6 = (RoomDescriptionCell)tableView.DequeueReusableCell(RoomDescriptionCell.Key, indexPath);
+                    cell6.SelectionStyle = UITableViewCellSelectionStyle.None;
 
                     //UIViewHelper.SetShadow(cell4, 2); 
+                    return cell6;
+                case 5 :
+                    
+                    var cell5 = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
+                    cell5.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    cell5.CollectionViewHomeCell.RegisterNibForCell(UINib.FromName("HotelAmenitiesCollectionCell", NSBundle.MainBundle), "HotelAmenitiesCollectionCell");
+                    var layout = new UICollectionViewFlowLayout();
+
+                    layout.ScrollDirection = UICollectionViewScrollDirection.Horizontal;
+                    cell5.CollectionViewHomeCell.CollectionViewLayout = layout;
+                    cell5.ConstraintCollectionViewHeight.Constant = tableView.Frame.Height * (nfloat)0.20;
+
+                    cell5.CollectionViewHomeCell.Source = new HotelCollectionViewSource(cell5.CollectionViewHomeCell,collectionViewLabels, collectionViewImages);
+                    cell5.CollectionViewHomeCell.Delegate = new HotelCollectionViewDelegate(cell5.CollectionViewHomeCell);
                     return cell5;
+
+
 
 
                 default: 

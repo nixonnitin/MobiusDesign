@@ -18,9 +18,9 @@ namespace Mobius.iOS.Views
         {
             
                 nfloat mainWidth = collectionView.Frame.Width;
-                nfloat cellWidth = mainWidth * (nfloat)0.50;
+                nfloat cellWidth = mainWidth * (nfloat)0.25;
 
-                nfloat mainHeight = (collectionView.Frame.Height * (nfloat)0.85);
+                nfloat mainHeight = (collectionView.Frame.Height * (nfloat)0.50);
                 nfloat cellHeight = mainHeight;
 
                 return new CGSize(cellWidth, cellHeight);

@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -22,8 +23,10 @@ namespace Mobius.iOS.Views
 		public override void AwakeFromNib()
 		{
             base.AwakeFromNib();
-            LabelRoomName.Font = UIFont.BoldSystemFontOfSize(18);
-            LabelRoomPrice.Font = UIFont.BoldSystemFontOfSize(18);
+            LabelRoomName.Font = MobiusHelper.GetFontBoldWithSize(18);
+            LabelRoomPrice.Font = MobiusHelper.GetFontBoldWithSize(18);
+            LabelFrom.Font = MobiusHelper.GetFontRegularWithSize(12);
+            LabelFrom.TextColor = MobiusHelper.GetColorGray();
 		}
 	}
 }

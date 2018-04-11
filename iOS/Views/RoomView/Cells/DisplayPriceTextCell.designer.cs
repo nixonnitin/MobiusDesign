@@ -33,6 +33,14 @@ namespace Mobius.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView UiMainViewDisplayPriceButton { get; set; }
 
+        [Action ("Button_Money_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void Button_Money_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("Button_Points_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void Button_Points_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (Button_Money != null) {

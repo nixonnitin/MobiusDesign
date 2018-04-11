@@ -61,6 +61,7 @@
             <connections>
                 <outlet property="LabelRoomName" destination="5Mk-cG-xyN" id="name-outlet-5Mk-cG-xyN"/>
                 <outlet property="LabelRoomPrice" destination="QVV-UO-oLV" id="name-outlet-QVV-UO-oLV"/>
+                <outlet property="LabelFrom" destination="WdC-3h-atl" id="name-outlet-WdC-3h-atl"/>
             </connections>
         </tableViewCell>
     </objects>
@@ -162,5 +163,24 @@
         <image name="expedia" width="501" height="142"/>
         <image name="expedio" width="50" height="50"/>
         <image name="trivago" width="510" height="152"/>
+        <image name="dollarWhite" width="30" height="30"/>
+        <image name="starRoundBlue" width="30" height="30"/>
+        <image name="Exclamatory" width="35" height="35"/>
+        <image name="128" width="128" height="128"/>
+        <image name="american" width="512" height="512"/>
+        <image name="chat" width="512" height="512"/>
+        <image name="phone-1" width="512" height="512"/>
+        <image name="red-bg" width="512" height="88"/>
+        <image name="lake-bg" width="1125" height="479"/>
+        <image name="owl" width="512" height="512"/>
+        <image name="pencilGray" width="512" height="512"/>
+        <image name="ArrowDownGray" width="512" height="512"/>
+        <image name="ArrayUpGray" width="512" height="512"/>
+        <image name="personGrey" width="512" height="512"/>
+        <image name="checkboxChecked" width="512" height="512"/>
+        <image name="checkboxUncheck" width="512" height="512"/>
+        <image name="emailGrey" width="512" height="512"/>
+        <image name="lockGrey" width="512" height="512"/>
+        <image name="phoneGrey" width="512" height="512"/>
     </resources>
 </document>
