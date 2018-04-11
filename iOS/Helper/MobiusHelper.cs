@@ -2,7 +2,6 @@
 using CoreAnimation;
 using Foundation;
 using UIKit;
-using CoreAnimation;
 namespace Mobius.iOS.Helper
 {
     public static class MobiusHelper
@@ -36,13 +35,10 @@ namespace Mobius.iOS.Helper
             return new UIColor(red: 1.00f, green: 0.77f, blue: 0.23f, alpha: 1.0f);
        } 
 
-
-
         public static UIColor GetColorLightGraySeperator()
        {
             return new UIColor(red: 0.92f, green: 0.92f, blue: 0.92f, alpha: 1.0f);
        } 
-
 
         //e6781e
         public static UIColor GetColorDarkOrange()
@@ -71,7 +67,7 @@ namespace Mobius.iOS.Helper
         //c6e7ec
         public static UIColor GetColorInformationBlue()
         {
-            return new UIColor(red: 0.96f, green: 0.96f, blue: 0.96f, alpha: 1.0f);
+            return new UIColor(red: 0.78f, green: 0.91f, blue: 0.93f, alpha: 1.0f);
         }
 
         /*

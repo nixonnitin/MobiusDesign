@@ -44,8 +44,9 @@ namespace Mobius.iOS.Views
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutBookingDetailCell", NSBundle.MainBundle), "CheckoutBookingDetailCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutInputTextCell", NSBundle.MainBundle), "CheckoutInputTextCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutSingleInputTextCell", NSBundle.MainBundle), "CheckoutSingleInputTextCell");
+            TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutSignupInfoCell", NSBundle.MainBundle), "CheckoutSignupInfoCell");
             TableCheckout.Source = new CheckoutTableSource(TableCheckout, sections);
-            //TableCheckout.Delegate = new MainHomeTableDelegate(TableCheckout, View.Frame.Size, sections);
+            TableCheckout.Delegate = new CheckoutTableDelegate(TableCheckout, View.Frame.Size, sections);
         }
     }
 }

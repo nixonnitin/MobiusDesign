@@ -15,15 +15,15 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIImageView ImageInput { get; set; }
+        UIKit.UIImageView ImageInput { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UITextField TextInput { get; set; }
+        UIKit.UITextField TextInput { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIView ViewInputContainer { get; set; }
+        UIKit.UIView ViewInputContainer { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

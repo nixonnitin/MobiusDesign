@@ -621,6 +621,7 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -929,6 +930,10 @@
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.designer.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.designer.cs">
+      <DependentUpon>CheckoutSignupInfoCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />

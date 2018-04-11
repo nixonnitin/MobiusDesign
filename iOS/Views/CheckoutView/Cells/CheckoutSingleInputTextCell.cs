@@ -31,5 +31,16 @@ namespace Mobius.iOS.Views
 
             TextInput.Font = MobiusHelper.GetFontLightWithSize(14);
         }
+
+        public UIImageView imageInputView
+      {
+            get { return ImageInput; }
+            set { ImageInput = value; }
+      } 
+        public UITextField textInput
+      {
+            get { return TextInput; }
+            set { TextInput = value; }
+      } 
     }
 }
