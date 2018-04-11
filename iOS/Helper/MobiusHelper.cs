@@ -3,7 +3,7 @@ using CoreAnimation;
 using Foundation;
 using UIKit;
 using CoreAnimation;
-namespace Mobius.iOS.Helpers
+namespace Mobius.iOS.Helper
 {
     public static class MobiusHelper
     {

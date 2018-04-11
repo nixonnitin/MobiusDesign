@@ -607,13 +607,20 @@
     <InterfaceDefinition Include="Views\Reservation\ReservationSummary\ReservationSummaryViewController.xib" />
     <InterfaceDefinition Include="Views\HomeView\Cells\HomeNearHotelCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutBookingDetailCell.xib" />
-    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.xib" />
-    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.xib" />
-    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
-    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
     <InterfaceDefinition Include="Views\RoomView\Cells\RoomDescriptionCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutInputTextCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSingleInputTextCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Collection View Cell\HotelAmenitiesCollectionCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Date and Guest Cell\HotelDateGuestCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Label cell\HotelLabelCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel List Cell\HotelListCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Location Map\HotelLocationMapCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -881,18 +888,11 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutBookingDetailCell.designer.cs">
       <DependentUpon>CheckoutBookingDetailCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.designer.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.designer.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.designer.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.designer.cs" />
     <Compile Include="Helper\MobiusHelper.cs" />
     <Compile Include="Views\RoomView\Cells\RoomDescriptionCell.cs" />
     <Compile Include="Views\RoomView\Cells\RoomDescriptionCell.designer.cs">
       <DependentUpon>RoomDescriptionCell.cs</DependentUpon>
+      </Compile>
     <Compile Include="Views\CheckoutView\Cells\CheckoutInputTextCell.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutInputTextCell.designer.cs">
       <DependentUpon>CheckoutInputTextCell.cs</DependentUpon>
@@ -905,6 +905,30 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutSingleInputTextCell.designer.cs">
       <DependentUpon>CheckoutSingleInputTextCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Hotel\Hotel Main Page\Collection View Cell\HotelAmenitiesCollectionCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Collection View Cell\HotelAmenitiesCollectionCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Collection View Class\HotelCollectionViewDelegate.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Collection View Class\HotelCollectionViewSource.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel DIsplay Price\HotelDisplayPriceCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Date and Guest Cell\HotelDateGuestCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Date and Guest Cell\HotelDateGuestCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Label cell\HotelLabelCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Label cell\HotelLabelCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel List Cell\HotelListCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel List Cell\HotelListCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Location Map\HotelLocationMapCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Location Map\HotelLocationMapCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.designer.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />

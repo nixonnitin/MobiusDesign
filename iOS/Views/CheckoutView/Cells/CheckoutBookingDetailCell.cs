@@ -2,7 +2,7 @@
 
 using Foundation;
 using UIKit;
-using Mobius.iOS.Helpers;
+using Mobius.iOS.Helper;
 namespace Mobius.iOS.Views
 {
     public partial class CheckoutBookingDetailCell : UITableViewCell
