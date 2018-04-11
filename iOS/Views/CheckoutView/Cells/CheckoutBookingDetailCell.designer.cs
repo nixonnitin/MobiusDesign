@@ -71,7 +71,7 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIView ViewOfferDetailContainer { get; set; }
+        UIKit.UIView ViewOfferDetailContainer { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

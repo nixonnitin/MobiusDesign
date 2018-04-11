@@ -12,7 +12,7 @@ using CoreGraphics;
 using Foundation;
 using ObjCRuntime;
 //using Mobius.Core.Helpers;
-using Mobius.iOS.Helpers;
+using Mobius.iOS.Helper;
 using Mobius.iOS.Views;
 
 //using Mobius.iOS.Views.OfflineDialog;

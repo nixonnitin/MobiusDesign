@@ -39,6 +39,10 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LabelOfferBooking { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel LabelPerNight { get; set; }
 
         [Outlet]
@@ -55,6 +59,10 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewBottomSeperateLine { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView ViewContentRoomrate { get; set; }
 
         [Outlet]
@@ -64,6 +72,14 @@ namespace Mobius.iOS.Views
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView ViewMemberLogo { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewOfferOnBooking { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewTopSeperateLine { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -97,6 +113,11 @@ namespace Mobius.iOS.Views
                 LabelMemberOnlyRate = null;
             }
 
+            if (LabelOfferBooking != null) {
+                LabelOfferBooking.Dispose ();
+                LabelOfferBooking = null;
+            }
+
             if (LabelPerNight != null) {
                 LabelPerNight.Dispose ();
                 LabelPerNight = null;
@@ -117,6 +138,11 @@ namespace Mobius.iOS.Views
                 LableContentHeading2 = null;
             }
 
+            if (ViewBottomSeperateLine != null) {
+                ViewBottomSeperateLine.Dispose ();
+                ViewBottomSeperateLine = null;
+            }
+
             if (ViewContentRoomrate != null) {
                 ViewContentRoomrate.Dispose ();
                 ViewContentRoomrate = null;
@@ -130,6 +156,16 @@ namespace Mobius.iOS.Views
             if (ViewMemberLogo != null) {
                 ViewMemberLogo.Dispose ();
                 ViewMemberLogo = null;
+            }
+
+            if (ViewOfferOnBooking != null) {
+                ViewOfferOnBooking.Dispose ();
+                ViewOfferOnBooking = null;
+            }
+
+            if (ViewTopSeperateLine != null) {
+                ViewTopSeperateLine.Dispose ();
+                ViewTopSeperateLine = null;
             }
         }
     }

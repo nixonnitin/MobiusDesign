@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Foundation;
 using UIKit;
-using Mobius.iOS.Helpers;
+using Mobius.iOS.Helper;
 using CoreGraphics;
 
 namespace Mobius.iOS.Views

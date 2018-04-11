@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -23,41 +23,41 @@
             <rect key="frame" x="0.0" y="0.0" width="368" height="114"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
-                <rect key="frame" x="0.0" y="0.0" width="368" height="113"/>
+                <rect key="frame" x="0.0" y="0.0" width="368" height="113.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h75-M0-jUF">
-                        <rect key="frame" x="0.0" y="0.0" width="368" height="113.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="98"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOY-Z5-V9m">
-                                <rect key="frame" x="20" y="31" width="328" height="72.5"/>
+                                <rect key="frame" x="20" y="31" width="328" height="57"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expedia" translatesAutoresizingMaskIntoConstraints="NO" id="iC0-5b-3hp">
-                                        <rect key="frame" x="5" y="1" width="70" height="70.5"/>
+                                        <rect key="frame" x="5" y="1" width="70" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="ZzV-Vw-bHX"/>
+                                            <constraint firstAttribute="height" constant="55" id="ZzV-Vw-bHX"/>
                                             <constraint firstAttribute="width" constant="70" id="eel-mM-aem"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Booking" translatesAutoresizingMaskIntoConstraints="NO" id="bPX-cw-dLr">
-                                        <rect key="frame" x="80" y="1" width="70" height="70"/>
+                                        <rect key="frame" x="87" y="3" width="70" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="5Fe-qg-li6"/>
-                                            <constraint firstAttribute="height" constant="70" id="Fha-J8-erg"/>
+                                            <constraint firstAttribute="height" constant="55" id="Fha-J8-erg"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivago" translatesAutoresizingMaskIntoConstraints="NO" id="tTe-iN-qvs">
-                                        <rect key="frame" x="155" y="1" width="70" height="70"/>
+                                        <rect key="frame" x="167" y="2" width="70" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="701-hZ-Sgg"/>
+                                            <constraint firstAttribute="height" constant="55" id="701-hZ-Sgg"/>
                                             <constraint firstAttribute="width" constant="70" id="w3K-4A-VtM"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-B0-ewC">
-                                        <rect key="frame" x="258" y="0.0" width="70" height="72.5"/>
+                                        <rect key="frame" x="253" y="0.0" width="75" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$107.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnK-vT-aRq">
-                                                <rect key="frame" x="9" y="27.5" width="52.5" height="16.5"/>
+                                                <rect key="frame" x="11.5" y="20" width="52.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -67,28 +67,28 @@
                                         <constraints>
                                             <constraint firstItem="mnK-vT-aRq" firstAttribute="centerY" secondItem="XXf-B0-ewC" secondAttribute="centerY" id="0eX-b3-nX0"/>
                                             <constraint firstItem="mnK-vT-aRq" firstAttribute="centerX" secondItem="XXf-B0-ewC" secondAttribute="centerX" id="98j-mY-zwo"/>
-                                            <constraint firstAttribute="width" constant="70" id="Mai-6h-cDY"/>
+                                            <constraint firstAttribute="width" constant="75" id="CdI-Cz-0AR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="bPX-cw-dLr" secondAttribute="bottom" constant="1" id="3k3-Ec-weq"/>
+                                    <constraint firstAttribute="bottom" secondItem="bPX-cw-dLr" secondAttribute="bottom" constant="-1" id="3k3-Ec-weq"/>
                                     <constraint firstAttribute="bottom" secondItem="XXf-B0-ewC" secondAttribute="bottom" id="Bo8-nl-H3e"/>
-                                    <constraint firstItem="bPX-cw-dLr" firstAttribute="leading" secondItem="iC0-5b-3hp" secondAttribute="trailing" constant="5" id="ZJL-mb-DXL"/>
+                                    <constraint firstItem="bPX-cw-dLr" firstAttribute="leading" secondItem="iC0-5b-3hp" secondAttribute="trailing" constant="12" id="ZJL-mb-DXL"/>
                                     <constraint firstItem="XXf-B0-ewC" firstAttribute="top" secondItem="AOY-Z5-V9m" secondAttribute="top" id="ZZT-GL-eKz"/>
-                                    <constraint firstItem="tTe-iN-qvs" firstAttribute="top" secondItem="AOY-Z5-V9m" secondAttribute="top" constant="1" id="aQa-xx-xPx"/>
+                                    <constraint firstItem="tTe-iN-qvs" firstAttribute="top" secondItem="AOY-Z5-V9m" secondAttribute="top" constant="2" id="aQa-xx-xPx"/>
                                     <constraint firstAttribute="bottom" secondItem="iC0-5b-3hp" secondAttribute="bottom" constant="1" id="fEs-O8-DAa"/>
-                                    <constraint firstItem="bPX-cw-dLr" firstAttribute="top" secondItem="AOY-Z5-V9m" secondAttribute="top" constant="1" id="hiB-sa-Npw"/>
-                                    <constraint firstItem="tTe-iN-qvs" firstAttribute="leading" secondItem="bPX-cw-dLr" secondAttribute="trailing" constant="5" id="ntq-ec-WFw"/>
-                                    <constraint firstAttribute="bottom" secondItem="tTe-iN-qvs" secondAttribute="bottom" constant="1" id="o1l-Nf-NoA"/>
+                                    <constraint firstItem="bPX-cw-dLr" firstAttribute="top" secondItem="AOY-Z5-V9m" secondAttribute="top" constant="3" id="hiB-sa-Npw"/>
+                                    <constraint firstItem="tTe-iN-qvs" firstAttribute="leading" secondItem="bPX-cw-dLr" secondAttribute="trailing" constant="10" id="ntq-ec-WFw"/>
+                                    <constraint firstAttribute="bottom" secondItem="tTe-iN-qvs" secondAttribute="bottom" id="o1l-Nf-NoA"/>
                                     <constraint firstItem="iC0-5b-3hp" firstAttribute="leading" secondItem="AOY-Z5-V9m" secondAttribute="leading" constant="5" id="r4g-jL-5dZ"/>
                                     <constraint firstAttribute="trailing" secondItem="XXf-B0-ewC" secondAttribute="trailing" id="u85-rW-rNI"/>
                                     <constraint firstItem="iC0-5b-3hp" firstAttribute="top" secondItem="AOY-Z5-V9m" secondAttribute="top" constant="1" id="uKD-Cd-vQV"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Direct for Guaranteed Best Rates!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scy-F9-rLa">
-                                <rect key="frame" x="82" y="5" width="204" height="20"/>
+                                <rect key="frame" x="82.5" y="5" width="204" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="fgH-NK-dCc"/>
                                 </constraints>
@@ -97,7 +97,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AOY-Z5-V9m" firstAttribute="leading" secondItem="h75-M0-jUF" secondAttribute="leading" constant="20" id="3dl-zB-IhY"/>
                             <constraint firstItem="AOY-Z5-V9m" firstAttribute="top" secondItem="Scy-F9-rLa" secondAttribute="top" constant="26" id="LdK-kZ-A0s"/>
@@ -117,6 +117,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="LabelDirectPrice" destination="mnK-vT-aRq" id="name-outlet-mnK-vT-aRq"/>
+                <outlet property="LabelDirectTextStatic" destination="Scy-F9-rLa" id="name-outlet-Scy-F9-rLa"/>
                 <outlet property="UIMainView_DirectBook" destination="h75-M0-jUF" id="name-outlet-h75-M0-jUF"/>
                 <outlet property="UIView_DirectBook" destination="AOY-Z5-V9m" id="name-outlet-AOY-Z5-V9m"/>
                 <outlet property="UiView_Price" destination="XXf-B0-ewC" id="name-outlet-XXf-B0-ewC"/>
@@ -125,105 +127,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Booking" width="509" height="85"/>
-        <image name="expedia" width="501" height="142"/>
-        <image name="trivago" width="510" height="152"/>
-        <image name="homeIcon" width="32" height="32"/>
-        <image name="nextArrow" width="32" height="32"/>
-        <image name="cal" width="512" height="512"/>
-        <image name="check" width="512" height="512"/>
-        <image name="checkwhite" width="512" height="512"/>
-        <image name="clock" width="2134" height="2134"/>
-        <image name="clockwhite" width="2134" height="2134"/>
-        <image name="defaultimage" width="512" height="512"/>
-        <image name="fb" width="512" height="512"/>
-        <image name="food" width="512" height="512"/>
-        <image name="gym" width="512" height="512"/>
-        <image name="homeAdd" width="512" height="512"/>
-        <image name="homeBestOffer" width="512" height="512"/>
-        <image name="location" width="512" height="512"/>
-        <image name="moon" width="512" height="512"/>
-        <image name="nextarrowhome" width="512" height="512"/>
-        <image name="ratingempty" width="512" height="512"/>
-        <image name="ratingfull" width="512" height="512"/>
-        <image name="ratinghalf" width="512" height="512"/>
-        <image name="homeCal" width="512" height="512"/>
-        <image name="homeCheck" width="512" height="512"/>
-        <image name="homeCheckWhite" width="512" height="512"/>
-        <image name="homeClock" width="2134" height="2134"/>
-        <image name="homeClockWhite" width="2134" height="2134"/>
-        <image name="homeDefaultImage" width="512" height="512"/>
-        <image name="homeFB" width="512" height="512"/>
-        <image name="homeFood" width="512" height="512"/>
-        <image name="homeGym" width="512" height="512"/>
-        <image name="homeLocation" width="512" height="512"/>
-        <image name="homeMoon" width="512" height="512"/>
-        <image name="homeNextArrow" width="32" height="32"/>
-        <image name="homeNextArrowHome" width="512" height="512"/>
-        <image name="homeRatingEmpty" width="512" height="512"/>
-        <image name="homeRatingFull" width="512" height="512"/>
-        <image name="homeRatingHalf" width="512" height="512"/>
-        <image name="homeParking" width="512" height="512"/>
-        <image name="homePencil" width="512" height="512"/>
-        <image name="homePerson" width="512" height="512"/>
-        <image name="homePersonWhite" width="512" height="512"/>
-        <image name="homeRoom" width="512" height="512"/>
-        <image name="homeSettings" width="512" height="512"/>
-        <image name="homeSwim" width="512" height="512"/>
-        <image name="homeWiFi" width="512" height="512"/>
-        <image name="homeicon" width="32" height="32"/>
-        <image name="nextarrow" width="32" height="32"/>
-        <image name="hotelRoomTest" width="1920" height="1200"/>
-        <image name="add-1" width="512" height="512"/>
-        <image name="arrow-white" width="50" height="34"/>
-        <image name="arrow" width="50" height="34"/>
-        <image name="best-offer" width="512" height="512"/>
-        <image name="check-white" width="512" height="512"/>
-        <image name="clock-white" width="2134" height="2134"/>
-        <image name="empty" width="512" height="512"/>
-        <image name="food-1" width="512" height="512"/>
-        <image name="full" width="512" height="512"/>
-        <image name="grey-cross-1" width="512" height="512"/>
-        <image name="gym-1" width="512" height="512"/>
-        <image name="half" width="512" height="512"/>
-        <image name="img" width="512" height="512"/>
-        <image name="minus" width="512" height="512"/>
-        <image name="moon-1" width="512" height="512"/>
-        <image name="next-arrrow-1" width="512" height="512"/>
-        <image name="parking-1" width="512" height="512"/>
-        <image name="pencil-1" width="512" height="512"/>
-        <image name="person-1" width="512" height="512"/>
-        <image name="person-white" width="512" height="512"/>
-        <image name="red-cross-1" width="512" height="512"/>
-        <image name="room-1" width="512" height="512"/>
-        <image name="search-1" width="512" height="512"/>
-        <image name="settings-1" width="512" height="512"/>
-        <image name="swim-1" width="512" height="512"/>
-        <image name="tag" width="512" height="515"/>
-        <image name="wifi-1" width="512" height="512"/>
-        <image name="BuildingMobius" width="259" height="194"/>
-        <image name="calWhite" width="512" height="512"/>
-        <image name="handicaped-white" width="512" height="512"/>
-        <image name="heart-line" width="512" height="512"/>
-        <image name="heart" width="512" height="512"/>
-        <image name="hotel-calendar-white" width="512" height="512"/>
-        <image name="locationWhite" width="512" height="512"/>
-        <image name="lock-white" width="512" height="512"/>
-        <image name="moon-white" width="512" height="512"/>
-        <image name="personWhite" width="512" height="512"/>
-        <image name="pet-white" width="512" height="512"/>
-        <image name="spoon-white" width="512" height="512"/>
-        <image name="top-bar-calendar" width="512" height="512"/>
-        <image name="gymWhiteBack" width="512" height="512"/>
-        <image name="homePencilWhite" width="30" height="30"/>
-        <image name="ArrowWhiteNext" width="50" height="50"/>
-        <image name="ArrowWhitePrevious" width="50" height="50"/>
-        <image name="expedio" width="50" height="50"/>
-        <image name="bgblur.png" width="240" height="320"/>
-        <image name="Triangle.png" width="54" height="36"/>
-        <image name="user.png" width="18" height="18"/>
-        <image name="dollarWhite" width="30" height="30"/>
-        <image name="starRoundBlue" width="30" height="30"/>
-        <image name="Exclamatory" width="30" height="30"/>
+        <image name="Booking" width="254" height="42"/>
+        <image name="expedia" width="250" height="71"/>
+        <image name="trivago" width="255" height="76"/>
     </resources>
 </document>

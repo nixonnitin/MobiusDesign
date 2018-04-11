@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -34,13 +35,17 @@ namespace Mobius.iOS.Views
         {
             TableRoomView.RowHeight = UITableView.AutomaticDimension;
             TableRoomView.EstimatedRowHeight = 100;
-
+            TableRoomView.BackgroundColor = MobiusHelper.GetColorLightGraySeperator();
 
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("SelectedRoomCell", NSBundle.MainBundle), "SelectedRoomCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomNameCell", NSBundle.MainBundle), "RoomNameCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("DirectBookCell", NSBundle.MainBundle), "DirectBookCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("DisplayPriceTextCell", NSBundle.MainBundle), "DisplayPriceTextCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomRateCell", NSBundle.MainBundle), "RoomRateCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("RoomDescriptionCell", NSBundle.MainBundle), "RoomDescriptionCell");
+
+
+
 
 
             TableRoomView.Source = new RoomTableSource(TableRoomView, sections);

@@ -466,6 +466,14 @@
     <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\pencil-grey-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\pencil-grey-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\pencilGray.imageset\pencil-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowDownGray.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowDownGray.imageset\down-arrow-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowDownGray.imageset\down-arrow-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrowDownGray.imageset\down-arrow-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\up-arrow-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\up-arrow-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ArrayUpGray.imageset\up-arrow-grey.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -579,6 +587,7 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
+    <InterfaceDefinition Include="Views\RoomView\Cells\RoomDescriptionCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -855,6 +864,10 @@
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.designer.cs" />
     <Compile Include="Helper\MobiusHelper.cs" />
+    <Compile Include="Views\RoomView\Cells\RoomDescriptionCell.cs" />
+    <Compile Include="Views\RoomView\Cells\RoomDescriptionCell.designer.cs">
+      <DependentUpon>RoomDescriptionCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
@@ -878,7 +891,6 @@
     <BundleResource Include="Resources\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
-    <BundleResource Include="Resources\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

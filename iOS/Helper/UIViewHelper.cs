@@ -3,7 +3,7 @@ using System.Drawing;
 using CoreGraphics;
 using UIKit;
 
-namespace Mobius.iOS.Helpers
+namespace Mobius.iOS.Helper
 {
 	public static class UIViewHelper
 	{
@@ -97,6 +97,26 @@ namespace Mobius.iOS.Helpers
             view.Layer.ShadowRadius = 5.0f;
             view.Layer.ShadowOffset = new System.Drawing.SizeF(5f, 5f);
         }
+
+
+        /// <summary>
+        /// Sets the shadow.
+        /// </summary>
+        /// <param name="view">View.</param>
+        /// <param name="cornerRadius">Corner radius.</param>
+        /// <param name="shadowOpacity">Shadow opacity.</param>
+        /// <param name="shadowRadius">Shadow radius.</param>
+        /// <param name="sizeFWidth">Size FW idth.</param>
+        /// <param name="sizeFHeight">Size FH eight.</param>
+        public static void SetShadow(UIView view, int cornerRadius = 0, float shadowOpacity = 1.0f,float shadowRadius = 5.0f,float sizeFWidth = 5.0f, float sizeFHeight = 5.0f)
+        {
+           view.Layer.CornerRadius = cornerRadius;
+           view.Layer.ShadowColor = UIColor.Black.CGColor;
+           view.Layer.ShadowOpacity = shadowOpacity;
+           view.Layer.ShadowRadius = shadowRadius;
+
+           view.Layer.ShadowOffset = new System.Drawing.SizeF(sizeFWidth, sizeFHeight);
+        } 
 
         /// <summary>
         /// Gets the navigation controller.

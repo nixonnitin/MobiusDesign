@@ -15,6 +15,14 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LabelDirectPrice { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LabelDirectTextStatic { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView UIMainView_DirectBook { get; set; }
 
         [Outlet]
@@ -27,6 +35,16 @@ namespace Mobius.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (LabelDirectPrice != null) {
+                LabelDirectPrice.Dispose ();
+                LabelDirectPrice = null;
+            }
+
+            if (LabelDirectTextStatic != null) {
+                LabelDirectTextStatic.Dispose ();
+                LabelDirectTextStatic = null;
+            }
+
             if (UIMainView_DirectBook != null) {
                 UIMainView_DirectBook.Dispose ();
                 UIMainView_DirectBook = null;

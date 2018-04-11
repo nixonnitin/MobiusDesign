@@ -1,6 +1,7 @@
 ﻿using System;
 using CoreAnimation;
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -31,8 +32,13 @@ namespace Mobius.iOS.Views
             maskLayer.Path = maskPath.CGPath;
             UiView_Price.Layer.Mask = maskLayer;
 
-            UIMainView_DirectBook.Layer.BackgroundColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f).CGColor;
+            UiView_Price.BackgroundColor = UIColor.Black;
 
+            LabelDirectPrice.Font = MobiusHelper.GetFontBoldWithSize(14);
+            LabelDirectPrice.TextColor = UIColor.White;
+
+            LabelDirectTextStatic.Font = MobiusHelper.GetFontItalicWithSize(12);
+            UIMainView_DirectBook.BackgroundColor = MobiusHelper.GetColorDarkGreen();
 
 		}
 	}

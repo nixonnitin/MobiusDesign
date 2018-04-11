@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Foundation;
-using Mobius.iOS.Helpers;
+using Mobius.iOS.Helper;
 using Mobius.Services;
 using UIKit;
 

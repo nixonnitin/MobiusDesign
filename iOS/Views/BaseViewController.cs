@@ -6,7 +6,7 @@ using Autofac;
 using Mobius.Core.ViewModels;
 using Plugin.Connectivity.Abstractions;
 using Plugin.Connectivity;
-using Mobius.iOS.Helpers;
+using Mobius.iOS.Helper;
 
 using System.Drawing;
 using Mobius.Services;

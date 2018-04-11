@@ -31,12 +31,12 @@ namespace Mobius.iOS.Views
             {
                 var cell = (HomeButtonCell)tableView.DequeueReusableCell(HomeButtonCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.BookYourStay.BackgroundColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f);
+                cell.bookYourStay.BackgroundColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f);
                 //cell.BookYourStay.Layer.BorderWidth = 1;
                 //cell.BookYourStay.Layer.BorderColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f).CGColor;
                 //                self.yourView.layer.borderWidth = 1
                 //self.yourView.layer.borderColor = UIColor(red: 222 / 255, green: 225 / 255, blue: 227 / 255, alpha: 1).cgColor
-                cell.BookYourStay.SetTitleColor(UIColor.White, UIControlState.Normal);
+                cell.bookYourStay.SetTitleColor(UIColor.White, UIControlState.Normal);
                 return cell;
             }
             else if (indexPath.Section == 2)
@@ -195,12 +195,12 @@ namespace Mobius.iOS.Views
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ConstraintSelectedViewWidth.Constant = 0;
                 //cell.LabelPointsDetail.Hidden = true;
-                cell.BookYourStay.BackgroundColor = UIColor.White;
-                cell.BookYourStay.Layer.BorderWidth = 1;
-                cell.BookYourStay.Layer.BorderColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f).CGColor;
+                cell.bookYourStay.BackgroundColor = UIColor.White;
+                cell.bookYourStay.Layer.BorderWidth = 1;
+                cell.bookYourStay.Layer.BorderColor = new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f).CGColor;
                 //                self.yourView.layer.borderWidth = 1
                 //self.yourView.layer.borderColor = UIColor(red: 222 / 255, green: 225 / 255, blue: 227 / 255, alpha: 1).cgColor
-                cell.BookYourStay.SetTitleColor(new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f), UIControlState.Normal);
+                cell.bookYourStay.SetTitleColor(new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f), UIControlState.Normal);
                 return cell;
             }
             else

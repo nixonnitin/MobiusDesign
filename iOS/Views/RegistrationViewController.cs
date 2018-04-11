@@ -7,7 +7,7 @@ using Mobius.Entities;
 using Mobius.Services;
 using Mobius.Data;
 using System.IO;
-using Mobius.iOS.Helpers;
+using Mobius.iOS.Helper;
 using System.Drawing;
 
 namespace Mobius.iOS.Views
