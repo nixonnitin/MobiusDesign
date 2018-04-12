@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7p-bI-wIO">
-                        <rect key="frame" x="5" y="5" width="152.5" height="45"/>
+                        <rect key="frame" x="15" y="5" width="142.5" height="45"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personGrey" translatesAutoresizingMaskIntoConstraints="NO" id="G9b-xj-sin">
                                 <rect key="frame" x="5" y="12.5" width="20" height="20"/>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="45B-nV-ZvZ">
-                                <rect key="frame" x="30" y="12" width="117.5" height="21"/>
+                                <rect key="frame" x="30" y="12" width="107.5" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -46,10 +46,10 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poN-xP-xrb">
-                        <rect key="frame" x="162.5" y="5" width="152.5" height="45"/>
+                        <rect key="frame" x="162.5" y="5" width="142.5" height="45"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-lv-mlQ">
-                                <rect key="frame" x="5" y="14" width="142.5" height="17"/>
+                                <rect key="frame" x="5" y="14" width="132.5" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,8 +70,8 @@
                     <constraint firstItem="poN-xP-xrb" firstAttribute="leading" secondItem="I7p-bI-wIO" secondAttribute="trailing" constant="5" id="QNU-yT-6vx"/>
                     <constraint firstItem="I7p-bI-wIO" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="Xvl-lZ-R3J"/>
                     <constraint firstItem="poN-xP-xrb" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="dhB-ce-JoQ"/>
-                    <constraint firstAttribute="trailing" secondItem="poN-xP-xrb" secondAttribute="trailing" constant="5" id="hd9-Tw-ejC"/>
-                    <constraint firstItem="I7p-bI-wIO" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="5" id="iIC-v7-wxh"/>
+                    <constraint firstAttribute="trailing" secondItem="poN-xP-xrb" secondAttribute="trailing" constant="15" id="hd9-Tw-ejC"/>
+                    <constraint firstItem="I7p-bI-wIO" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="iIC-v7-wxh"/>
                     <constraint firstItem="poN-xP-xrb" firstAttribute="width" secondItem="I7p-bI-wIO" secondAttribute="width" id="n36-2i-zYa"/>
                 </constraints>
             </tableViewCellContentView>

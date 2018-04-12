@@ -498,6 +498,14 @@
     <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\phone-grey-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\phone-grey-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\phoneGrey.imageset\phone-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starGrey.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\starGrey.imageset\star-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starGrey.imageset\star-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starGrey.imageset\star-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -622,6 +630,10 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPromocodeCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutTermsConditionsCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutNextCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -933,6 +945,22 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.designer.cs">
       <DependentUpon>CheckoutSignupInfoCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPromocodeCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPromocodeCell.designer.cs">
+      <DependentUpon>CheckoutPromocodeCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutTermsConditionsCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutTermsConditionsCell.designer.cs">
+      <DependentUpon>CheckoutTermsConditionsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutNextCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutNextCell.designer.cs">
+      <DependentUpon>CheckoutNextCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.designer.cs">
+      <DependentUpon>CheckoutPriceBreakdownCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -32,7 +32,7 @@ namespace Mobius.iOS.Views
             MobiusHelper.GetRoundedCornerFromSideOfView(ViewOfferDetailContainer, UIRectCorner.BottomLeft|UIRectCorner.BottomRight,10,10);
             UIViewHelper.SetShadow(ViewOfferDetailContainer, 5, 0.3f, 3f, 0.2f, 0.2f);
             //MobiusHelper.GetRoundedCornerFromSideOfView(ViewOfferDetailContainer, );
-            MobiusHelper.GetRoundedCornerFromSideOfView(ViewDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
+            //MobiusHelper.GetRoundedCornerFromSideOfView(ViewDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
             //ViewDetailContainer.Layer.CornerRadius = 5;
 
             MobiusHelper.GetRoundedCornerFromSideOfView(ImageHotel, UIRectCorner.TopRight);

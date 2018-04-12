@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kD-DO-9D8">
-                        <rect key="frame" x="5" y="5" width="310" height="45"/>
+                        <rect key="frame" x="15" y="5" width="290" height="45"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailGrey" translatesAutoresizingMaskIntoConstraints="NO" id="ZMk-GS-1Qg">
                                 <rect key="frame" x="5" y="12.5" width="20" height="20"/>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXx-pG-Ijw">
-                                <rect key="frame" x="30" y="5" width="275" height="35"/>
+                                <rect key="frame" x="30" y="5" width="255" height="35"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -51,9 +51,9 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="0kD-DO-9D8" secondAttribute="bottom" constant="5" id="1by-tT-8bT"/>
                     <constraint firstItem="0kD-DO-9D8" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="E6l-sn-2Dj"/>
-                    <constraint firstItem="0kD-DO-9D8" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="5" id="Zbc-kh-6Tg"/>
+                    <constraint firstItem="0kD-DO-9D8" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="Zbc-kh-6Tg"/>
                     <constraint firstItem="0kD-DO-9D8" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="gTF-c3-N3A"/>
-                    <constraint firstAttribute="trailing" secondItem="0kD-DO-9D8" secondAttribute="trailing" constant="5" id="uq4-Np-jf9"/>
+                    <constraint firstAttribute="trailing" secondItem="0kD-DO-9D8" secondAttribute="trailing" constant="15" id="uq4-Np-jf9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
