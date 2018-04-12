@@ -170,22 +170,11 @@ namespace Mobius.iOS.Helper
 
         public static void GetRoundedCornerFromSideOfView(UIView view,UIRectCorner corners,float cornerWidth = 5f,float cornerHeight = 5f)
         {
-            //UIBezierPath.FromRoundedRect()
-            //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, UIRectCorner.BottomRight | UIRectCorner.TopRight, new CoreGraphics.CGSize(5, 5));
-            //UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, corners, new CoreGraphics.CGSize(5, 5));
-            //CAShapeLayer maskLayer = new CAShapeLayer();
-            //maskLayer.Frame = view.Bounds;
-            //maskLayer.Path = maskPath.CGPath;
-            //view.Layer.Mask = maskLayer;
-            //return view;
-
-
             UIBezierPath maskPath = UIBezierPath.FromRoundedRect(view.Bounds, corners, new CoreGraphics.CGSize(cornerWidth, cornerHeight));
            CAShapeLayer maskLayer = new CAShapeLayer();
             maskLayer.Frame = view.Bounds;
            maskLayer.Path = maskPath.CGPath;
             view.Layer.Mask = maskLayer; 
         }
-
     }
 }
