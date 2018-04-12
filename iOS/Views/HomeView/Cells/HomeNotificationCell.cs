@@ -37,5 +37,16 @@ namespace Mobius.iOS.Views
 
         }
 
+        public UILabel labelGrayBelow{
+            get { return LabelGrayBelow; }
+            set { LabelGrayBelow = value; }
+        }
+
+        public UILabel labelMainPopUp
+        {
+            get { return LabelMainPopUp; }
+            set { LabelMainPopUp = value; }
+        }
+
     }
 }

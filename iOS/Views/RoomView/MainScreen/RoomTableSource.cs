@@ -47,20 +47,17 @@ namespace Mobius.iOS.Views
                 case 3:
                     var cell3 = (DisplayPriceTextCell)tableView.DequeueReusableCell(DisplayPriceTextCell.Key, indexPath);
                     cell3.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    //UIViewHelper.SetShadow(cell3, 2); 
+            
                     return cell3;
                 case 4:
                     var cell4 = (RoomRateCell)tableView.DequeueReusableCell(RoomRateCell.Key, indexPath);
                     cell4.SelectionStyle = UITableViewCellSelectionStyle.None;
-
-                    //UIViewHelper.SetShadow(cell4, 2); 
+                     
                     return cell4;
                 case 6:
                     var cell6 = (RoomDescriptionCell)tableView.DequeueReusableCell(RoomDescriptionCell.Key, indexPath);
                     cell6.SelectionStyle = UITableViewCellSelectionStyle.None;
-
-                    //UIViewHelper.SetShadow(cell4, 2); 
-                    return cell6;
+                         return cell6;
                 case 5 :
                     
                     var cell5 = (HomeCollectionContainerCell)tableView.DequeueReusableCell(HomeCollectionContainerCell.Key, indexPath);
@@ -84,33 +81,12 @@ namespace Mobius.iOS.Views
                     return cellDefault;
                    
             }
-
-
-            /*
-            if (indexPath.Section == 0)
-            {
-                var cell = (HomeIntroductionCell)tableView.DequeueReusableCell(HomeIntroductionCell.Key, indexPath);
-                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-                return cell;
-            }
-            */
            
         }
 
         public override nint RowsInSection(UITableView tableView, nint section)
         {
             return 1;
-            /*
-            if (section == 10 || section == 11 || section == 15)
-            {
-                return 3;
-            }
-            else
-            {
-                return 1;
-            }
-            */
         }
 
         public override nint NumberOfSections(UITableView tableView)

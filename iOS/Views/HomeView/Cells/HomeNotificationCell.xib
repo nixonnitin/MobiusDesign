@@ -32,22 +32,36 @@
                             <constraint firstAttribute="width" constant="60" id="Pmm-uD-Q9B"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 points added to your loyalty account" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPt-kR-WXP" misplaced="YES">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 points added to your loyalty account" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPt-kR-WXP">
                         <rect key="frame" x="33" y="125" width="304" height="84"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                         <color key="textColor" red="0.25490196079999999" green="0.69411764710000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enhancement has been added to your booking and will be payable on hotel checkin" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxJ-Sg-7dr">
+                        <rect key="frame" x="20" y="219" width="331" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="HPt-kR-WXP" firstAttribute="leading" secondItem="K0E-v0-F57" secondAttribute="leadingMargin" constant="17" id="EMl-h8-vjU"/>
+                    <constraint firstItem="WxJ-Sg-7dr" firstAttribute="top" secondItem="HPt-kR-WXP" secondAttribute="bottom" constant="10" id="R2r-Uo-XgG"/>
                     <constraint firstAttribute="bottomMargin" secondItem="HPt-kR-WXP" secondAttribute="bottom" constant="49.5" id="WGi-7s-FX6"/>
                     <constraint firstItem="R5U-bN-3o3" firstAttribute="centerX" secondItem="K0E-v0-F57" secondAttribute="centerX" id="WIA-JC-l0D"/>
                     <constraint firstItem="HPt-kR-WXP" firstAttribute="top" secondItem="R5U-bN-3o3" secondAttribute="bottom" constant="8" id="Wp9-2Z-YqR"/>
+                    <constraint firstAttribute="trailing" secondItem="WxJ-Sg-7dr" secondAttribute="trailing" constant="20" id="dOr-c7-HGL"/>
                     <constraint firstItem="R5U-bN-3o3" firstAttribute="top" secondItem="K0E-v0-F57" secondAttribute="topMargin" constant="49" id="oIN-Hs-Xyj"/>
+                    <constraint firstItem="WxJ-Sg-7dr" firstAttribute="leading" secondItem="K0E-v0-F57" secondAttribute="leading" constant="20" id="osV-uG-1oW"/>
                     <constraint firstAttribute="trailingMargin" secondItem="HPt-kR-WXP" secondAttribute="trailing" constant="18" id="sed-nf-7OR"/>
+                    <constraint firstItem="WxJ-Sg-7dr" firstAttribute="centerX" secondItem="K0E-v0-F57" secondAttribute="centerX" id="x2S-q9-W5J"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="LabelGrayBelow" destination="WxJ-Sg-7dr" id="name-outlet-WxJ-Sg-7dr"/>
+                <outlet property="LabelMainPopUp" destination="HPt-kR-WXP" id="name-outlet-HPt-kR-WXP"/>
+            </connections>
             <point key="canvasLocation" x="78.5" y="36.5"/>
         </tableViewCell>
     </objects>
@@ -139,6 +153,32 @@
         <image name="spoon-white" width="512" height="512"/>
         <image name="top-bar-calendar" width="512" height="512"/>
         <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="homePencilWhite" width="30" height="30"/>
+        <image name="ArrowWhiteNext" width="50" height="50"/>
+        <image name="ArrowWhitePrevious" width="50" height="50"/>
+        <image name="Booking" width="509" height="85"/>
+        <image name="expedia" width="501" height="142"/>
+        <image name="expedio" width="50" height="50"/>
+        <image name="trivago" width="510" height="152"/>
+        <image name="dollarWhite" width="30" height="30"/>
+        <image name="starRoundBlue" width="30" height="30"/>
+        <image name="Exclamatory" width="35" height="35"/>
+        <image name="128" width="128" height="128"/>
+        <image name="american" width="512" height="512"/>
+        <image name="chat" width="512" height="512"/>
+        <image name="phone-1" width="512" height="512"/>
+        <image name="red-bg" width="512" height="88"/>
+        <image name="lake-bg" width="1125" height="479"/>
+        <image name="owl" width="512" height="512"/>
+        <image name="pencilGray" width="512" height="512"/>
+        <image name="ArrowDownGray" width="512" height="512"/>
+        <image name="ArrayUpGray" width="512" height="512"/>
+        <image name="personGrey" width="512" height="512"/>
+        <image name="checkboxChecked" width="512" height="512"/>
+        <image name="checkboxUncheck" width="512" height="512"/>
+        <image name="emailGrey" width="512" height="512"/>
+        <image name="lockGrey" width="512" height="512"/>
+        <image name="phoneGrey" width="512" height="512"/>
         <image name="bgblur.png" width="240" height="320"/>
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>

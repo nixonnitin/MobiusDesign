@@ -520,6 +520,9 @@
     <Folder Include="Views\CheckoutView\" />
     <Folder Include="Views\CheckoutView\MainView\" />
     <Folder Include="Views\CheckoutView\Cells\" />
+    <Folder Include="Views\BuyEnhancement\" />
+    <Folder Include="Views\BuyEnhancement\Cells\" />
+    <Folder Include="Views\BuyEnhancement\MainScreen\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -622,6 +625,8 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.xib" />
+    <InterfaceDefinition Include="Views\BuyEnhancement\MainScreen\BuyEnhancementViewController.xib" />
+    <InterfaceDefinition Include="Views\BuyEnhancement\Cells\BreakfastViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -933,6 +938,15 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.designer.cs">
       <DependentUpon>CheckoutSignupInfoCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuyEnhancement\MainScreen\BuyEnhancementViewController.cs" />
+    <Compile Include="Views\BuyEnhancement\MainScreen\BuyEnhancementViewController.designer.cs">
+      <DependentUpon>BuyEnhancementViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BuyEnhancement\MainScreen\BuyEnhancementTableSource.cs" />
+    <Compile Include="Views\BuyEnhancement\Cells\BreakfastViewCell.cs" />
+    <Compile Include="Views\BuyEnhancement\Cells\BreakfastViewCell.designer.cs">
+      <DependentUpon>BreakfastViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

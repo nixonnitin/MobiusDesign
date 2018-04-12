@@ -2,6 +2,7 @@
 using CoreAnimation;
 using CoreGraphics;
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -25,8 +26,8 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
-		public override void AwakeFromNib()
-		{
+        public override void AwakeFromNib()
+        {
             base.AwakeFromNib();
             this.Layer.BackgroundColor = UIColor.White.CGColor;
             this.Layer.CornerRadius = 5;
@@ -48,10 +49,45 @@ namespace Mobius.iOS.Views
             this.Layer.CornerRadius = 5;
             //this.Layer.BackgroundColor = UIColor.White.CGColor;
 
+            UIViewHelper.SetShadow(this, 5, 0.3f, 3f, 0.2f, 0.2f); 
             //this.Layer.ShadowPath = UIBezierPath.FromRect(this.Layer.Bounds).CGPath;
 
 
 
-		}
+        }
+
+        public UIButton buttonHotelImageEdit
+        {
+            get { return ButtonHotelImageEdit; }
+            set { ButtonHotelImageEdit = value; }
+        }
+
+        public NSLayoutConstraint constraintHotelImageHeight {
+            get { return ConstraintHotelImageHeight; }
+            set { ConstraintHotelImageHeight = value; }
+
+        }
+
+        public NSLayoutConstraint constraintHotelNameTop{
+            get { return ConstraintHotelNameTop; }
+            set { ConstraintHotelNameTop = value; }
+        }
+
+
+        public UILabel labelHotelName
+        {
+            get { return LabelHotelName; }
+            set { LabelHotelName = value; }
+        }
+
+        public UILabel labelAdvabcePurchaseRate
+        {
+            get { return LabelAdvabcePurchaseRate; }
+            set { LabelAdvabcePurchaseRate = value; }
+        }
+
+
+
+
 	}
 }

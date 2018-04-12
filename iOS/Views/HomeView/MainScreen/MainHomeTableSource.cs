@@ -187,6 +187,7 @@ namespace Mobius.iOS.Views
             {
                 var cell = (HomeNotificationCell)tableView.DequeueReusableCell(HomeNotificationCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                cell.labelGrayBelow.Hidden = true;
                 return cell;
             }
             else if (indexPath.Section == 17)

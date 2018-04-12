@@ -93,12 +93,12 @@ namespace Mobius.iOS.Views
 		{
             if(indexPath.Section == 2){
                 var cell = (CheckoutSignupInfoCell)tableView.DequeueReusableCell(CheckoutSignupInfoCell.Key, indexPath);
-                System.Console.WriteLine("Tapped");
-                if(cell.ConstraintViewHeight.Constant <= 0){
-                    cell.ConstraintViewHeight.Constant = 82.5f;
-                }else{
-                    cell.ConstraintViewHeight.Constant = 0;
-                }
+                //System.Console.WriteLine("Tapped");
+                //if(cell.ConstraintViewHeight.Constant <= 0){
+                //    cell.ConstraintViewHeight.Constant = 82.5f;
+                //}else{
+                //    cell.ConstraintViewHeight.Constant = 0;
+                //}
                 //tableView.reloadRows(at: [IndexPath(row: label.tag, section: 0)], with: .fade)
                 NSIndexPath[] indexPaths = new NSIndexPath[1];
                 indexPaths[0] = indexPath;

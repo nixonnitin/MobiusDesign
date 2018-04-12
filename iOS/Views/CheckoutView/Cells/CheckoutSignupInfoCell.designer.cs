@@ -15,7 +15,7 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.NSLayoutConstraint ConstraintViewHeight { get; set; }
+        UIKit.NSLayoutConstraint ConstraintViewHeight { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]

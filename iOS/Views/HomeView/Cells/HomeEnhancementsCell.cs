@@ -1,6 +1,7 @@
 ﻿using System;
 using CoreGraphics;
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -30,7 +31,7 @@ namespace Mobius.iOS.Views
             //this.Layer.ShadowRadius = 4;
             this.Layer.CornerRadius = 5;
             //this.Layer.BackgroundColor = UIColor.Red.CGColor;
-
+            UIViewHelper.SetShadow(this, 5, 0.3f, 3f, 0.2f, 0.2f); 
             //this.Layer.ShadowPath = UIBezierPath.FromRect(this.Layer.Bounds).CGPath;
 
 
