@@ -104,27 +104,27 @@ namespace Mobius.iOS.Views
                 {
                     var cell = (CheckoutPriceBreakdownCell)tableView.DequeueReusableCell(CheckoutPriceBreakdownCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ViewSeperator.Hidden = true;
+                    cell.viewSeperator.Hidden = true;
                     return cell;
                 }
                 else if (indexPath.Row == 1)
                 {
                     var cell = (CheckoutPriceBreakdownCell)tableView.DequeueReusableCell(CheckoutPriceBreakdownCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ViewSeperator.Hidden = false;
-                    cell.LabelAmount.TextColor = MobiusHelper.GetColorGray();
-                    cell.LabelAmount.Font = MobiusHelper.GetFontRegularWithSize(14);
-                    cell.LabelDetail.TextColor = MobiusHelper.GetColorGray();
-                    cell.LabelDetail.Font = MobiusHelper.GetFontRegularWithSize(14);
-                    cell.ViewSeperator.BackgroundColor = MobiusHelper.GetColorBorderGrey();
+                    cell.viewSeperator.Hidden = false;
+                    cell.labelAmount.TextColor = MobiusHelper.GetColorGray();
+                    cell.labelAmount.Font = MobiusHelper.GetFontRegularWithSize(14);
+                    cell.labelDetail.TextColor = MobiusHelper.GetColorGray();
+                    cell.labelDetail.Font = MobiusHelper.GetFontRegularWithSize(14);
+                    cell.viewSeperator.BackgroundColor = MobiusHelper.GetColorBorderGrey();
                     return cell;
                     
                 }else{
                     var cell = (CheckoutPriceBreakdownCell)tableView.DequeueReusableCell(CheckoutPriceBreakdownCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ViewSeperator.Hidden = true;
-                    cell.LabelAmount.Font = MobiusHelper.GetFontBoldWithSize(16);
-                    cell.LabelDetail.Font = MobiusHelper.GetFontBoldWithSize(16);
+                    cell.viewSeperator.Hidden = true;
+                    cell.labelAmount.Font = MobiusHelper.GetFontBoldWithSize(16);
+                    cell.labelDetail.Font = MobiusHelper.GetFontBoldWithSize(16);
                     return cell;
                 }
 
