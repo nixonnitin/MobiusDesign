@@ -506,6 +506,14 @@
     <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\parking-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\parking-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\parking-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -639,6 +647,7 @@
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutTermsConditionsCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutNextCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -975,6 +984,10 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.designer.cs">
       <DependentUpon>CheckoutPriceBreakdownCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.designer.cs">
+      <DependentUpon>SearchAmentiesButtonViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
