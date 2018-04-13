@@ -526,6 +526,10 @@
     <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\offer-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\offer-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\offer.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -660,6 +664,7 @@
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutNextCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutScanCardButtonCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1000,6 +1005,10 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.designer.cs">
       <DependentUpon>CheckoutPaymentOptionButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutScanCardButtonCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutScanCardButtonCell.designer.cs">
+      <DependentUpon>CheckoutScanCardButtonCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
