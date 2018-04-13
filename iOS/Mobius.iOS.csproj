@@ -506,6 +506,14 @@
     <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\blueArrowDown.imageset\blue-arrow.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\parking-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\parking-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ParkingImage.imageset\parking-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey.png" />
     <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\Contents.json" />
     <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\blue-bg-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\blue-bg-2.png" />
@@ -555,6 +563,9 @@
     <Folder Include="Views\BuyEnhancement\" />
     <Folder Include="Views\BuyEnhancement\Cells\" />
     <Folder Include="Views\BuyEnhancement\MainScreen\" />
+    <Folder Include="Views\RewardCenter\" />
+    <Folder Include="Views\RewardCenter\Cells\" />
+    <Folder Include="Views\RewardCenter\MainScreen\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -663,8 +674,12 @@
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutTermsConditionsCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutNextCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.xib" />
+    <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutScanCardButtonCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\MainScreen\RewardCenterViewController.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\BreakLineViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1002,6 +1017,10 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.designer.cs">
       <DependentUpon>CheckoutPriceBreakdownCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.cs" />
+    <Compile Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.designer.cs">
+      <DependentUpon>SearchAmentiesButtonViewCell.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.designer.cs">
       <DependentUpon>CheckoutPaymentOptionButtons.cs</DependentUpon>
@@ -1009,6 +1028,23 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutScanCardButtonCell.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutScanCardButtonCell.designer.cs">
       <DependentUpon>CheckoutScanCardButtonCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\MainScreen\RewardCenterViewController.cs" />
+    <Compile Include="Views\RewardCenter\MainScreen\RewardCenterViewController.designer.cs">
+      <DependentUpon>RewardCenterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\MainScreen\RewardCenterTableSource.cs" />
+    <Compile Include="TableRoomView.cs" />
+    <Compile Include="TableRoomView.designer.cs">
+      <DependentUpon>TableRoomView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.designer.cs">
+      <DependentUpon>RewardCenterMemberHeaderViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\BreakLineViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\BreakLineViewCell.designer.cs">
+      <DependentUpon>BreakLineViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

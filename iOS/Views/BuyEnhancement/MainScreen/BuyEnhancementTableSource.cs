@@ -69,9 +69,7 @@ namespace Mobius.iOS.Views
                     var cell5 = (BreakfastViewCell)tableView.DequeueReusableCell(BreakfastViewCell.Key, indexPath);
                     cell5.SelectionStyle = UITableViewCellSelectionStyle.None;
                     return cell5;
-                 
-
-
+      
                 default:
                     var cellDefault = new UITableViewCell();
                     return cellDefault;

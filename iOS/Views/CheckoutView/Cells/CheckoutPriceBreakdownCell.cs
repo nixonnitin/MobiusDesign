@@ -30,6 +30,12 @@ namespace Mobius.iOS.Views
         }
 
 
+        public UILabel labelAmount
+        {
+            get { return LabelAmount; }
+            set { LabelAmount = value; }
+        }
+
         public UILabel labelDetail
         {
             get { return LabelDetail; }
@@ -42,11 +48,6 @@ namespace Mobius.iOS.Views
             set { ViewSeperator = value; }
         }
 
-        public UILabel labelAmount
-        {
-            get { return LabelAmount; }
-            set { LabelAmount = value; }
-        }
-
+    
     }
 }
