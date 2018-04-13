@@ -78,7 +78,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advance Purchase Rate" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZM-wd-c47">
-                        <rect key="frame" x="23" y="168" width="237" height="16.5"/>
+                        <rect key="frame" x="27" y="168" width="233" height="16.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16.5" id="Gc4-Js-6c7"/>
                         </constraints>
@@ -87,7 +87,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calgary City Centre" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-ls-f0l">
-                        <rect key="frame" x="23" y="186.5" width="226" height="21.5"/>
+                        <rect key="frame" x="27" y="186.5" width="222" height="21.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
                         <nil key="textColor"/>
                     </label>
@@ -423,7 +423,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Queen Double Deluxe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-77-FR5">
-                        <rect key="frame" x="23" y="209" width="226" height="18"/>
+                        <rect key="frame" x="27" y="209" width="222" height="18"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -594,5 +594,7 @@
         <image name="bgblur.png" width="240" height="320"/>
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>
+        <image name="starGrey" width="512" height="512"/>
+        <image name="blueArrowDown" width="512" height="512"/>
     </resources>
 </document>

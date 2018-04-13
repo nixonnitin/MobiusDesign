@@ -167,5 +167,7 @@
         <image name="emailGrey" width="512" height="512"/>
         <image name="lockGrey" width="512" height="512"/>
         <image name="phoneGrey" width="512" height="512"/>
+        <image name="starGrey" width="512" height="512"/>
+        <image name="blueArrowDown" width="512" height="512"/>
     </resources>
 </document>

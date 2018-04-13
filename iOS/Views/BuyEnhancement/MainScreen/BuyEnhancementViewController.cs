@@ -33,7 +33,7 @@ namespace Mobius.iOS.Views
 
         private void initData()
         {
-            sections = new List<string> { "Your Next Stay:", "Your Future Stays:", "Recommended Enhancement:","Your Purchased Enhancements:",""};
+            sections = new List<string> { "Your Next Stay:", "Your Future Stays:", "Recommended Enhancement:","Your Purchased Enhancements:","",""};
             //collectionViewLabels = new List<string> { "On-Site Parking", "24-Hours Front Desk", "Complimentary Wireless Internet", "Denny's Restaurant" };
             //collectionViewImages = new List<string> { "parking-1", "food-1", "gym", "homeWiFi" };
         }
@@ -46,6 +46,8 @@ namespace Mobius.iOS.Views
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("HomeRateCell", NSBundle.MainBundle), "HomeRateCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("HomeEnhancementsCell", NSBundle.MainBundle), "HomeEnhancementsCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("HomeNotificationCell", NSBundle.MainBundle), "HomeNotificationCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("BreakfastViewCell", NSBundle.MainBundle), "BreakfastViewCell");
+
 
 
 

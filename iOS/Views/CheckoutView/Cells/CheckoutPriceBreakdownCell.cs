@@ -29,20 +29,9 @@ namespace Mobius.iOS.Views
             LabelAmount.Font = MobiusHelper.GetFontRegularWithSize(16);
         }
 
-        /*UIKit.UILabel LabelAmount { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel LabelDetail { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView ViewSeperator { get; set; }
-        */
         public UILabel labelAmount{
             get { return LabelAmount; }
             set { LabelAmount = value; }
-        }
 
         public UILabel labelDetail
         {
@@ -55,5 +44,12 @@ namespace Mobius.iOS.Views
             get { return ViewSeperator; }
             set { ViewSeperator = value; }
         }
+
+        public UILabel labelAmount
+        {
+            get { return LabelAmount; }
+            set { LabelAmount = value; }
+        }
+
     }
 }
