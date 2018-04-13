@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,15 +34,17 @@
                                 <rect key="frame" x="15" y="319" width="311" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11n-Q5-Gjv">
-                                        <rect key="frame" x="0.0" y="10" width="99" height="40"/>
+                                        <rect key="frame" x="27" y="10" width="100" height="40"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="8hy-X6-x5W"/>
                                             <constraint firstAttribute="height" constant="40" id="vto-JJ-A3L"/>
                                         </constraints>
                                         <state key="normal" title="$25"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8Q-1n-08b">
-                                        <rect key="frame" x="212" y="8" width="99" height="40"/>
+                                        <rect key="frame" x="183" y="10" width="100" height="40"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Zow-MX-B3N"/>
                                             <constraint firstAttribute="height" constant="40" id="eeK-EJ-kuj"/>
                                         </constraints>
                                         <state key="normal" title="25 Points"/>
@@ -58,17 +59,16 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="y8Q-1n-08b" firstAttribute="height" secondItem="11n-Q5-Gjv" secondAttribute="height" id="1pa-bv-xd0"/>
-                                    <constraint firstItem="y8Q-1n-08b" firstAttribute="leading" secondItem="NQA-ru-2Ow" secondAttribute="trailing" constant="49" id="56b-ES-Mdn"/>
+                                    <constraint firstItem="y8Q-1n-08b" firstAttribute="leading" secondItem="NQA-ru-2Ow" secondAttribute="trailing" constant="20" id="56b-ES-Mdn"/>
                                     <constraint firstAttribute="bottom" secondItem="NQA-ru-2Ow" secondAttribute="bottom" constant="4" id="5Yj-gf-eNQ"/>
                                     <constraint firstItem="NQA-ru-2Ow" firstAttribute="centerY" secondItem="Fzt-18-6fg" secondAttribute="centerY" constant="3" id="8gZ-fA-YxD"/>
-                                    <constraint firstItem="11n-Q5-Gjv" firstAttribute="top" secondItem="NQA-ru-2Ow" secondAttribute="top" id="BnU-PQ-mfg"/>
-                                    <constraint firstAttribute="trailing" secondItem="y8Q-1n-08b" secondAttribute="trailing" id="QEf-kh-M8Q"/>
+                                    <constraint firstItem="11n-Q5-Gjv" firstAttribute="top" secondItem="NQA-ru-2Ow" secondAttribute="top" id="P4a-U8-qvB"/>
                                     <constraint firstItem="NQA-ru-2Ow" firstAttribute="top" secondItem="Fzt-18-6fg" secondAttribute="top" constant="10" id="RHq-Tx-cFA"/>
+                                    <constraint firstItem="y8Q-1n-08b" firstAttribute="top" secondItem="NQA-ru-2Ow" secondAttribute="top" id="Sgw-bk-Dgz"/>
                                     <constraint firstItem="y8Q-1n-08b" firstAttribute="width" secondItem="11n-Q5-Gjv" secondAttribute="width" id="eyl-NE-ELk"/>
-                                    <constraint firstItem="y8Q-1n-08b" firstAttribute="top" secondItem="Fzt-18-6fg" secondAttribute="topMargin" id="mee-fN-7QK"/>
+                                    <constraint firstItem="NQA-ru-2Ow" firstAttribute="leading" secondItem="11n-Q5-Gjv" secondAttribute="trailing" constant="20" id="iLJ-fS-yHw"/>
                                     <constraint firstItem="NQA-ru-2Ow" firstAttribute="centerX" secondItem="Fzt-18-6fg" secondAttribute="centerX" id="rxc-0L-Y2v"/>
                                     <constraint firstAttribute="height" constant="50" id="w4d-xj-bDT"/>
-                                    <constraint firstItem="11n-Q5-Gjv" firstAttribute="leading" secondItem="Fzt-18-6fg" secondAttribute="leading" id="z5h-9D-HPP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzt-dY-RsX">
