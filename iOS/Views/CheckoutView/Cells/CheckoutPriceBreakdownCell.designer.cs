@@ -15,15 +15,15 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UILabel LabelAmount { get; set; }
+        UIKit.UILabel LabelAmount { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UILabel LabelDetail { get; set; }
+        UIKit.UILabel LabelDetail { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIView ViewSeperator { get; set; }
+        UIKit.UIView ViewSeperator { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

@@ -22,6 +22,19 @@ namespace Mobius.iOS.Views
             //return tableCell;
             if (indexPath.Section == 0)
             {
+                var cell = (HomeIntroductionCell)tableView.DequeueReusableCell(HomeIntroductionCell.Key, indexPath);
+                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                cell.imageBackground.Image = UIImage.FromBundle("backgroundRed");
+                cell.LabelTitle.TextAlignment = UITextAlignment.Left;
+                cell.LabelText.TextAlignment = UITextAlignment.Left;
+                cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+                //cell.BackgroundColor = MobiusHelper.GetColorLightGrey();
+                //cell.LabelText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+                //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
+                return cell;
+            }
+            else if (indexPath.Section == 1)
+            {
                 var cell = (CheckoutBookingDetailCell)tableView.DequeueReusableCell(CheckoutBookingDetailCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 cell.BackgroundColor = MobiusHelper.GetColorLightGrey();
@@ -29,7 +42,7 @@ namespace Mobius.iOS.Views
                 //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
                 return cell;
             }
-            else if (indexPath.Section == 1)
+            else if (indexPath.Section == 2)
             {
                 if (indexPath.Row == 0)
                 {
@@ -62,7 +75,7 @@ namespace Mobius.iOS.Views
                 }
 
             }
-            else if (indexPath.Section == 2)
+            else if (indexPath.Section == 3)
             {
                 var cell = (CheckoutSignupInfoCell)tableView.DequeueReusableCell(CheckoutSignupInfoCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
@@ -71,7 +84,7 @@ namespace Mobius.iOS.Views
                 //MobiusHelper.GetRoundedCornerFromSideOfView(cell.ViewOfferDetailContainer, UIRectCorner.BottomLeft | UIRectCorner.BottomRight);
                 return cell;
             }
-            else if (indexPath.Section == 3)
+            else if (indexPath.Section == 4)
             {
                 var cell = (CheckoutSingleInputTextCell)tableView.DequeueReusableCell(CheckoutSingleInputTextCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
@@ -81,60 +94,68 @@ namespace Mobius.iOS.Views
                 cell.textInput.Placeholder = "Enter a Password";
                 cell.textInput.SecureTextEntry = true;
                 return cell;
-            }else if (indexPath.Section == 4)
+            }else if (indexPath.Section == 5)
             {
                 var cell = (CheckoutPromocodeCell)tableView.DequeueReusableCell(CheckoutPromocodeCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
-            }else if (indexPath.Section == 6 || indexPath.Section == 5)
+            }else if (indexPath.Section == 6 || indexPath.Section == 7)
             {
                 var cell = (CheckoutTermsConditionsCell)tableView.DequeueReusableCell(CheckoutTermsConditionsCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 return cell;
             }
-            else if (indexPath.Section == 7)
+            else if (indexPath.Section == 8)
             {
 
                 var cell = (CheckoutNextCell)tableView.DequeueReusableCell(CheckoutNextCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
                 return cell;
-            }else 
+            }else if (indexPath.Section == 9)
             {
                 if (indexPath.Row == 0)
                 {
                     var cell = (CheckoutPriceBreakdownCell)tableView.DequeueReusableCell(CheckoutPriceBreakdownCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ViewSeperator.Hidden = true;
+                    cell.viewSeperator.Hidden = true;
                     return cell;
                 }
                 else if (indexPath.Row == 1)
                 {
                     var cell = (CheckoutPriceBreakdownCell)tableView.DequeueReusableCell(CheckoutPriceBreakdownCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ViewSeperator.Hidden = false;
-                    cell.LabelAmount.TextColor = MobiusHelper.GetColorGray();
-                    cell.LabelAmount.Font = MobiusHelper.GetFontRegularWithSize(14);
-                    cell.LabelDetail.TextColor = MobiusHelper.GetColorGray();
-                    cell.LabelDetail.Font = MobiusHelper.GetFontRegularWithSize(14);
-                    cell.ViewSeperator.BackgroundColor = MobiusHelper.GetColorBorderGrey();
+                    cell.viewSeperator.Hidden = false;
+                    cell.labelAmount.TextColor = MobiusHelper.GetColorGray();
+                    cell.labelAmount.Font = MobiusHelper.GetFontRegularWithSize(14);
+                    cell.labelDetail.TextColor = MobiusHelper.GetColorGray();
+                    cell.labelDetail.Font = MobiusHelper.GetFontRegularWithSize(14);
+                    cell.viewSeperator.BackgroundColor = MobiusHelper.GetColorBorderGrey();
                     return cell;
                     
                 }else{
                     var cell = (CheckoutPriceBreakdownCell)tableView.DequeueReusableCell(CheckoutPriceBreakdownCell.Key, indexPath);
                     cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                    cell.ViewSeperator.Hidden = true;
-                    cell.LabelAmount.Font = MobiusHelper.GetFontBoldWithSize(16);
-                    cell.LabelDetail.Font = MobiusHelper.GetFontBoldWithSize(16);
+                    cell.viewSeperator.Hidden = true;
+                    cell.labelAmount.Font = MobiusHelper.GetFontBoldWithSize(16);
+                    cell.labelDetail.Font = MobiusHelper.GetFontBoldWithSize(16);
                     return cell;
                 }
 
+            }else
+            {
+
+                var cell = (CheckoutPaymentOptionButtons)tableView.DequeueReusableCell(CheckoutPaymentOptionButtons.Key, indexPath);
+                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
+                return cell;
             }
 
             //CheckoutTermsConditionsCell
         }
         public override nint RowsInSection(UITableView tableView, nint section)
         {
-            if (section == 1 || section == 8)
+            if (section == 2 || section == 9)
             {
                 return 3;
             }
@@ -147,9 +168,12 @@ namespace Mobius.iOS.Views
         public override nint NumberOfSections(UITableView tableView)
         {
             //return sections.Count;
-            return 9;
+            return 11;
         }
 
+        //public void TestAction(object sender,EventArgs e){
+        //    System.Console.WriteLine("Test");
+        //}
 
 		public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 		{
@@ -187,47 +211,47 @@ namespace Mobius.iOS.Views
 
 	}
 
-    public class CheckoutTableDelegate : UITableViewDelegate
-    {
-        UITableView table;
-        CGSize viewSize;
-        List<string> sections;
-        public CheckoutTableDelegate(UITableView tableView, CGSize viewSize, List<string> sections)
-        {
-            this.table = tableView;
-            this.viewSize = viewSize;
-            this.sections = sections;
-        }
+ //   public class CheckoutTableDelegate : UITableViewDelegate
+ //   {
+ //       UITableView table;
+ //       CGSize viewSize;
+ //       List<string> sections;
+ //       public CheckoutTableDelegate(UITableView tableView, CGSize viewSize, List<string> sections)
+ //       {
+ //           this.table = tableView;
+ //           this.viewSize = viewSize;
+ //           this.sections = sections;
+ //       }
 
-		//public override UIView GetViewForHeader(UITableView tableView, nint section)
-		//{
-		//    var headerText = sections[(int)section];
-		//    var headerHeight = 22;
+	//	//public override UIView GetViewForHeader(UITableView tableView, nint section)
+	//	//{
+	//	//    var headerText = sections[(int)section];
+	//	//    var headerHeight = 22;
 
 
-		//    var headerView = new UIView(new CGRect(0, 0, tableView.Frame.Size.Width, headerHeight));
-		//    if (headerText == "")
-		//    {
-		//        headerView.BackgroundColor = UIColor.Clear;
-		//    }
-		//    else
-		//    {
-		//        headerView.BackgroundColor = UIColor.White;
-		//    }
+	//	//    var headerView = new UIView(new CGRect(0, 0, tableView.Frame.Size.Width, headerHeight));
+	//	//    if (headerText == "")
+	//	//    {
+	//	//        headerView.BackgroundColor = UIColor.Clear;
+	//	//    }
+	//	//    else
+	//	//    {
+	//	//        headerView.BackgroundColor = UIColor.White;
+	//	//    }
 
-		//    var headerLabel = new UILabel(new CGRect(5, 2, tableView.Frame.Size.Width - 5, 18));
-		//    headerLabel.BackgroundColor = UIColor.Clear;
-		//    headerLabel.TextColor = UIColor.Black;
-		//    headerLabel.Font = UIFont.BoldSystemFontOfSize(16);
+	//	//    var headerLabel = new UILabel(new CGRect(5, 2, tableView.Frame.Size.Width - 5, 18));
+	//	//    headerLabel.BackgroundColor = UIColor.Clear;
+	//	//    headerLabel.TextColor = UIColor.Black;
+	//	//    headerLabel.Font = UIFont.BoldSystemFontOfSize(16);
 
-		//    headerLabel.Text = headerText;
-		//    headerLabel.TextAlignment = UITextAlignment.Left;
-		//    //headerLabel.Center.Y = headerView.Center.Y;
-		//    headerView.AddSubview(headerLabel);
-		//    return headerView;
-		//}
+	//	//    headerLabel.Text = headerText;
+	//	//    headerLabel.TextAlignment = UITextAlignment.Left;
+	//	//    //headerLabel.Center.Y = headerView.Center.Y;
+	//	//    headerView.AddSubview(headerLabel);
+	//	//    return headerView;
+	//	//}
 
-	}
+	//}
 }
 
 

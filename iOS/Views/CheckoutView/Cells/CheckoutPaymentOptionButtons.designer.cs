@@ -10,11 +10,19 @@ using System.CodeDom.Compiler;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("BreakfastViewCell")]
-    partial class BreakfastViewCell
+    [Register ("CheckoutPaymentOptionButtons")]
+    partial class CheckoutPaymentOptionButtons
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISegmentedControl SegmentPay { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (SegmentPay != null) {
+                SegmentPay.Dispose ();
+                SegmentPay = null;
+            }
         }
     }
 }

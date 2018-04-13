@@ -19,5 +19,10 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
+        // UIKit.UIImageView ImageBackground { get; set; }
+        public UIImageView imageBackground{
+            get { return ImageBackground; }
+            set { ImageBackground = value; }
+        }
     }
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -15,17 +15,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="185.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlJ-YV-p5g">
                         <rect key="frame" x="15" y="5" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIe-Kh-E27">
-                        <rect key="frame" x="15" y="30.5" width="300" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -100,31 +94,37 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woz-Yv-PMB">
+                        <rect key="frame" x="15" y="30.5" width="187" height="35"/>
+                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="18"/>
+                        <state key="normal" title="View Price Break Down">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="nKi-oG-Lyv" firstAttribute="top" secondItem="EIe-Kh-E27" secondAttribute="bottom" constant="35" id="2RG-iZ-YQ7"/>
                     <constraint firstAttribute="bottom" secondItem="hcE-Gw-4gR" secondAttribute="bottom" constant="5" id="4Xw-1T-rl5"/>
                     <constraint firstItem="hcE-Gw-4gR" firstAttribute="top" secondItem="nKi-oG-Lyv" secondAttribute="bottom" id="7xh-Wv-aNx"/>
                     <constraint firstItem="q7M-7H-SDl" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="7yy-3j-5L2"/>
-                    <constraint firstItem="EIe-Kh-E27" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="B6N-XF-yCh"/>
                     <constraint firstItem="gpF-fK-v87" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="C0k-lo-Qp2"/>
                     <constraint firstItem="gpF-fK-v87" firstAttribute="leading" secondItem="q7M-7H-SDl" secondAttribute="trailing" constant="5" id="Cqd-hT-Lde"/>
-                    <constraint firstAttribute="trailing" secondItem="EIe-Kh-E27" secondAttribute="trailing" constant="5" id="HN0-Vh-goR"/>
                     <constraint firstItem="viu-d4-oHY" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="IZ7-P9-jTb"/>
                     <constraint firstItem="Tuk-87-uPi" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="Iva-cf-jf3"/>
                     <constraint firstItem="viu-d4-oHY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mlJ-YV-p5g" secondAttribute="trailing" constant="5" id="K2p-LW-7Z6"/>
                     <constraint firstItem="q7M-7H-SDl" firstAttribute="leading" secondItem="viu-d4-oHY" secondAttribute="trailing" constant="5" id="Wsl-wz-Wx4"/>
-                    <constraint firstItem="EIe-Kh-E27" firstAttribute="top" secondItem="mlJ-YV-p5g" secondAttribute="bottom" constant="5" id="Wsr-4M-JNA"/>
                     <constraint firstItem="hcE-Gw-4gR" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="YA3-HH-R6i"/>
                     <constraint firstAttribute="trailing" secondItem="hcE-Gw-4gR" secondAttribute="trailing" constant="15" id="YdV-lr-EqS"/>
                     <constraint firstItem="Tuk-87-uPi" firstAttribute="leading" secondItem="gpF-fK-v87" secondAttribute="trailing" constant="5" id="YeF-Td-Wcl"/>
                     <constraint firstItem="nKi-oG-Lyv" firstAttribute="centerX" secondItem="YTl-1W-gDM" secondAttribute="centerX" id="YqK-Jc-4Xp"/>
+                    <constraint firstItem="woz-Yv-PMB" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="dRE-FS-bcw"/>
+                    <constraint firstItem="nKi-oG-Lyv" firstAttribute="top" secondItem="woz-Yv-PMB" secondAttribute="bottom" constant="20" id="fZ8-Nx-3Nh"/>
                     <constraint firstAttribute="trailing" secondItem="nKi-oG-Lyv" secondAttribute="trailing" constant="40" id="gUx-lQ-Ifk"/>
                     <constraint firstItem="nKi-oG-Lyv" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="40" id="iXQ-au-iHQ"/>
                     <constraint firstAttribute="trailing" secondItem="Tuk-87-uPi" secondAttribute="trailing" constant="15" id="jwY-Sl-oX4"/>
                     <constraint firstItem="q7M-7H-SDl" firstAttribute="centerY" secondItem="viu-d4-oHY" secondAttribute="centerY" id="kv5-Vw-RL6"/>
                     <constraint firstItem="Tuk-87-uPi" firstAttribute="centerY" secondItem="gpF-fK-v87" secondAttribute="centerY" id="lME-a8-Qh5"/>
                     <constraint firstItem="mlJ-YV-p5g" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="qn2-ME-CWI"/>
+                    <constraint firstItem="woz-Yv-PMB" firstAttribute="top" secondItem="mlJ-YV-p5g" secondAttribute="bottom" constant="5" id="tcc-xV-17X"/>
                     <constraint firstItem="mlJ-YV-p5g" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="tyn-aV-8Ml"/>
                 </constraints>
             </tableViewCellContentView>
@@ -137,14 +137,135 @@
                 <outlet property="LabelPrice" destination="viu-d4-oHY" id="name-outlet-viu-d4-oHY"/>
                 <outlet property="LabelTotalForStay" destination="mlJ-YV-p5g" id="name-outlet-mlJ-YV-p5g"/>
                 <outlet property="LabelTotalPoints" destination="gpF-fK-v87" id="name-outlet-gpF-fK-v87"/>
-                <outlet property="LabelViewPriceBreakdown" destination="EIe-Kh-E27" id="name-outlet-EIe-Kh-E27"/>
                 <outlet property="ViewInfoContainer" destination="nKi-oG-Lyv" id="name-outlet-nKi-oG-Lyv"/>
                 <outlet property="ViewInfoLabelContainer" destination="9Hy-dk-pbE" id="name-outlet-9Hy-dk-pbE"/>
+                <outlet property="ButtonPriceBreakdown" destination="woz-Yv-PMB" id="name-outlet-woz-Yv-PMB"/>
             </connections>
             <point key="canvasLocation" x="25" y="123"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="blueArrowDown" width="256" height="256"/>
+        <image name="blueArrowDown" width="512" height="512"/>
+        <image name="homeIcon" width="32" height="32"/>
+        <image name="nextArrow" width="32" height="32"/>
+        <image name="cal" width="512" height="512"/>
+        <image name="check" width="512" height="512"/>
+        <image name="checkwhite" width="512" height="512"/>
+        <image name="clock" width="2134" height="2134"/>
+        <image name="clockwhite" width="2134" height="2134"/>
+        <image name="defaultimage" width="512" height="512"/>
+        <image name="fb" width="512" height="512"/>
+        <image name="food" width="512" height="512"/>
+        <image name="gym" width="512" height="512"/>
+        <image name="homeAdd" width="512" height="512"/>
+        <image name="homeBestOffer" width="512" height="512"/>
+        <image name="location" width="512" height="512"/>
+        <image name="moon" width="512" height="512"/>
+        <image name="nextarrowhome" width="512" height="512"/>
+        <image name="ratingempty" width="512" height="512"/>
+        <image name="ratingfull" width="512" height="512"/>
+        <image name="ratinghalf" width="512" height="512"/>
+        <image name="homeCal" width="512" height="512"/>
+        <image name="homeCheck" width="512" height="512"/>
+        <image name="homeCheckWhite" width="512" height="512"/>
+        <image name="homeClock" width="2134" height="2134"/>
+        <image name="homeClockWhite" width="2134" height="2134"/>
+        <image name="homeDefaultImage" width="512" height="512"/>
+        <image name="homeFB" width="512" height="512"/>
+        <image name="homeFood" width="512" height="512"/>
+        <image name="homeGym" width="512" height="512"/>
+        <image name="homeLocation" width="512" height="512"/>
+        <image name="homeMoon" width="512" height="512"/>
+        <image name="homeNextArrow" width="32" height="32"/>
+        <image name="homeNextArrowHome" width="512" height="512"/>
+        <image name="homeRatingEmpty" width="512" height="512"/>
+        <image name="homeRatingFull" width="512" height="512"/>
+        <image name="homeRatingHalf" width="512" height="512"/>
+        <image name="homeParking" width="512" height="512"/>
+        <image name="homePencil" width="512" height="512"/>
+        <image name="homePerson" width="512" height="512"/>
+        <image name="homePersonWhite" width="512" height="512"/>
+        <image name="homeRoom" width="512" height="512"/>
+        <image name="homeSettings" width="512" height="512"/>
+        <image name="homeSwim" width="512" height="512"/>
+        <image name="homeWiFi" width="512" height="512"/>
+        <image name="homeicon" width="32" height="32"/>
+        <image name="nextarrow" width="32" height="32"/>
+        <image name="hotelRoomTest" width="1920" height="1200"/>
+        <image name="add-1" width="512" height="512"/>
+        <image name="arrow-white" width="50" height="34"/>
+        <image name="arrow" width="50" height="34"/>
+        <image name="best-offer" width="512" height="512"/>
+        <image name="check-white" width="512" height="512"/>
+        <image name="clock-white" width="2134" height="2134"/>
+        <image name="empty" width="512" height="512"/>
+        <image name="food-1" width="512" height="512"/>
+        <image name="full" width="512" height="512"/>
+        <image name="grey-cross-1" width="512" height="512"/>
+        <image name="gym-1" width="512" height="512"/>
+        <image name="half" width="512" height="512"/>
+        <image name="img" width="512" height="512"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="moon-1" width="512" height="512"/>
+        <image name="next-arrrow-1" width="512" height="512"/>
+        <image name="parking-1" width="512" height="512"/>
+        <image name="pencil-1" width="512" height="512"/>
+        <image name="person-1" width="512" height="512"/>
+        <image name="person-white" width="512" height="512"/>
+        <image name="red-cross-1" width="512" height="512"/>
+        <image name="room-1" width="512" height="512"/>
+        <image name="search-1" width="512" height="512"/>
+        <image name="settings-1" width="512" height="512"/>
+        <image name="swim-1" width="512" height="512"/>
+        <image name="tag" width="512" height="515"/>
+        <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="homePencilWhite" width="30" height="30"/>
+        <image name="ArrowWhiteNext" width="50" height="50"/>
+        <image name="ArrowWhitePrevious" width="50" height="50"/>
+        <image name="Booking" width="509" height="85"/>
+        <image name="expedia" width="501" height="142"/>
+        <image name="expedio" width="50" height="50"/>
+        <image name="trivago" width="510" height="152"/>
+        <image name="dollarWhite" width="30" height="30"/>
+        <image name="starRoundBlue" width="30" height="30"/>
+        <image name="Exclamatory" width="35" height="35"/>
+        <image name="128" width="128" height="128"/>
+        <image name="american" width="512" height="512"/>
+        <image name="chat" width="512" height="512"/>
+        <image name="phone-1" width="512" height="512"/>
+        <image name="red-bg" width="512" height="88"/>
+        <image name="lake-bg" width="1125" height="479"/>
+        <image name="owl" width="512" height="512"/>
+        <image name="pencilGray" width="512" height="512"/>
+        <image name="ArrowDownGray" width="512" height="512"/>
+        <image name="ArrayUpGray" width="512" height="512"/>
+        <image name="personGrey" width="512" height="512"/>
+        <image name="checkboxChecked" width="512" height="512"/>
+        <image name="checkboxUncheck" width="512" height="512"/>
+        <image name="emailGrey" width="512" height="512"/>
+        <image name="lockGrey" width="512" height="512"/>
+        <image name="phoneGrey" width="512" height="512"/>
+        <image name="starGrey" width="512" height="512"/>
+        <image name="bgblur.png" width="240" height="320"/>
+        <image name="Triangle.png" width="54" height="36"/>
+        <image name="user.png" width="18" height="18"/>
+        <image name="backgroundBlue" width="1125" height="363"/>
+        <image name="backgroundRed" width="1125" height="485"/>
+        <image name="informationWhite" width="512" height="512"/>
+        <image name="backgroundOrange" width="1125" height="486"/>
     </resources>
 </document>

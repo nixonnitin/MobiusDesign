@@ -20,8 +20,17 @@ namespace Mobius.iOS.Views
         [Outlet]
         public UIKit.UILabel LabelTitle { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView ImageBackground { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (ImageBackground != null) {
+                ImageBackground.Dispose ();
+                ImageBackground = null;
+            }
+
             if (LabelText != null) {
                 LabelText.Dispose ();
                 LabelText = null;

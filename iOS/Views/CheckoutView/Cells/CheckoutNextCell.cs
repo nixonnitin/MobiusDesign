@@ -39,8 +39,9 @@ namespace Mobius.iOS.Views
             LabelPoints.Font = MobiusHelper.GetFontRegularWithSize(12);
             LabelPoints.TextColor = MobiusHelper.GetColorGray();
 
-            LabelViewPriceBreakdown.Font = MobiusHelper.GetFontRegularWithSize(12);
-            LabelViewPriceBreakdown.TextColor = MobiusHelper.GetColorGray();
+            ButtonNext.Font = MobiusHelper.GetFontRegularWithSize(12);
+            ButtonNext.SetTitleColor(MobiusHelper.GetColorGray(), UIControlState.Normal);
+            //ButtonNext.TextColor = MobiusHelper.GetColorGray();
 
             ViewInfoLabelContainer.BackgroundColor = MobiusHelper.GetColorInformationBlue();
             ViewInfoLabelContainer.Layer.CornerRadius = 5;
