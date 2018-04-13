@@ -29,9 +29,11 @@ namespace Mobius.iOS.Views
             LabelAmount.Font = MobiusHelper.GetFontRegularWithSize(16);
         }
 
-        public UILabel labelAmount{
+        public UILabel labelAmount
+        {
             get { return LabelAmount; }
             set { LabelAmount = value; }
+        }
 
         public UILabel labelDetail
         {
@@ -45,11 +47,6 @@ namespace Mobius.iOS.Views
             set { ViewSeperator = value; }
         }
 
-        public UILabel labelAmount
-        {
-            get { return LabelAmount; }
-            set { LabelAmount = value; }
-        }
-
+    
     }
 }

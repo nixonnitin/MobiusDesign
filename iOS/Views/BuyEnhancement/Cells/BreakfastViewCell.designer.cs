@@ -13,8 +13,7 @@ namespace Mobius.iOS.Views
     [Register ("BreakfastViewCell")]
     partial class BreakfastViewCell
     {
-        void ReleaseDesignerOutlets ()
-        {
+    
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton ButtonDollar { get; set; }
