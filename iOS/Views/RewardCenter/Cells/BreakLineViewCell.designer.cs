@@ -10,8 +10,8 @@ using System.CodeDom.Compiler;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("SearchAmentiesButtonViewCell")]
-    partial class SearchAmentiesButtonViewCell
+    [Register ("BreakLineViewCell")]
+    partial class BreakLineViewCell
     {
         void ReleaseDesignerOutlets ()
         {

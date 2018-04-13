@@ -7,14 +7,23 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("SearchAmentiesButtonViewCell")]
-    partial class SearchAmentiesButtonViewCell
+    [Register ("RewardCenterViewController")]
+    partial class RewardCenterViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView TableRoomView { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (TableRoomView != null) {
+                TableRoomView.Dispose ();
+                TableRoomView = null;
+            }
         }
     }
 }

@@ -7,14 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
-namespace Mobius.iOS.Views
+namespace Mobius.iOS
 {
-    [Register ("SearchAmentiesButtonViewCell")]
-    partial class SearchAmentiesButtonViewCell
+    [Register ("TableRoomView")]
+    partial class TableRoomView
     {
-        void ReleaseDesignerOutlets ()
-        {
-        }
     }
 }

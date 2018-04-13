@@ -559,6 +559,9 @@
     <Folder Include="Views\BuyEnhancement\" />
     <Folder Include="Views\BuyEnhancement\Cells\" />
     <Folder Include="Views\BuyEnhancement\MainScreen\" />
+    <Folder Include="Views\RewardCenter\" />
+    <Folder Include="Views\RewardCenter\Cells\" />
+    <Folder Include="Views\RewardCenter\MainScreen\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -669,6 +672,9 @@
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\MainScreen\RewardCenterViewController.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\BreakLineViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1013,6 +1019,23 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.designer.cs">
       <DependentUpon>CheckoutPaymentOptionButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\MainScreen\RewardCenterViewController.cs" />
+    <Compile Include="Views\RewardCenter\MainScreen\RewardCenterViewController.designer.cs">
+      <DependentUpon>RewardCenterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\MainScreen\RewardCenterTableSource.cs" />
+    <Compile Include="TableRoomView.cs" />
+    <Compile Include="TableRoomView.designer.cs">
+      <DependentUpon>TableRoomView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.designer.cs">
+      <DependentUpon>RewardCenterMemberHeaderViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\BreakLineViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\BreakLineViewCell.designer.cs">
+      <DependentUpon>BreakLineViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

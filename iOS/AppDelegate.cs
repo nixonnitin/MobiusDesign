@@ -69,7 +69,10 @@ namespace Mobius.iOS
             //var controller = new Views.HomeViewControllerScreen6();
             //var controller = new Views.MainHomeViewController();
             //var controller = new Views.RoomViewController();
-            var controller = new Views.BuyEnhancementViewController();
+            //var controller = new Views.BuyEnhancementViewController();
+            var controller = new Views.RewardCenterViewController();
+
+
 
 
             //var controller = new Views.ReservationViewController();
