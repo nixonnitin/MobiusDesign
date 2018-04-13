@@ -64,6 +64,11 @@ namespace Mobius.iOS.Views
                     cell4.labelGrayBelow.TextColor = MobiusHelper.GetColorGray();
                     cell4.labelMainPopUp.Text = "Enhancement Added";
                     return cell4;
+
+                case 5:
+                    var cell5 = (BreakfastViewCell)tableView.DequeueReusableCell(BreakfastViewCell.Key, indexPath);
+                    cell5.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    return cell5;
                  
 
 
