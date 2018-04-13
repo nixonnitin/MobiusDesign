@@ -19,6 +19,10 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton ButtonPriceBreakdown { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView ImageBlueArrowDown { get; set; }
 
         [Outlet]
@@ -47,10 +51,6 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel LabelViewPriceBreakdown { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView ViewInfoContainer { get; set; }
 
         [Outlet]
@@ -62,6 +62,11 @@ namespace Mobius.iOS.Views
             if (ButtonNext != null) {
                 ButtonNext.Dispose ();
                 ButtonNext = null;
+            }
+
+            if (ButtonPriceBreakdown != null) {
+                ButtonPriceBreakdown.Dispose ();
+                ButtonPriceBreakdown = null;
             }
 
             if (ImageBlueArrowDown != null) {
@@ -97,11 +102,6 @@ namespace Mobius.iOS.Views
             if (LabelTotalPoints != null) {
                 LabelTotalPoints.Dispose ();
                 LabelTotalPoints = null;
-            }
-
-            if (LabelViewPriceBreakdown != null) {
-                LabelViewPriceBreakdown.Dispose ();
-                LabelViewPriceBreakdown = null;
             }
 
             if (ViewInfoContainer != null) {

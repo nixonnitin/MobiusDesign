@@ -514,6 +514,26 @@
     <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\WirelessImage.imageset\wifi-grey.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\blue-bg-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\blue-bg-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundBlue.imageset\blue-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundRed.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundRed.imageset\red-bg-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundRed.imageset\red-bg-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundRed.imageset\red-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\informationWhite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\informationWhite.imageset\white-flower-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\informationWhite.imageset\white-flower-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\informationWhite.imageset\white-flower.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundOrange.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundOrange.imageset\oragnge-bg-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundOrange.imageset\oragnge-bg-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\backgroundOrange.imageset\oragnge-bg.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\offer-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\offer-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\starOffer.imageset\offer.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -648,6 +668,7 @@
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutNextCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPriceBreakdownCell.xib" />
     <InterfaceDefinition Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -988,6 +1009,10 @@
     <Compile Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.cs" />
     <Compile Include="Views\Search Result\Search Filter\SearchAmentiesButtonViewCell.designer.cs">
       <DependentUpon>SearchAmentiesButtonViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPaymentOptionButtons.designer.cs">
+      <DependentUpon>CheckoutPaymentOptionButtons.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

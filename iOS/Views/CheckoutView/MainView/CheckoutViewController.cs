@@ -41,6 +41,7 @@ namespace Mobius.iOS.Views
 
             TableCheckout.RowHeight = UITableView.AutomaticDimension;
             TableCheckout.EstimatedRowHeight = 100;
+            TableCheckout.RegisterNibForCellReuse(UINib.FromName("HomeIntroductionCell", NSBundle.MainBundle), "HomeIntroductionCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutBookingDetailCell", NSBundle.MainBundle), "CheckoutBookingDetailCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutInputTextCell", NSBundle.MainBundle), "CheckoutInputTextCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutSingleInputTextCell", NSBundle.MainBundle), "CheckoutSingleInputTextCell");
@@ -50,6 +51,8 @@ namespace Mobius.iOS.Views
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutTermsConditionsCell", NSBundle.MainBundle), "CheckoutTermsConditionsCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutNextCell", NSBundle.MainBundle), "CheckoutNextCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutPriceBreakdownCell", NSBundle.MainBundle), "CheckoutPriceBreakdownCell");
+            TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutPaymentOptionButtons", NSBundle.MainBundle), "CheckoutPaymentOptionButtons");
+
             TableCheckout.Source = new CheckoutTableSource(TableCheckout, sections);
             //TableCheckout.Delegate = new CheckoutTableDelegate(TableCheckout, View.Frame.Size, sections);
         }
