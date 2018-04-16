@@ -8,6 +8,7 @@ namespace Mobius.iOS.Views
 {
     public partial class BreakLineViewCell : UITableViewCell
     {
+    	
         public static readonly NSString Key = new NSString("BreakLineViewCell");
         public static readonly UINib Nib;
 
