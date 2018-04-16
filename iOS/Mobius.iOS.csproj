@@ -588,6 +588,7 @@
     <Folder Include="Views\OffersPage\" />
     <Folder Include="Views\OffersPage\Cells\" />
     <Folder Include="Views\OffersPage\MainView\" />
+    <Folder Include="Views\Hotel\Hotel Main Page\Hotel More Cell\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -686,7 +687,6 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Location Map\HotelLocationMapCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.xib" />
-    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.xib" />
@@ -716,6 +716,7 @@
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1018,8 +1019,6 @@
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.designer.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
@@ -1134,6 +1133,8 @@
     <Compile Include="Views\RewardCenter\Cells\RewardsTableViewCell.designer.cs">
       <DependentUpon>RewardsTableViewCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
