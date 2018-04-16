@@ -588,6 +588,7 @@
     <Folder Include="Views\OffersPage\" />
     <Folder Include="Views\OffersPage\Cells\" />
     <Folder Include="Views\OffersPage\MainView\" />
+    <Folder Include="Views\Hotel\Hotel Main Page\Hotel More Cell\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -686,7 +687,6 @@
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Location Map\HotelLocationMapCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.xib" />
-    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutSignupInfoCell.xib" />
@@ -707,10 +707,16 @@
     <InterfaceDefinition Include="Views\OffersPage\Cells\OfferPageWebviewCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutInputCardCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\MainView\TestViewController.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPostcodeCountryCell.xib" />
+    <InterfaceDefinition Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Poll\Poll List\Controller\PollListViewController.xib" />
+    <InterfaceDefinition Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1013,8 +1019,6 @@
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Lowest price with date\HotelLowestPriceWithDataCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Main Page Controller\HotelMainPageViewController.designer.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.cs" />
-    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel Rating Cell\HotelRatingCell.designer.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel name &amp; price Cell\HotelNamePriceCell.cs" />
@@ -1098,6 +1102,21 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.designer.cs">
       <DependentUpon>CheckoutCardExpireCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CheckoutView\MainView\TestViewController.cs" />
+    <Compile Include="Views\CheckoutView\MainView\TestViewController.designer.cs">
+      <DependentUpon>TestViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\MainView\TestTableSource.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPostcodeCountryCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPostcodeCountryCell.designer.cs">
+      <DependentUpon>CheckoutPostcodeCountryCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.cs" />
+    <Compile Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.designer.cs" />
+    <Compile Include="Views\Poll\Poll List\Controller\PollListViewController.cs" />
+    <Compile Include="Views\Poll\Poll List\Controller\PollListViewController.designer.cs" />
+    <Compile Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.cs" />
+    <Compile Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.designer.cs" />
     <Compile Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.cs" />
     <Compile Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.designer.cs">
       <DependentUpon>ImageWithHeadingViewCell.cs</DependentUpon>
@@ -1114,6 +1133,8 @@
     <Compile Include="Views\RewardCenter\Cells\RewardsTableViewCell.designer.cs">
       <DependentUpon>RewardsTableViewCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.cs" />
+    <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />

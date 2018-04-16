@@ -27,6 +27,10 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewContainer { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView ViewErrorContainer { get; set; }
 
         [Outlet]
@@ -48,6 +52,11 @@ namespace Mobius.iOS.Views
             if (TextInput != null) {
                 TextInput.Dispose ();
                 TextInput = null;
+            }
+
+            if (ViewContainer != null) {
+                ViewContainer.Dispose ();
+                ViewContainer = null;
             }
 
             if (ViewErrorContainer != null) {
