@@ -127,7 +127,16 @@
                     <constraint firstAttribute="trailing" secondItem="Ae1-6a-fYm" secondAttribute="trailing" id="hP6-46-gow"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-99" y="-55"/>
+            <point key="canvasLocation" x="-256" y="-71"/>
+            <connections>
+                <outlet property="ViewBreakLine" destination="eVc-0n-EEa" id="name-outlet-eVc-0n-EEa"/>
+                <outlet property="LabelHeadRowDate" destination="DMG-dp-gKE" id="name-outlet-DMG-dp-gKE"/>
+                <outlet property="LabelHeadRowRewardName" destination="ixB-oL-4aX" id="name-outlet-ixB-oL-4aX"/>
+                <outlet property="LabelHeadRowStatus" destination="I0T-MC-R1R" id="name-outlet-I0T-MC-R1R"/>
+                <outlet property="LabelRowDateValue" destination="f8Z-k8-154" id="name-outlet-f8Z-k8-154"/>
+                <outlet property="LabelRewardNameValue" destination="Oqf-F9-gmO" id="name-outlet-Oqf-F9-gmO"/>
+                <outlet property="LabelStatusValue" destination="jl3-lh-Spa" id="name-outlet-jl3-lh-Spa"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
