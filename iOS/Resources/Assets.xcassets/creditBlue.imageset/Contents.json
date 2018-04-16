@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "camera-dark.png",
+      "filename" : "credit-blue.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "camera-dark-1.png",
+      "filename" : "credit-blue-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "camera-dark-2.png",
+      "filename" : "credit-blue-2.png",
       "scale" : "3x"
     }
   ],

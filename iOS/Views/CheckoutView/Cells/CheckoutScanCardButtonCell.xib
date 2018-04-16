@@ -48,10 +48,10 @@
                         <constraints>
                             <constraint firstItem="0Y1-Qd-DbA" firstAttribute="leading" secondItem="wBN-9B-H8e" secondAttribute="leading" constant="15" id="0Tq-88-qnw"/>
                             <constraint firstItem="Dg0-A1-acQ" firstAttribute="leading" secondItem="wBN-9B-H8e" secondAttribute="leading" id="Fc6-IO-fQP"/>
-                            <constraint firstItem="0Aq-wn-dgB" firstAttribute="leading" secondItem="0Y1-Qd-DbA" secondAttribute="trailing" constant="5" id="OuM-Pl-Z87"/>
+                            <constraint firstItem="0Aq-wn-dgB" firstAttribute="leading" secondItem="0Y1-Qd-DbA" secondAttribute="trailing" constant="5" id="LPV-Vo-RTT"/>
                             <constraint firstItem="0Y1-Qd-DbA" firstAttribute="centerY" secondItem="wBN-9B-H8e" secondAttribute="centerY" id="Sx2-Au-hch"/>
                             <constraint firstAttribute="trailing" secondItem="Dg0-A1-acQ" secondAttribute="trailing" id="Uld-Fd-iOX"/>
-                            <constraint firstAttribute="trailing" secondItem="GDX-Yc-TYb" secondAttribute="trailing" constant="5" id="cW4-YX-u8Z"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GDX-Yc-TYb" secondAttribute="trailing" constant="5" id="cW4-YX-u8Z"/>
                             <constraint firstAttribute="height" constant="60" id="eBQ-9d-56i"/>
                             <constraint firstItem="GDX-Yc-TYb" firstAttribute="leading" secondItem="0Aq-wn-dgB" secondAttribute="trailing" constant="5" id="fy6-7b-kEw"/>
                             <constraint firstItem="Dg0-A1-acQ" firstAttribute="top" secondItem="wBN-9B-H8e" secondAttribute="top" id="iSy-sy-w1q"/>
@@ -62,10 +62,11 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="wBN-9B-H8e" secondAttribute="trailing" constant="15" id="B7d-ij-ZVO"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wBN-9B-H8e" secondAttribute="trailing" constant="15" id="B7d-ij-ZVO"/>
                     <constraint firstAttribute="bottom" secondItem="wBN-9B-H8e" secondAttribute="bottom" constant="5" id="G3g-Kl-V6P"/>
                     <constraint firstItem="wBN-9B-H8e" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="Y2T-7t-8BU"/>
-                    <constraint firstItem="wBN-9B-H8e" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="rd4-Zw-Z8b"/>
+                    <constraint firstItem="wBN-9B-H8e" firstAttribute="centerX" secondItem="YTl-1W-gDM" secondAttribute="centerX" id="eBe-nQ-coO"/>
+                    <constraint firstItem="wBN-9B-H8e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="rd4-Zw-Z8b"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

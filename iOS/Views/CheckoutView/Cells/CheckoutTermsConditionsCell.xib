@@ -30,13 +30,13 @@
                                 <state key="normal" image="checkboxUncheck"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNt-8B-vyF">
-                                <rect key="frame" x="40" y="12" width="42" height="20.5"/>
+                                <rect key="frame" x="40" y="5" width="42" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyv-KV-AI6">
-                                <rect key="frame" x="87" y="12" width="42" height="20.5"/>
+                                <rect key="frame" x="87" y="5" width="42" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,14 +44,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MNt-8B-vyF" secondAttribute="bottom" constant="5" id="0wQ-YU-95Z"/>
                             <constraint firstItem="gyv-KV-AI6" firstAttribute="leading" secondItem="MNt-8B-vyF" secondAttribute="trailing" constant="5" id="2mT-EJ-Xxj"/>
+                            <constraint firstAttribute="bottom" secondItem="gyv-KV-AI6" secondAttribute="bottom" constant="5" id="5fq-J9-U9h"/>
                             <constraint firstItem="MNt-8B-vyF" firstAttribute="centerY" secondItem="LfW-xJ-5Jx" secondAttribute="centerY" id="Dlj-R3-G2p"/>
                             <constraint firstItem="2kc-yO-WEv" firstAttribute="leading" secondItem="LfW-xJ-5Jx" secondAttribute="leading" constant="5" id="MYl-mq-Fte"/>
                             <constraint firstAttribute="height" constant="45" id="Z3c-fZ-IbJ"/>
                             <constraint firstItem="MNt-8B-vyF" firstAttribute="leading" secondItem="2kc-yO-WEv" secondAttribute="trailing" constant="5" id="mOz-Ee-p3a"/>
+                            <constraint firstItem="gyv-KV-AI6" firstAttribute="top" secondItem="LfW-xJ-5Jx" secondAttribute="top" constant="5" id="o2g-0f-So0"/>
                             <constraint firstItem="gyv-KV-AI6" firstAttribute="centerY" secondItem="LfW-xJ-5Jx" secondAttribute="centerY" id="oD1-qs-p01"/>
                             <constraint firstItem="2kc-yO-WEv" firstAttribute="centerY" secondItem="LfW-xJ-5Jx" secondAttribute="centerY" id="rag-tY-Bmf"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gyv-KV-AI6" secondAttribute="trailing" constant="5" id="xDc-4o-oVh"/>
+                            <constraint firstItem="MNt-8B-vyF" firstAttribute="top" secondItem="LfW-xJ-5Jx" secondAttribute="top" constant="5" id="z7X-un-Fgb"/>
                         </constraints>
                     </view>
                 </subviews>

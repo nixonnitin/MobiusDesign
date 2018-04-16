@@ -81,9 +81,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Plugin.Connectivity.Abstractions">
-      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net.Http" />
     <Reference Include="Autofac">
@@ -91,6 +88,9 @@
     </Reference>
     <Reference Include="Plugin.Connectivity">
       <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -538,6 +538,25 @@
     <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-dark-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-dark-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\cameraIcon.imageset\camera-dark.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditBlue.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditBlue.imageset\credit-blue-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditBlue.imageset\credit-blue-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditBlue.imageset\credit-blue.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditGrey.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditGrey.imageset\credit-card-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditGrey.imageset\credit-card-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditGrey.imageset\credit-card-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditRed.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditRed.imageset\credit-red-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditRed.imageset\credit-red-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\creditRed.imageset\credit-red.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\downArrowBlue.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\downArrowBlue.imageset\down-arrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\downArrowBlue.imageset\down-arrow-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\downArrowBlue.imageset\down-arrow-3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -566,6 +585,9 @@
     <Folder Include="Views\RewardCenter\" />
     <Folder Include="Views\RewardCenter\Cells\" />
     <Folder Include="Views\RewardCenter\MainScreen\" />
+    <Folder Include="Views\OffersPage\" />
+    <Folder Include="Views\OffersPage\Cells\" />
+    <Folder Include="Views\OffersPage\MainView\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -680,6 +702,11 @@
     <InterfaceDefinition Include="Views\RewardCenter\MainScreen\RewardCenterViewController.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardCenterMemberHeaderViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\BreakLineViewCell.xib" />
+    <InterfaceDefinition Include="Views\OffersPage\Cells\OfferPageOfferCell.xib" />
+    <InterfaceDefinition Include="Views\OffersPage\MainView\OffersViewController.xib" />
+    <InterfaceDefinition Include="Views\OffersPage\Cells\OfferPageWebviewCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutInputCardCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1045,6 +1072,27 @@
     <Compile Include="Views\RewardCenter\Cells\BreakLineViewCell.cs" />
     <Compile Include="Views\RewardCenter\Cells\BreakLineViewCell.designer.cs">
       <DependentUpon>BreakLineViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OffersPage\Cells\OfferPageOfferCell.cs" />
+    <Compile Include="Views\OffersPage\Cells\OfferPageOfferCell.designer.cs">
+      <DependentUpon>OfferPageOfferCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OffersPage\MainView\OffersViewController.cs" />
+    <Compile Include="Views\OffersPage\MainView\OffersViewController.designer.cs">
+      <DependentUpon>OffersViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OffersPage\MainView\OffersPageTableSource.cs" />
+    <Compile Include="Views\OffersPage\Cells\OfferPageWebviewCell.cs" />
+    <Compile Include="Views\OffersPage\Cells\OfferPageWebviewCell.designer.cs">
+      <DependentUpon>OfferPageWebviewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutInputCardCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutInputCardCell.designer.cs">
+      <DependentUpon>CheckoutInputCardCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.designer.cs">
+      <DependentUpon>CheckoutCardExpireCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -150,10 +150,25 @@ namespace Mobius.iOS.Views
                 //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
                 return cell;
             }
-            else
+            else if (indexPath.Section == 11)
             {
 
                 var cell = (CheckoutScanCardButtonCell)tableView.DequeueReusableCell(CheckoutScanCardButtonCell.Key, indexPath);
+                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
+                return cell;
+            }else if (indexPath.Section == 12)
+            {
+
+                var cell = (CheckoutInputCardCell)tableView.DequeueReusableCell(CheckoutInputCardCell.Key, indexPath);
+                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
+                return cell;
+            }
+            else
+            {
+
+                var cell = (CheckoutCardExpireCell)tableView.DequeueReusableCell(CheckoutCardExpireCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
                 return cell;
@@ -176,7 +191,7 @@ namespace Mobius.iOS.Views
         public override nint NumberOfSections(UITableView tableView)
         {
             //return sections.Count;
-            return 12;
+            return 14;
         }
 
         //public void TestAction(object sender,EventArgs e){

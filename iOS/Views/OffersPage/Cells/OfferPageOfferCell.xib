@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfferPageOfferCell" rowHeight="225" id="cxk-wN-pdQ" customClass="OfferPageOfferCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="224.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelRoomTest" translatesAutoresizingMaskIntoConstraints="NO" id="waR-S2-i12">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="UOb-Xe-Aaw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save upto 20% and get free breakfast" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfG-eq-ujd">
+                        <rect key="frame" x="15" y="163.5" width="290" height="56"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2 more days valid,booked 102 times in the last week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2o-7Q-SzQ">
+                        <rect key="frame" x="0.0" y="120" width="320" height="33.5"/>
+                        <color key="backgroundColor" red="1" green="0.25297864199999998" blue="0.25637971409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="waR-S2-i12" secondAttribute="trailing" id="2f2-rf-SHz"/>
+                    <constraint firstItem="waR-S2-i12" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="52c-eC-W9r"/>
+                    <constraint firstItem="t2o-7Q-SzQ" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="DEO-1e-5EZ"/>
+                    <constraint firstItem="waR-S2-i12" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="Lo5-Lq-ACN"/>
+                    <constraint firstAttribute="trailing" secondItem="DfG-eq-ujd" secondAttribute="trailing" constant="15" id="WPE-m9-6Cp"/>
+                    <constraint firstItem="t2o-7Q-SzQ" firstAttribute="top" secondItem="waR-S2-i12" secondAttribute="bottom" id="bob-pl-6Y4"/>
+                    <constraint firstAttribute="trailing" secondItem="t2o-7Q-SzQ" secondAttribute="trailing" id="kVq-yd-yhV"/>
+                    <constraint firstItem="DfG-eq-ujd" firstAttribute="top" secondItem="t2o-7Q-SzQ" secondAttribute="bottom" constant="10" id="kwv-Vk-2c8"/>
+                    <constraint firstItem="DfG-eq-ujd" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="mLb-Tp-UQ1"/>
+                    <constraint firstAttribute="bottom" secondItem="DfG-eq-ujd" secondAttribute="bottom" constant="5" id="tEh-L7-iRI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImageOffer" destination="waR-S2-i12" id="name-outlet-waR-S2-i12"/>
+                <outlet property="LabelBookingInfo" destination="t2o-7Q-SzQ" id="name-outlet-t2o-7Q-SzQ"/>
+                <outlet property="LabelOffer" destination="DfG-eq-ujd" id="name-outlet-DfG-eq-ujd"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="144.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotelRoomTest" width="525" height="394"/>
+    </resources>
+</document>

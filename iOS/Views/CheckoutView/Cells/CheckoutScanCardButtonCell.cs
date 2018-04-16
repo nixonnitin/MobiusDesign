@@ -23,7 +23,7 @@ namespace Mobius.iOS.Views
         public override void AwakeFromNib()
         {
             base.AwakeFromNib();
-            ViewContainer.BackgroundColor = MobiusHelper.GetColorDarkGreen();
+            //ViewContainer.BackgroundColor = MobiusHelper.GetColorDarkGreen();
             ViewContainer.Layer.CornerRadius = 5;
             LabelScanCard.Font = MobiusHelper.GetFontBoldWithSize(15);
             LabelUsingCamera.Font = MobiusHelper.GetFontRegularWithSize(12);
