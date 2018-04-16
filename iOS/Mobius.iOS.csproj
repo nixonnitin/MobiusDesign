@@ -707,6 +707,10 @@
     <InterfaceDefinition Include="Views\OffersPage\Cells\OfferPageWebviewCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutInputCardCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardsTableViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1093,6 +1097,22 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.cs" />
     <Compile Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.designer.cs">
       <DependentUpon>CheckoutCardExpireCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.designer.cs">
+      <DependentUpon>ImageWithHeadingViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.designer.cs">
+      <DependentUpon>RewardDescriptionWithButtonViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.designer.cs">
+      <DependentUpon>RewardDescriptionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardsTableViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardsTableViewCell.designer.cs">
+      <DependentUpon>RewardsTableViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

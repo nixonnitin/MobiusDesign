@@ -161,5 +161,9 @@
         <image name="Triangle.png" width="54" height="36"/>
         <image name="user.png" width="18" height="18"/>
         <image name="cameraIcon" width="512" height="512"/>
+        <image name="creditBlue" width="512" height="512"/>
+        <image name="creditGrey" width="512" height="512"/>
+        <image name="creditRed" width="512" height="512"/>
+        <image name="downArrowBlue" width="512" height="512"/>
     </resources>
 </document>

@@ -10,27 +10,27 @@ using System.CodeDom.Compiler;
 
 namespace Mobius.iOS.Views
 {
-    [Register ("BreakLineViewCell")]
-    partial class BreakLineViewCell
+    [Register ("ImageWithHeadingViewCell")]
+    partial class ImageWithHeadingViewCell
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UISegmentedControl SegmentControlTab { get; set; }
+        UIKit.UIImageView ImageReward { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView UiViewBreakline { get; set; }
+        UIKit.UILabel LabelHeadingReward { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (SegmentControlTab != null) {
-                SegmentControlTab.Dispose ();
-                SegmentControlTab = null;
+            if (ImageReward != null) {
+                ImageReward.Dispose ();
+                ImageReward = null;
             }
 
-            if (UiViewBreakline != null) {
-                UiViewBreakline.Dispose ();
-                UiViewBreakline = null;
+            if (LabelHeadingReward != null) {
+                LabelHeadingReward.Dispose ();
+                LabelHeadingReward = null;
             }
         }
     }

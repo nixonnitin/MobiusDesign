@@ -19,5 +19,20 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
+
+        #region properties
+        public UIKit.NSLayoutConstraint constraintWebviewHeight{
+            get { return ConstraintWebviewHeight; }
+            set { ConstraintWebviewHeight = value; }
+        }
+
+        public UIKit.UIWebView webviewDescription
+        {
+            get { return WebviewDescription; }
+            set { WebviewDescription = value; }
+        }
+
+       
+        #endregion
     }
 }

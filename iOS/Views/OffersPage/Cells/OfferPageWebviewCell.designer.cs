@@ -15,11 +15,11 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.NSLayoutConstraint ConstraintWebviewHeight { get; set; }
+        UIKit.NSLayoutConstraint ConstraintWebviewHeight { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIWebView WebviewDescription { get; set; }
+        UIKit.UIWebView WebviewDescription { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

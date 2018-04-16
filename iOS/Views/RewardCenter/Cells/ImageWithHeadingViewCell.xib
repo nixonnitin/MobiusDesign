@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="354" id="cxk-wN-pdQ" customClass="ImageWithHeadingViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="354"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="353.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOm-8m-ByI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="353.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="hotelRoomTest" translatesAutoresizingMaskIntoConstraints="NO" id="l4T-uh-j2n">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="292.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Qiu-27-s7I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="$1,000 USD Sandman Hotels Gift Card" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-TL-CKF">
+                                <rect key="frame" x="15" y="302.5" width="290" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="l4T-uh-j2n" secondAttribute="trailing" id="1Is-FM-Kbo"/>
+                            <constraint firstItem="TCo-TL-CKF" firstAttribute="leading" secondItem="kOm-8m-ByI" secondAttribute="leading" constant="15" id="ItW-iU-RhT"/>
+                            <constraint firstItem="TCo-TL-CKF" firstAttribute="top" secondItem="l4T-uh-j2n" secondAttribute="bottom" constant="10" id="L2N-tK-4aF"/>
+                            <constraint firstAttribute="bottom" secondItem="TCo-TL-CKF" secondAttribute="bottom" constant="10" id="Psh-qK-qnu"/>
+                            <constraint firstItem="l4T-uh-j2n" firstAttribute="leading" secondItem="kOm-8m-ByI" secondAttribute="leading" id="QSD-tY-7YK"/>
+                            <constraint firstItem="l4T-uh-j2n" firstAttribute="top" secondItem="kOm-8m-ByI" secondAttribute="top" id="gBN-LX-f1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="TCo-TL-CKF" secondAttribute="trailing" constant="15" id="s1i-vO-wHC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kOm-8m-ByI" secondAttribute="trailing" id="5mN-tj-WYo"/>
+                    <constraint firstItem="kOm-8m-ByI" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="BjW-l3-aRh"/>
+                    <constraint firstItem="kOm-8m-ByI" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="j0s-am-qG9"/>
+                    <constraint firstAttribute="bottom" secondItem="kOm-8m-ByI" secondAttribute="bottom" id="j9l-L4-shk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImageReward" destination="l4T-uh-j2n" id="name-outlet-l4T-uh-j2n"/>
+                <outlet property="LabelHeadingReward" destination="TCo-TL-CKF" id="name-outlet-TCo-TL-CKF"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="-41"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotelRoomTest" width="525" height="394"/>
+    </resources>
+</document>
