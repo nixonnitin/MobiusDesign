@@ -32,5 +32,44 @@ namespace Mobius.iOS.Views
             LabelTerms.Font = MobiusHelper.GetFontMediumWithSize(14);
             LabelTerms.TextColor = MobiusHelper.GetColorSeaBlue();
         }
+
+        #region properties
+        public UIKit.UILabel labelAgree{
+            get{
+                return LabelAgree;
+            }
+            set{
+                LabelAgree = value;
+            }
+        }
+
+        public UIKit.UILabel labelTerms
+        {
+            get
+            {
+                return LabelTerms;
+            }
+            set
+            {
+                LabelTerms = value;
+            }
+        }
+
+   
+        public UIKit.UIView viewContainer
+        {
+            get
+            {
+                return ViewContainer;
+            }
+            set
+            {
+                ViewContainer = value;
+            }
+        }
+
+
+
+        #endregion
     }
 }
