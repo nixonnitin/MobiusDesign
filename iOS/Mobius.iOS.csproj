@@ -712,6 +712,10 @@
     <InterfaceDefinition Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.xib" />
     <InterfaceDefinition Include="Views\Poll\Poll List\Controller\PollListViewController.xib" />
     <InterfaceDefinition Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.xib" />
+    <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardsTableViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1114,6 +1118,22 @@
     <Compile Include="Views\Poll\Poll List\Controller\PollListViewController.designer.cs" />
     <Compile Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.cs" />
     <Compile Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.designer.cs" />
+    <Compile Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\ImageWithHeadingViewCell.designer.cs">
+      <DependentUpon>ImageWithHeadingViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionWithButtonViewCell.designer.cs">
+      <DependentUpon>RewardDescriptionWithButtonViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.designer.cs">
+      <DependentUpon>RewardDescriptionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardCenter\Cells\RewardsTableViewCell.cs" />
+    <Compile Include="Views\RewardCenter\Cells\RewardsTableViewCell.designer.cs">
+      <DependentUpon>RewardsTableViewCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />

@@ -33,7 +33,7 @@ namespace Mobius.iOS.Views
 
         private void initData()
         {
-            sections = new List<string> { "", "", "" };
+            sections = new List<string> { "", "", "" ,"","","",""};
             //collectionViewLabels = new List<string> { "On-Site Parking", "24-Hours Front Desk", "Complimentary Wireless Internet", "Denny's Restaurant" };
             //collectionViewImages = new List<string> { "parking-1", "food-1", "gym", "homeWiFi" };
         }
@@ -47,9 +47,11 @@ namespace Mobius.iOS.Views
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("RewardCenterMemberHeaderViewCell", NSBundle.MainBundle), "RewardCenterMemberHeaderViewCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("HomeEnhancementsCell", NSBundle.MainBundle), "HomeEnhancementsCell");
             TableRoomView.RegisterNibForCellReuse(UINib.FromName("BreakLineViewCell", NSBundle.MainBundle), "BreakLineViewCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("ImageWithHeadingViewCell", NSBundle.MainBundle), "ImageWithHeadingViewCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("RewardDescriptionWithButtonViewCell", NSBundle.MainBundle), "RewardDescriptionWithButtonViewCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("RewardDescriptionViewCell", NSBundle.MainBundle), "RewardDescriptionViewCell");
+            TableRoomView.RegisterNibForCellReuse(UINib.FromName("RewardsTableViewCell", NSBundle.MainBundle), "RewardsTableViewCell");
 
-
-        
 
 
 

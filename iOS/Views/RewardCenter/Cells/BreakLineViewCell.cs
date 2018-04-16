@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -19,5 +20,25 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
+        public override void AwakeFromNib()
+        {
+            base.AwakeFromNib();
+
+            segmentControlTab.Layer.BorderColor = MobiusHelper.GetColorLightGreen().CGColor;
+            segmentControlTab.TintColor = MobiusHelper.GetColorLightGreen();
+            segmentControlTab.Layer.MasksToBounds = true;
+            UiViewBreakline.BackgroundColor = MobiusHelper.GetColorBorderGrey();
+
+        }
+
+
+        #region properties
+        public UIKit.UISegmentedControl segmentControlTab{
+            get { return SegmentControlTab; }
+            set { SegmentControlTab = value; }
+        }
+        #endregion
+
+
     }
 }

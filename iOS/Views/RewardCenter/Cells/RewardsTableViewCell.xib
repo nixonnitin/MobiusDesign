@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="cxk-wN-pdQ" customClass="RewardsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-6a-fYm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="147.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Date Reddemed" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMG-dp-gKE">
+                                <rect key="frame" x="15" y="10" width="105.5" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="mfv-hw-vOL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-oL-4aX">
+                                <rect key="frame" x="107.5" y="10" width="105.5" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="NIc-B2-hnz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Status" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0T-MC-R1R">
+                                <rect key="frame" x="204.5" y="10" width="105.5" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="4nC-yl-fhD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 Oct 2017" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-k8-154">
+                                <rect key="frame" x="15" y="76.5" width="105.5" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Xzl-EP-siH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Breakfast in Bed" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqf-F9-gmO">
+                                <rect key="frame" x="107.5" y="76.5" width="105.5" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Gn2-ox-YgR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeemed" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-lh-Spa">
+                                <rect key="frame" x="204.5" y="76.5" width="105.5" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="dGj-BO-QDB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-0n-EEa">
+                                <rect key="frame" x="0.0" y="145.5" width="320" height="2"/>
+                                <color key="backgroundColor" red="1" green="0.167466856" blue="0.28769306319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="rNA-Id-SBc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jl3-lh-Spa" secondAttribute="trailing" constant="10" id="1vR-qW-6E1"/>
+                            <constraint firstItem="jl3-lh-Spa" firstAttribute="height" secondItem="DMG-dp-gKE" secondAttribute="height" id="3b9-OF-wdU"/>
+                            <constraint firstItem="jl3-lh-Spa" firstAttribute="width" secondItem="DMG-dp-gKE" secondAttribute="width" id="4nW-hE-Hig"/>
+                            <constraint firstItem="ixB-oL-4aX" firstAttribute="height" secondItem="DMG-dp-gKE" secondAttribute="height" id="5be-2j-ip2"/>
+                            <constraint firstItem="f8Z-k8-154" firstAttribute="width" secondItem="DMG-dp-gKE" secondAttribute="width" id="7mh-NU-t2E"/>
+                            <constraint firstAttribute="bottom" secondItem="Oqf-F9-gmO" secondAttribute="bottom" constant="10" id="7x3-Xf-Anu"/>
+                            <constraint firstItem="I0T-MC-R1R" firstAttribute="width" secondItem="DMG-dp-gKE" secondAttribute="width" id="9I7-Hi-W1b"/>
+                            <constraint firstAttribute="bottom" secondItem="eVc-0n-EEa" secondAttribute="bottom" id="FOj-tu-SLA"/>
+                            <constraint firstItem="jl3-lh-Spa" firstAttribute="top" secondItem="I0T-MC-R1R" secondAttribute="bottom" constant="5" id="K2O-mG-YPv"/>
+                            <constraint firstItem="Oqf-F9-gmO" firstAttribute="width" secondItem="DMG-dp-gKE" secondAttribute="width" id="Oew-a1-hIA"/>
+                            <constraint firstItem="eVc-0n-EEa" firstAttribute="leading" secondItem="Ae1-6a-fYm" secondAttribute="leading" id="P7N-if-Byx"/>
+                            <constraint firstAttribute="bottom" secondItem="f8Z-k8-154" secondAttribute="bottom" constant="10" id="W9x-2U-TPr"/>
+                            <constraint firstAttribute="bottom" secondItem="jl3-lh-Spa" secondAttribute="bottom" constant="10" id="WXS-Kw-fta"/>
+                            <constraint firstItem="DMG-dp-gKE" firstAttribute="leading" secondItem="Ae1-6a-fYm" secondAttribute="leading" constant="15" id="Zab-wM-Jx8"/>
+                            <constraint firstItem="DMG-dp-gKE" firstAttribute="top" secondItem="Ae1-6a-fYm" secondAttribute="top" constant="10" id="b9n-Ox-wWq"/>
+                            <constraint firstAttribute="trailing" secondItem="I0T-MC-R1R" secondAttribute="trailing" constant="10" id="cxV-hp-xSi"/>
+                            <constraint firstItem="f8Z-k8-154" firstAttribute="top" secondItem="DMG-dp-gKE" secondAttribute="bottom" constant="5" id="dOE-yy-giD"/>
+                            <constraint firstItem="ixB-oL-4aX" firstAttribute="top" secondItem="Ae1-6a-fYm" secondAttribute="top" constant="10" id="gX2-DM-tFr"/>
+                            <constraint firstItem="I0T-MC-R1R" firstAttribute="height" secondItem="DMG-dp-gKE" secondAttribute="height" id="iTj-68-vrN"/>
+                            <constraint firstItem="I0T-MC-R1R" firstAttribute="top" secondItem="Ae1-6a-fYm" secondAttribute="top" constant="10" id="lSb-C1-iIR"/>
+                            <constraint firstItem="ixB-oL-4aX" firstAttribute="width" secondItem="DMG-dp-gKE" secondAttribute="width" id="pGc-2F-cvy"/>
+                            <constraint firstItem="ixB-oL-4aX" firstAttribute="centerX" secondItem="Ae1-6a-fYm" secondAttribute="centerX" id="rit-dx-R78"/>
+                            <constraint firstItem="f8Z-k8-154" firstAttribute="leading" secondItem="Ae1-6a-fYm" secondAttribute="leading" constant="15" id="v96-df-PKT"/>
+                            <constraint firstItem="Oqf-F9-gmO" firstAttribute="top" secondItem="ixB-oL-4aX" secondAttribute="bottom" constant="5" id="xYU-IA-y37"/>
+                            <constraint firstItem="ixB-oL-4aX" firstAttribute="leading" secondItem="Oqf-F9-gmO" secondAttribute="leading" id="yih-3e-qix"/>
+                            <constraint firstAttribute="trailing" secondItem="eVc-0n-EEa" secondAttribute="trailing" id="zrh-ND-a5W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ae1-6a-fYm" secondAttribute="bottom" id="BgM-x5-WgU"/>
+                    <constraint firstItem="Ae1-6a-fYm" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="O3P-8H-fx5"/>
+                    <constraint firstItem="Ae1-6a-fYm" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="e1M-qe-wC4"/>
+                    <constraint firstAttribute="trailing" secondItem="Ae1-6a-fYm" secondAttribute="trailing" id="hP6-46-gow"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-99" y="-55"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homeIcon" width="32" height="32"/>
+        <image name="nextArrow" width="32" height="32"/>
+        <image name="cal" width="512" height="512"/>
+        <image name="check" width="512" height="512"/>
+        <image name="checkwhite" width="512" height="512"/>
+        <image name="clock" width="2134" height="2134"/>
+        <image name="clockwhite" width="2134" height="2134"/>
+        <image name="defaultimage" width="512" height="512"/>
+        <image name="fb" width="512" height="512"/>
+        <image name="food" width="512" height="512"/>
+        <image name="gym" width="512" height="512"/>
+        <image name="homeAdd" width="512" height="512"/>
+        <image name="homeBestOffer" width="512" height="512"/>
+        <image name="location" width="512" height="512"/>
+        <image name="moon" width="512" height="512"/>
+        <image name="nextarrowhome" width="512" height="512"/>
+        <image name="ratingempty" width="512" height="512"/>
+        <image name="ratingfull" width="512" height="512"/>
+        <image name="ratinghalf" width="512" height="512"/>
+        <image name="homeCal" width="512" height="512"/>
+        <image name="homeCheck" width="512" height="512"/>
+        <image name="homeCheckWhite" width="512" height="512"/>
+        <image name="homeClock" width="2134" height="2134"/>
+        <image name="homeClockWhite" width="2134" height="2134"/>
+        <image name="homeDefaultImage" width="512" height="512"/>
+        <image name="homeFB" width="512" height="512"/>
+        <image name="homeFood" width="512" height="512"/>
+        <image name="homeGym" width="512" height="512"/>
+        <image name="homeLocation" width="512" height="512"/>
+        <image name="homeMoon" width="512" height="512"/>
+        <image name="homeNextArrow" width="32" height="32"/>
+        <image name="homeNextArrowHome" width="512" height="512"/>
+        <image name="homeRatingEmpty" width="512" height="512"/>
+        <image name="homeRatingFull" width="512" height="512"/>
+        <image name="homeRatingHalf" width="512" height="512"/>
+        <image name="homeParking" width="512" height="512"/>
+        <image name="homePencil" width="512" height="512"/>
+        <image name="homePerson" width="512" height="512"/>
+        <image name="homePersonWhite" width="512" height="512"/>
+        <image name="homeRoom" width="512" height="512"/>
+        <image name="homeSettings" width="512" height="512"/>
+        <image name="homeSwim" width="512" height="512"/>
+        <image name="homeWiFi" width="512" height="512"/>
+        <image name="homeicon" width="32" height="32"/>
+        <image name="nextarrow" width="32" height="32"/>
+        <image name="hotelRoomTest" width="1920" height="1200"/>
+        <image name="add-1" width="512" height="512"/>
+        <image name="arrow-white" width="50" height="34"/>
+        <image name="arrow" width="50" height="34"/>
+        <image name="best-offer" width="512" height="512"/>
+        <image name="check-white" width="512" height="512"/>
+        <image name="clock-white" width="2134" height="2134"/>
+        <image name="empty" width="512" height="512"/>
+        <image name="food-1" width="512" height="512"/>
+        <image name="full" width="512" height="512"/>
+        <image name="grey-cross-1" width="512" height="512"/>
+        <image name="gym-1" width="512" height="512"/>
+        <image name="half" width="512" height="512"/>
+        <image name="img" width="512" height="512"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="moon-1" width="512" height="512"/>
+        <image name="next-arrrow-1" width="512" height="512"/>
+        <image name="parking-1" width="512" height="512"/>
+        <image name="pencil-1" width="512" height="512"/>
+        <image name="person-1" width="512" height="512"/>
+        <image name="person-white" width="512" height="512"/>
+        <image name="red-cross-1" width="512" height="512"/>
+        <image name="room-1" width="512" height="512"/>
+        <image name="search-1" width="512" height="512"/>
+        <image name="settings-1" width="512" height="512"/>
+        <image name="swim-1" width="512" height="512"/>
+        <image name="tag" width="512" height="515"/>
+        <image name="wifi-1" width="512" height="512"/>
+        <image name="BuildingMobius" width="259" height="194"/>
+        <image name="calWhite" width="512" height="512"/>
+        <image name="handicaped-white" width="512" height="512"/>
+        <image name="heart-line" width="512" height="512"/>
+        <image name="heart" width="512" height="512"/>
+        <image name="hotel-calendar-white" width="512" height="512"/>
+        <image name="locationWhite" width="512" height="512"/>
+        <image name="lock-white" width="512" height="512"/>
+        <image name="moon-white" width="512" height="512"/>
+        <image name="personWhite" width="512" height="512"/>
+        <image name="pet-white" width="512" height="512"/>
+        <image name="spoon-white" width="512" height="512"/>
+        <image name="top-bar-calendar" width="512" height="512"/>
+        <image name="gymWhiteBack" width="512" height="512"/>
+        <image name="homePencilWhite" width="30" height="30"/>
+        <image name="ArrowWhiteNext" width="50" height="50"/>
+        <image name="ArrowWhitePrevious" width="50" height="50"/>
+        <image name="Booking" width="509" height="85"/>
+        <image name="expedia" width="501" height="142"/>
+        <image name="expedio" width="50" height="50"/>
+        <image name="trivago" width="510" height="152"/>
+        <image name="dollarWhite" width="30" height="30"/>
+        <image name="starRoundBlue" width="30" height="30"/>
+        <image name="Exclamatory" width="35" height="35"/>
+        <image name="128" width="128" height="128"/>
+        <image name="american" width="512" height="512"/>
+        <image name="chat" width="512" height="512"/>
+        <image name="phone-1" width="512" height="512"/>
+        <image name="red-bg" width="512" height="88"/>
+        <image name="lake-bg" width="1125" height="479"/>
+        <image name="owl" width="512" height="512"/>
+        <image name="pencilGray" width="512" height="512"/>
+        <image name="ArrowDownGray" width="512" height="512"/>
+        <image name="ArrayUpGray" width="512" height="512"/>
+        <image name="personGrey" width="512" height="512"/>
+        <image name="checkboxChecked" width="512" height="512"/>
+        <image name="checkboxUncheck" width="512" height="512"/>
+        <image name="emailGrey" width="512" height="512"/>
+        <image name="lockGrey" width="512" height="512"/>
+        <image name="phoneGrey" width="512" height="512"/>
+        <image name="starGrey" width="512" height="512"/>
+        <image name="blueArrowDown" width="512" height="512"/>
+        <image name="ParkingImage" width="60" height="60"/>
+        <image name="WirelessImage" width="60" height="60"/>
+        <image name="backgroundBlue" width="1125" height="363"/>
+        <image name="backgroundRed" width="1125" height="485"/>
+        <image name="informationWhite" width="512" height="512"/>
+        <image name="backgroundOrange" width="1125" height="486"/>
+        <image name="starOffer" width="512" height="512"/>
+        <image name="cameraIcon" width="512" height="512"/>
+        <image name="creditBlue" width="512" height="512"/>
+        <image name="creditGrey" width="512" height="512"/>
+        <image name="creditRed" width="512" height="512"/>
+        <image name="downArrowBlue" width="512" height="512"/>
+        <image name="bgblur.png" width="240" height="320"/>
+        <image name="Triangle.png" width="54" height="36"/>
+        <image name="user.png" width="18" height="18"/>
+    </resources>
+</document>

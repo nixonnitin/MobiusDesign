@@ -7,9 +7,14 @@ namespace Mobius.iOS.Helper
     public static class MobiusHelper
     {
         //348d9b
-        public static UIColor GetColorDarkGreen(){
+       public static UIColor GetColorDarkGreen(){
            return new UIColor(red: 0.20f, green: 0.55f, blue: 0.61f, alpha: 1.0f); 
        }
+        public static UIColor GetColorLightGreen()
+        {
+            return new UIColor(red: 0.00f, green: 0.70f, blue: 0.78f, alpha: 1.0f);
+        }
+
         //#93222e
        public static UIColor GetColorMaroonRed()
        {

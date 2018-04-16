@@ -45,7 +45,24 @@ namespace Mobius.iOS.Views
                     cell2.SelectionStyle = UITableViewCellSelectionStyle.None;
                     cell2.ConstraintSelectedViewWidth.Constant = 0;
                     return cell2;
-      
+                case 3:
+                    var cell3 = (ImageWithHeadingViewCell)tableView.DequeueReusableCell(ImageWithHeadingViewCell.Key, indexPath);
+                    cell3.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    return cell3;
+
+                case 4:
+                    var cell4 = (RewardDescriptionWithButtonViewCell)tableView.DequeueReusableCell(RewardDescriptionWithButtonViewCell.Key, indexPath);
+                    cell4.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    return cell4;
+                case 5:
+                    var cell5 = (RewardDescriptionViewCell)tableView.DequeueReusableCell(RewardDescriptionViewCell.Key, indexPath);
+                    cell5.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    return cell5;
+                case 6:
+                    var cell6 = (RewardsTableViewCell)tableView.DequeueReusableCell(RewardsTableViewCell.Key, indexPath);
+                    cell6.SelectionStyle = UITableViewCellSelectionStyle.None;
+                    return cell6;
+
                 default:
                     var cellDefault = new UITableViewCell();
                     return cellDefault;

@@ -11,54 +11,57 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="cxk-wN-pdQ" customClass="BreakLineViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="cxk-wN-pdQ" customClass="RewardDescriptionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLe-0g-tMj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
-                        <color key="backgroundColor" red="1" green="0.25297864199999998" blue="0.25637971409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="2" id="Zhu-8B-dXv"/>
-                        </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI7-sk-a5Z">
-                        <rect key="frame" x="0.0" y="4" width="320" height="80.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paU-wo-nBg">
+                        <rect key="frame" x="15" y="15" width="290" height="141.5"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5TD-Y2-8Zb">
-                                <rect key="frame" x="10" y="10" width="300" height="61.5"/>
-                                <segments>
-                                    <segment title="Buy Rewards"/>
-                                    <segment title="Redeemed Rewards"/>
-                                </segments>
-                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Started with rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icr-r0-IF2">
+                                <rect key="frame" x="5" y="5" width="280" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="zbT-qV-9kW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-0P-CUx">
+                                <rect key="frame" x="5" y="35" width="280" height="81.5"/>
+                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5TD-Y2-8Zb" firstAttribute="leading" secondItem="qI7-sk-a5Z" secondAttribute="leading" constant="10" id="7Z7-lV-eri"/>
-                            <constraint firstItem="5TD-Y2-8Zb" firstAttribute="top" secondItem="qI7-sk-a5Z" secondAttribute="top" constant="10" id="EwR-UM-fnQ"/>
-                            <constraint firstItem="5TD-Y2-8Zb" firstAttribute="centerY" secondItem="qI7-sk-a5Z" secondAttribute="centerY" id="SCS-Sn-d73"/>
-                            <constraint firstAttribute="trailing" secondItem="5TD-Y2-8Zb" secondAttribute="trailing" constant="10" id="Yiw-QR-71E"/>
+                            <constraint firstItem="fNq-0P-CUx" firstAttribute="leading" secondItem="paU-wo-nBg" secondAttribute="leading" constant="5" id="57R-MB-jLT"/>
+                            <constraint firstAttribute="bottom" secondItem="fNq-0P-CUx" secondAttribute="bottom" constant="25" id="6kh-1l-Z6C"/>
+                            <constraint firstItem="fNq-0P-CUx" firstAttribute="top" secondItem="icr-r0-IF2" secondAttribute="bottom" constant="5" id="KBa-C6-Tct"/>
+                            <constraint firstAttribute="trailing" secondItem="icr-r0-IF2" secondAttribute="trailing" constant="5" id="Mrn-ih-ZkH"/>
+                            <constraint firstItem="icr-r0-IF2" firstAttribute="leading" secondItem="paU-wo-nBg" secondAttribute="leading" constant="5" id="P9F-Do-ahh"/>
+                            <constraint firstItem="icr-r0-IF2" firstAttribute="top" secondItem="paU-wo-nBg" secondAttribute="top" constant="5" id="RYc-G9-PtW"/>
+                            <constraint firstAttribute="trailing" secondItem="fNq-0P-CUx" secondAttribute="trailing" constant="5" id="dlo-5K-75G"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qI7-sk-a5Z" firstAttribute="top" secondItem="hLe-0g-tMj" secondAttribute="bottom" constant="2" id="0rv-2z-7MN"/>
-                    <constraint firstItem="qI7-sk-a5Z" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="21g-rl-n4k"/>
-                    <constraint firstAttribute="trailing" secondItem="hLe-0g-tMj" secondAttribute="trailing" id="BPY-4w-k5w"/>
-                    <constraint firstAttribute="trailing" secondItem="qI7-sk-a5Z" secondAttribute="trailing" id="In7-Pn-D13"/>
-                    <constraint firstItem="hLe-0g-tMj" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="eFd-IO-13I"/>
-                    <constraint firstItem="hLe-0g-tMj" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="fD1-2H-9Uu"/>
-                    <constraint firstAttribute="bottom" secondItem="qI7-sk-a5Z" secondAttribute="bottom" id="uKl-gI-dCF"/>
+                    <constraint firstAttribute="trailing" secondItem="paU-wo-nBg" secondAttribute="trailing" constant="15" id="AaZ-Pr-FVN"/>
+                    <constraint firstItem="paU-wo-nBg" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="15" id="Bo6-3k-deM"/>
+                    <constraint firstAttribute="bottom" secondItem="paU-wo-nBg" secondAttribute="bottom" constant="15" id="g9Z-j6-rOE"/>
+                    <constraint firstItem="paU-wo-nBg" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="mH9-SF-FTP"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="34" y="95.5"/>
+            <point key="canvasLocation" x="18" y="-81"/>
             <connections>
-                <outlet property="UiViewBreakline" destination="hLe-0g-tMj" id="name-outlet-hLe-0g-tMj"/>
-                <outlet property="SegmentControlTab" destination="5TD-Y2-8Zb" id="name-outlet-5TD-Y2-8Zb"/>
+                <outlet property="ViewMainForDescription" destination="paU-wo-nBg" id="name-outlet-paU-wo-nBg"/>
+                <outlet property="LabelDescriptionHeading" destination="icr-r0-IF2" id="name-outlet-icr-r0-IF2"/>
+                <outlet property="LabelDescription" destination="fNq-0P-CUx" id="name-outlet-fNq-0P-CUx"/>
             </connections>
         </tableViewCell>
     </objects>
