@@ -19,5 +19,14 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
+
+        public NSLayoutConstraint constraintWebviewHeight{
+            get { return ConstraintWebviewHeight; }
+            set { ConstraintWebviewHeight = value; }
+        }
+        public UIWebView webviewDescription{
+            get { return WebviewDescription; }
+            set { WebviewDescription = value; }
+        }
     }
 }

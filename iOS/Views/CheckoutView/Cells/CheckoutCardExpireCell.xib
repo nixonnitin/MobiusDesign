@@ -34,13 +34,13 @@
                         <rect key="frame" x="15" y="31" width="93.5" height="40"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jPe-Jl-s0J">
-                                <rect key="frame" x="5" y="11.5" width="62.5" height="17"/>
+                                <rect key="frame" x="5" y="11.5" width="55.5" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvc-f6-cLk">
-                                <rect key="frame" x="70.5" y="10" width="20" height="20"/>
+                                <rect key="frame" x="63.5" y="10" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="53b-lV-tPY"/>
                                     <constraint firstAttribute="height" constant="20" id="9cw-TJ-53B"/>
@@ -51,7 +51,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="0bC-MQ-rw0"/>
-                            <constraint firstAttribute="trailing" secondItem="Fvc-f6-cLk" secondAttribute="trailing" constant="3" id="Rsu-vw-DD5"/>
+                            <constraint firstAttribute="trailing" secondItem="Fvc-f6-cLk" secondAttribute="trailing" constant="10" id="Rsu-vw-DD5"/>
                             <constraint firstItem="Fvc-f6-cLk" firstAttribute="centerY" secondItem="gAE-Ii-S2s" secondAttribute="centerY" id="Sds-tZ-Ezy"/>
                             <constraint firstItem="jPe-Jl-s0J" firstAttribute="centerY" secondItem="gAE-Ii-S2s" secondAttribute="centerY" id="kup-Qe-sHa"/>
                             <constraint firstItem="jPe-Jl-s0J" firstAttribute="leading" secondItem="gAE-Ii-S2s" secondAttribute="leading" constant="5" id="thH-9s-HBw"/>
@@ -62,13 +62,13 @@
                         <rect key="frame" x="113.5" y="31" width="93" height="40"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="YY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBf-jz-u8Z">
-                                <rect key="frame" x="4" y="11.5" width="63" height="17"/>
+                                <rect key="frame" x="4" y="11.5" width="56" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik7-7C-dFc">
-                                <rect key="frame" x="70" y="10" width="20" height="20"/>
+                                <rect key="frame" x="63" y="10" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="MZ9-Dd-ejU"/>
                                     <constraint firstAttribute="height" constant="20" id="ZKi-cC-fFe"/>
@@ -78,7 +78,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ik7-7C-dFc" secondAttribute="trailing" constant="3" id="0Uu-Co-2ke"/>
+                            <constraint firstAttribute="trailing" secondItem="ik7-7C-dFc" secondAttribute="trailing" constant="10" id="0Uu-Co-2ke"/>
                             <constraint firstItem="ik7-7C-dFc" firstAttribute="centerY" secondItem="4YY-Oa-jGm" secondAttribute="centerY" id="BEb-WZ-OGh"/>
                             <constraint firstItem="ik7-7C-dFc" firstAttribute="leading" secondItem="vBf-jz-u8Z" secondAttribute="trailing" constant="3" id="LWP-dK-yUD"/>
                             <constraint firstAttribute="height" constant="40" id="Ui9-DZ-wwP"/>

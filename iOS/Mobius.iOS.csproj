@@ -707,6 +707,11 @@
     <InterfaceDefinition Include="Views\OffersPage\Cells\OfferPageWebviewCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutInputCardCell.xib" />
     <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\MainView\TestViewController.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\CheckoutPostcodeCountryCell.xib" />
+    <InterfaceDefinition Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Poll\Poll List\Controller\PollListViewController.xib" />
+    <InterfaceDefinition Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1094,6 +1099,21 @@
     <Compile Include="Views\CheckoutView\Cells\CheckoutCardExpireCell.designer.cs">
       <DependentUpon>CheckoutCardExpireCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CheckoutView\MainView\TestViewController.cs" />
+    <Compile Include="Views\CheckoutView\MainView\TestViewController.designer.cs">
+      <DependentUpon>TestViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\MainView\TestTableSource.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPostcodeCountryCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\CheckoutPostcodeCountryCell.designer.cs">
+      <DependentUpon>CheckoutPostcodeCountryCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.cs" />
+    <Compile Include="Views\Poll\Poll List\Cell\Top cell\PollTopCellTableViewCell.designer.cs" />
+    <Compile Include="Views\Poll\Poll List\Controller\PollListViewController.cs" />
+    <Compile Include="Views\Poll\Poll List\Controller\PollListViewController.designer.cs" />
+    <Compile Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.cs" />
+    <Compile Include="Views\Poll\Poll Question\Controller\PollQuestionViewController.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />

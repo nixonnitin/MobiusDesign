@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PollTopCellTableViewCell" rowHeight="100" id="cxk-wN-pdQ" customClass="PollTopCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the poll title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRe-KU-n64">
+                        <rect key="frame" x="16" y="11" width="288" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete polls to earn 5 Points" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izW-lW-arO">
+                        <rect key="frame" x="16" y="30" width="288" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Poll" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abi-NH-aDA">
+                        <rect key="frame" x="16" y="68" width="288" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.094117647060000004" green="0.4431372549" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrowBlue" translatesAutoresizingMaskIntoConstraints="NO" id="VHY-ve-Vdi">
+                        <rect key="frame" x="155" y="84.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="UBH-Ft-j1b"/>
+                            <constraint firstAttribute="height" constant="10" id="cub-CD-Wfl"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="abi-NH-aDA" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="2mt-97-g7J"/>
+                    <constraint firstItem="VHY-ve-Vdi" firstAttribute="top" secondItem="abi-NH-aDA" secondAttribute="bottom" constant="2" id="70p-ll-tmH"/>
+                    <constraint firstItem="abi-NH-aDA" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailingMargin" id="AGy-8n-kjq"/>
+                    <constraint firstItem="izW-lW-arO" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailingMargin" id="Cdy-QK-YCM"/>
+                    <constraint firstItem="VHY-ve-Vdi" firstAttribute="centerX" secondItem="YTl-1W-gDM" secondAttribute="centerX" id="IHU-WD-A6l"/>
+                    <constraint firstItem="jRe-KU-n64" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="ORs-CD-zWb"/>
+                    <constraint firstItem="jRe-KU-n64" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" id="SuR-di-Wh6"/>
+                    <constraint firstItem="abi-NH-aDA" firstAttribute="top" secondItem="izW-lW-arO" secondAttribute="bottom" constant="17" id="d1G-xi-sSy"/>
+                    <constraint firstItem="abi-NH-aDA" firstAttribute="top" secondItem="izW-lW-arO" secondAttribute="bottom" constant="17" id="etT-G9-vgd"/>
+                    <constraint firstItem="VHY-ve-Vdi" firstAttribute="top" secondItem="abi-NH-aDA" secondAttribute="bottom" constant="2" id="iv3-Tp-zHl"/>
+                    <constraint firstItem="izW-lW-arO" firstAttribute="top" secondItem="jRe-KU-n64" secondAttribute="bottom" id="rBk-Ap-YhU"/>
+                    <constraint firstItem="abi-NH-aDA" firstAttribute="top" secondItem="jRe-KU-n64" secondAttribute="bottom" constant="38" id="s3k-gP-ycH"/>
+                    <constraint firstItem="jRe-KU-n64" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailingMargin" id="uUH-UO-VZe"/>
+                    <constraint firstItem="izW-lW-arO" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="wHP-1F-eiG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="ImageViewDown" destination="VHY-ve-Vdi" id="cmx-Xg-eMZ"/>
+                <outlet property="LabeTakePoll" destination="abi-NH-aDA" id="WVI-51-QdF"/>
+                <outlet property="LabelCompletePoll" destination="izW-lW-arO" id="hf5-nz-yJ4"/>
+                <outlet property="LabelPollTitile" destination="jRe-KU-n64" id="i7B-tg-Oij"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="-139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrowBlue" width="256" height="256"/>
+    </resources>
+</document>

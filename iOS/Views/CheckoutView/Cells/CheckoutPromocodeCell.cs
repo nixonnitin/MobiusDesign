@@ -24,7 +24,8 @@ namespace Mobius.iOS.Views
         {
             base.AwakeFromNib();
             this.BackgroundColor = MobiusHelper.GetColorLightGrey();
-
+            ViewContainer.BackgroundColor = MobiusHelper.GetColorLightGrey();
+            ViewCheckboxContainer.BackgroundColor = MobiusHelper.GetColorLightGrey();
             ViewPromocodeContainer.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
             ViewPromocodeContainer.Layer.BorderWidth = 2;
             ViewPromocodeContainer.Layer.CornerRadius = 5;

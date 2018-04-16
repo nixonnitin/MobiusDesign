@@ -24,7 +24,7 @@ namespace Mobius.iOS.Views
         {
             base.AwakeFromNib();
             this.BackgroundColor = MobiusHelper.GetColorLightGrey();
-
+            ViewContainer.BackgroundColor = MobiusHelper.GetColorLightGrey();
             ViewInputContainer.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
             ViewInputContainer.Layer.BorderWidth = 2;
             ViewInputContainer.Layer.CornerRadius = 5;

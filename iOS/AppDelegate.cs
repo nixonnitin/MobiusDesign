@@ -77,6 +77,7 @@ namespace Mobius.iOS
 
             //var controller = new Views.ReservationViewController();
             var controller = new Views.CheckoutViewController();
+            //var controller = new Views.TestViewController();
             //var controller = new Views.OffersViewController();
             //var controller = new Views.MainResultViewController();
             //var controller = new Views.BookSearch();

@@ -31,6 +31,14 @@ namespace Mobius.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewCheckboxContainer { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ViewContainer { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView ViewPromocodeContainer { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -53,6 +61,16 @@ namespace Mobius.iOS.Views
             if (TextPromocode != null) {
                 TextPromocode.Dispose ();
                 TextPromocode = null;
+            }
+
+            if (ViewCheckboxContainer != null) {
+                ViewCheckboxContainer.Dispose ();
+                ViewCheckboxContainer = null;
+            }
+
+            if (ViewContainer != null) {
+                ViewContainer.Dispose ();
+                ViewContainer = null;
             }
 
             if (ViewPromocodeContainer != null) {

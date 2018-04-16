@@ -30,11 +30,11 @@ namespace Mobius.iOS.Views
             {
                 var cell = (OfferPageWebviewCell)tableView.DequeueReusableCell(OfferPageWebviewCell.Key, indexPath);
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-                cell.ConstraintWebviewHeight.Constant = 300;
-                cell.WebviewDescription.BackgroundColor = MobiusHelper.GetColorLightGrey();
+                cell.constraintWebviewHeight.Constant = 300;
+                cell.webviewDescription.BackgroundColor = MobiusHelper.GetColorLightGrey();
 
                 NSUrlRequest req = new NSUrlRequest(new NSUrl("https://m.facebook.com"));
-                cell.WebviewDescription.LoadRequest(req);
+                cell.webviewDescription.LoadRequest(req);
                 return cell;
             }
             else
