@@ -77,6 +77,11 @@ namespace Mobius.iOS.Views
             {
                 return 3;
             }
+
+            if (section == 6)
+            {
+                return 3;
+            }
             return 1;
         }
 
