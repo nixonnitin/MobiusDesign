@@ -25,7 +25,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCa-ZV-JFC">
-                        <rect key="frame" x="103" y="16" width="198" height="36.5"/>
+                        <rect key="frame" x="108" y="16" width="193" height="36.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -38,20 +38,20 @@
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelRoomTest" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-7e-Fez">
-                        <rect key="frame" x="10" y="10" width="85" height="64.5"/>
+                        <rect key="frame" x="15" y="10" width="85" height="64.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="85" id="aNC-1k-N3k"/>
                             <constraint firstAttribute="height" constant="65" id="owu-dD-ihq"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9x-vp-zl1">
-                        <rect key="frame" x="103" y="57.5" width="198" height="16.5"/>
+                        <rect key="frame" x="108" y="57.5" width="193" height="16.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                         <color key="textColor" red="0.25490196079999999" green="0.69411764710000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTi-b0-bkR">
-                        <rect key="frame" x="10" y="10" width="85" height="64.5"/>
+                        <rect key="frame" x="15" y="10" width="85" height="64.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeCheckWhite" translatesAutoresizingMaskIntoConstraints="NO" id="OND-uA-rTV">
                                 <rect key="frame" x="22" y="12.5" width="41" height="40"/>
@@ -83,10 +83,10 @@
                     <constraint firstItem="IsX-IC-SRq" firstAttribute="centerY" secondItem="fVY-ol-bmE" secondAttribute="centerY" id="S5w-6e-hBr"/>
                     <constraint firstItem="v9x-vp-zl1" firstAttribute="top" secondItem="HCa-ZV-JFC" secondAttribute="bottom" constant="5" id="VES-uN-QM1"/>
                     <constraint firstItem="v9x-vp-zl1" firstAttribute="bottom" secondItem="fVY-ol-bmE" secondAttribute="bottomMargin" id="Y6A-mc-o1a"/>
-                    <constraint firstItem="PTi-b0-bkR" firstAttribute="leading" secondItem="fVY-ol-bmE" secondAttribute="leading" constant="10" id="ZPo-Sd-28R"/>
+                    <constraint firstItem="PTi-b0-bkR" firstAttribute="leading" secondItem="fVY-ol-bmE" secondAttribute="leading" constant="15" id="ZPo-Sd-28R"/>
                     <constraint firstItem="v9x-vp-zl1" firstAttribute="bottom" secondItem="fVY-ol-bmE" secondAttribute="bottomMargin" id="aeu-mJ-Neo"/>
                     <constraint firstItem="IsX-IC-SRq" firstAttribute="trailing" secondItem="fVY-ol-bmE" secondAttribute="trailingMargin" id="bSh-tU-4Kl"/>
-                    <constraint firstItem="eVH-7e-Fez" firstAttribute="leading" secondItem="fVY-ol-bmE" secondAttribute="leading" constant="10" id="gke-wA-hTk"/>
+                    <constraint firstItem="eVH-7e-Fez" firstAttribute="leading" secondItem="fVY-ol-bmE" secondAttribute="leading" constant="15" id="gke-wA-hTk"/>
                     <constraint firstItem="v9x-vp-zl1" firstAttribute="top" secondItem="HCa-ZV-JFC" secondAttribute="bottom" constant="5" id="mbV-Tq-9JL"/>
                     <constraint firstAttribute="bottom" secondItem="eVH-7e-Fez" secondAttribute="bottom" constant="10" id="wmQ-8C-a6J"/>
                 </constraints>

@@ -165,6 +165,16 @@ namespace Mobius.iOS.Views
                 //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
                 return cell;
             }
+            else if (indexPath.Section == 13)
+            {
+
+                var cell = (CheckoutPostcodeCountryCell)tableView.DequeueReusableCell(CheckoutPostcodeCountryCell.Key, indexPath);
+                cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
+                return cell;
+            }
+
+
             else
             {
 

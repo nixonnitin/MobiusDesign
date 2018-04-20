@@ -42,7 +42,7 @@ namespace Mobius.iOS.Views
             LabelRewardNameValue.Font = MobiusHelper.GetFontRegularWithSize(13);
             LabelRewardNameValue.TextColor = UIColor.Black;
 
-            ViewBreakLine.BackgroundColor = MobiusHelper.GetColorGray();
+            ViewBreakLine.BackgroundColor = MobiusHelper.GetColorLightGraySeperator();
 
 		}
 

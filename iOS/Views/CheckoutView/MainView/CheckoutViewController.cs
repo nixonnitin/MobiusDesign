@@ -30,7 +30,7 @@ namespace Mobius.iOS.Views
         private void initData()
         {
             sections = new List<string> { "", "Enter Your Details", "Offers", "Hotels Near You", "Popular Destinations","","", "",
-                "Selected Offers:", "Your Up Coming Stay:", "Your Purchased Enhancements:", "Recommended Enhancements:", "Your Reservation:", "Your Reservation:" ,"","Select your welcome benefit:","","","" };
+                "Selected Offers:", "Your Up Coming Stay:", "Your Purchased Enhancements:", "Recommended Enhancements:", "Your Reservation:", "Your Reservation:" ,"","Select your welcome benefit:","","","","" };
         }
 
         private void initUI()
@@ -55,6 +55,9 @@ namespace Mobius.iOS.Views
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutScanCardButtonCell", NSBundle.MainBundle), "CheckoutScanCardButtonCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutInputCardCell", NSBundle.MainBundle), "CheckoutInputCardCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutCardExpireCell", NSBundle.MainBundle), "CheckoutCardExpireCell");
+            TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutPostcodeCountryCell", NSBundle.MainBundle), "CheckoutPostcodeCountryCell");
+
+
             TableCheckout.Source = new CheckoutTableSource(TableCheckout, sections);
             //TableCheckout.Delegate = new CheckoutTableDelegate(TableCheckout, View.Frame.Size, sections);
         }

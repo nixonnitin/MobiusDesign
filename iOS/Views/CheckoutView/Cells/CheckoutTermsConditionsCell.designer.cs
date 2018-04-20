@@ -15,19 +15,19 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIButton ButtonCheckbox { get; set; }
+        UIKit.UIButton ButtonCheckbox { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UILabel LabelAgree { get; set; }
+        UIKit.UILabel LabelAgree { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UILabel LabelTerms { get; set; }
+        UIKit.UILabel LabelTerms { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        public UIKit.UIView ViewContainer { get; set; }
+        UIKit.UIView ViewContainer { get; set; }
 
         void ReleaseDesignerOutlets ()
         {

@@ -3,7 +3,7 @@
 using Foundation;
 using UIKit;
 
-namespace Mobius.iOS.Views.CheckoutView.Cells
+namespace Mobius.iOS.Views
 {
     public partial class CheckoutPostcodeCountryCell : UITableViewCell
     {

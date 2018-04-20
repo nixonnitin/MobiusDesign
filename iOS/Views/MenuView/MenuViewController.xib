@@ -169,5 +169,17 @@
         <image name="phoneGrey" width="512" height="512"/>
         <image name="starGrey" width="512" height="512"/>
         <image name="blueArrowDown" width="512" height="512"/>
+        <image name="ParkingImage" width="60" height="60"/>
+        <image name="WirelessImage" width="60" height="60"/>
+        <image name="backgroundBlue" width="1125" height="363"/>
+        <image name="backgroundRed" width="1125" height="485"/>
+        <image name="informationWhite" width="512" height="512"/>
+        <image name="backgroundOrange" width="1125" height="486"/>
+        <image name="starOffer" width="512" height="512"/>
+        <image name="cameraIcon" width="512" height="512"/>
+        <image name="creditBlue" width="512" height="512"/>
+        <image name="creditGrey" width="512" height="512"/>
+        <image name="creditRed" width="512" height="512"/>
+        <image name="downArrowBlue" width="512" height="512"/>
     </resources>
 </document>

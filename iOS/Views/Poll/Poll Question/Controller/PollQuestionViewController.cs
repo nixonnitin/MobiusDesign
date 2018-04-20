@@ -98,15 +98,15 @@ namespace Mobius.iOS.Views
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
 
                 //Agree label
-                cell.LabelAgree.Text = labels[indexPath.Row - 1];
-                cell.LabelAgree.Font = UIFont.SystemFontOfSize(15, UIFontWeight.Medium);
-                cell.LabelAgree.TextColor = UIColor.Black;
+                cell.labelAgree.Text = labels[indexPath.Row - 1];
+                cell.labelAgree.Font = UIFont.SystemFontOfSize(15, UIFontWeight.Medium);
+                cell.labelAgree.TextColor = UIColor.Black;
 
                 //Terms label
-                cell.LabelTerms.Text = "";
+                cell.labelTerms.Text = "";
 
                 //View
-                cell.ViewContainer.BackgroundColor = UIColor.Clear;
+                cell.viewContainer.BackgroundColor = UIColor.Clear;
 
                 //Cell background colour
                 cell.BackgroundColor = UIColor.Clear;
