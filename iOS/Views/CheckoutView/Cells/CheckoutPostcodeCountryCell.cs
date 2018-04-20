@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 using Mobius.iOS.Helper;
 namespace Mobius.iOS.Views
@@ -20,21 +21,35 @@ namespace Mobius.iOS.Views
             // Note: this .ctor should not contain any initialization logic.
         }
 
-        public override void AwakeFromNib()
-        {
+    //     public override void AwakeFromNib()
+    //     {
+    //         base.AwakeFromNib();
+    //         this.BackgroundColor = MobiusHelper.GetColorLightGrey();
+    //         ViewMainPostCodeCountry.BackgroundColor = MobiusHelper.GetColorLightGrey();
+    //         ViewPostcode.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
+    //         ViewPostcode.Layer.BorderWidth = 2;
+    //         ViewPostcode.Layer.CornerRadius = 5;
+
+    //         ViewCountry.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
+    //         ViewCountry.Layer.BorderWidth = 2;
+    //         ViewCountry.Layer.CornerRadius = 5;
+
+    //         TextFieldPostcode.Font = MobiusHelper.GetFontLightWithSize(14);
+    //         TextFieldCountry.Font = MobiusHelper.GetFontLightWithSize(14);
+    //     }
+    // }
+
+		public override void AwakeFromNib()
+		{
             base.AwakeFromNib();
-            this.BackgroundColor = MobiusHelper.GetColorLightGrey();
-            ViewMainPostCodeCountry.BackgroundColor = MobiusHelper.GetColorLightGrey();
-            ViewPostcode.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
-            ViewPostcode.Layer.BorderWidth = 2;
-            ViewPostcode.Layer.CornerRadius = 5;
+            TextFieldPostcode.Placeholder = "Post Code";
+            TextFieldCountry.Placeholder = "Country";
+         
 
-            ViewCountry.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
-            ViewCountry.Layer.BorderWidth = 2;
-            ViewCountry.Layer.CornerRadius = 5;
+            UIViewHelper.SetViewBorderAndCornerRadiusForTextField(ViewCountry);
+            UIViewHelper.SetViewBorderAndCornerRadiusForTextField(ViewPostcode);
 
-            TextFieldPostcode.Font = MobiusHelper.GetFontLightWithSize(14);
-            TextFieldCountry.Font = MobiusHelper.GetFontLightWithSize(14);
-        }
-    }
+
+		}
+	}
 }

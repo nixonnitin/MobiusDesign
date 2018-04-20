@@ -15,6 +15,10 @@ namespace Mobius.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView ImageArrowDown { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView ImageGlobe { get; set; }
 
         [Outlet]
@@ -43,6 +47,11 @@ namespace Mobius.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (ImageArrowDown != null) {
+                ImageArrowDown.Dispose ();
+                ImageArrowDown = null;
+            }
+
             if (ImageGlobe != null) {
                 ImageGlobe.Dispose ();
                 ImageGlobe = null;

@@ -565,6 +565,10 @@
     <ImageAsset Include="Resources\Assets.xcassets\MailBoxGrayImage.imageset\post-code-1.png" />
     <ImageAsset Include="Resources\Assets.xcassets\MailBoxGrayImage.imageset\post-code-2.png" />
     <ImageAsset Include="Resources\Assets.xcassets\MailBoxGrayImage.imageset\post-code-3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ImageVisa.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\ImageVisa.imageset\visa-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ImageVisa.imageset\visa-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\ImageVisa.imageset\visa.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -733,6 +737,8 @@
     <InterfaceDefinition Include="Views\Points\cell\Points two button cell\PointsTwoButtonTableViewCell.xib" />
     <InterfaceDefinition Include="Views\Confirmation\Cells\Confirmation hotel details\ConfirmationHotelDetailsTableViewCell.xib" />
     <InterfaceDefinition Include="Views\Confirmation\Controller\ConfirmationViewController.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\ImageVisaViewCell.xib" />
+    <InterfaceDefinition Include="Views\CheckoutView\Cells\PointsDataViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -1167,6 +1173,14 @@
     <Compile Include="Views\Confirmation\Cells\Confirmation hotel details\ConfirmationHotelDetailsTableViewCell.designer.cs" />
     <Compile Include="Views\Confirmation\Controller\ConfirmationViewController.cs" />
     <Compile Include="Views\Confirmation\Controller\ConfirmationViewController.designer.cs" />
+    <Compile Include="Views\CheckoutView\Cells\ImageVisaViewCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\ImageVisaViewCell.designer.cs">
+      <DependentUpon>ImageVisaViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckoutView\Cells\PointsDataViewCell.cs" />
+    <Compile Include="Views\CheckoutView\Cells\PointsDataViewCell.designer.cs">
+      <DependentUpon>PointsDataViewCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />
@@ -1190,6 +1204,7 @@
     <BundleResource Include="Resources\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Roboto-ThinItalic.ttf" />
+    <BundleResource Include="Resources\Archive.zip" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

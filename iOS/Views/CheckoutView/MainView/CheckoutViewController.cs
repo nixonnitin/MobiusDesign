@@ -30,7 +30,7 @@ namespace Mobius.iOS.Views
         private void initData()
         {
             sections = new List<string> { "", "Enter Your Details", "Offers", "Hotels Near You", "Popular Destinations","","", "",
-                "Selected Offers:", "Your Up Coming Stay:", "Your Purchased Enhancements:", "Recommended Enhancements:", "Your Reservation:", "Your Reservation:" ,"","Select your welcome benefit:","","","","" };
+                "Selected Offers:", "Your Up Coming Stay:", "Your Purchased Enhancements:", "Recommended Enhancements:", "Your Reservation:", "Your Reservation:" ,"","Select your welcome benefit:","","","","","","" };
         }
 
         private void initUI()
@@ -56,13 +56,15 @@ namespace Mobius.iOS.Views
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutInputCardCell", NSBundle.MainBundle), "CheckoutInputCardCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutCardExpireCell", NSBundle.MainBundle), "CheckoutCardExpireCell");
             TableCheckout.RegisterNibForCellReuse(UINib.FromName("CheckoutPostcodeCountryCell", NSBundle.MainBundle), "CheckoutPostcodeCountryCell");
+            TableCheckout.RegisterNibForCellReuse(UINib.FromName("ImageVisaViewCell", NSBundle.MainBundle), "ImageVisaViewCell");
+
+            TableCheckout.RegisterNibForCellReuse(UINib.FromName("PointsDataViewCell", NSBundle.MainBundle), "PointsDataViewCell");
 
 
             TableCheckout.Source = new CheckoutTableSource(TableCheckout, sections);
             //TableCheckout.Delegate = new CheckoutTableDelegate(TableCheckout, View.Frame.Size, sections);
         }
     }
-
 
     public class CheckoutTableSource : UITableViewSource
     {
@@ -237,8 +239,23 @@ namespace Mobius.iOS.Views
                 //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
                 return cell;
             }
+            else if (indexPath.Section == 13)
+            {
 
+                var cell = (ImageVisaViewCell)tableView.DequeueReusableCell(ImageVisaViewCell.Key, indexPath);
+                // cell.SelectionStyle = UITableViewCellSelectionStyle.None;
 
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
+                return cell;
+            }else if (indexPath.Section == 14)
+            {
+
+                var cell = (PointsDataViewCell)tableView.DequeueReusableCell(PointsDataViewCell.Key, indexPath);
+                // cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+
+                //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
+                return cell;
+            }
             else
             {
 
@@ -246,11 +263,12 @@ namespace Mobius.iOS.Views
                 cell.SelectionStyle = UITableViewCellSelectionStyle.None;
                 //cell.ButtonNext.AddTarget(TestAction, UIControlEvent.TouchUpInside);
                 return cell;
-               
+
             }
 
             //CheckoutTermsConditionsCell
         }
+
         public override nint RowsInSection(UITableView tableView, nint section)
         {
             if (section == 2 || section == 8)
@@ -266,7 +284,8 @@ namespace Mobius.iOS.Views
         public override nint NumberOfSections(UITableView tableView)
         {
             //return sections.Count;
-            return 14;
+            return 16;
         }
+
     }
 }
