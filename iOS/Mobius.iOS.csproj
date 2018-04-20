@@ -603,7 +603,6 @@
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Views\LoginViewController.xib" />
     <InterfaceDefinition Include="Views\RegistrationViewController.xib" />
-    <InterfaceDefinition Include="Views\MyTableViewCell.xib" />
     <InterfaceDefinition Include="Views\MyViewController.xib" />
     <InterfaceDefinition Include="Views\MenuView\MenuExistingUserCell1.xib" />
     <InterfaceDefinition Include="Views\MenuView\MenuViewController.xib" />
@@ -725,6 +724,15 @@
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardDescriptionViewCell.xib" />
     <InterfaceDefinition Include="Views\RewardCenter\Cells\RewardsTableViewCell.xib" />
     <InterfaceDefinition Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.xib" />
+    <InterfaceDefinition Include="Views\Points\Controller\PointsViewController.xib" />
+    <InterfaceDefinition Include="Views\Points\cell\PointEarningHistoryCell\PointsEarningHistoryTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Points\cell\PointeTwoLabelRoundedCell\PointsTwoLabelRoundedCellTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Points\cell\Points Two label cell\PointsTwoLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Points\cell\Points popup cell\MyTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Points\cell\Points popup cell\PollPopupTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Points\cell\Points two button cell\PointsTwoButtonTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Confirmation\Cells\Confirmation hotel details\ConfirmationHotelDetailsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Confirmation\Controller\ConfirmationViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -755,7 +763,6 @@
     <Compile Include="Views\LoadingOverlay.cs" />
     <Compile Include="Views\RootViewController.cs" />
     <Compile Include="Views\NavController.cs" />
-    <Compile Include="Views\MyTableViewCell.cs" />
     <Compile Include="Views\MyViewController.cs" />
     <Compile Include="Views\MyViewController.designer.cs">
       <DependentUpon>MyViewController.cs</DependentUpon>
@@ -919,7 +926,6 @@
     <Compile Include="Views\CheckoutView\MainView\CheckoutViewController.designer.cs">
       <DependentUpon>CheckoutViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CheckoutView\MainView\CheckoutTableSource.cs" />
     <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookButtonCell.cs" />
     <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.cs" />
     <Compile Include="Views\Hotel\Hotel Quick Book\HotelQuickBookImageCell.designer.cs" />
@@ -1143,6 +1149,24 @@
     </Compile>
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.cs" />
     <Compile Include="Views\Hotel\Hotel Main Page\Hotel More Cell\HotelMoreCell.designer.cs" />
+    <Compile Include="Views\Points\Controller\PointsViewController.cs" />
+    <Compile Include="Views\Points\Controller\PointsViewController.designer.cs" />
+    <Compile Include="Views\Points\cell\PointEarningHistoryCell\PointsEarningHistoryTableViewCell.cs" />
+    <Compile Include="Views\Points\cell\PointEarningHistoryCell\PointsEarningHistoryTableViewCell.designer.cs" />
+    <Compile Include="Views\Points\cell\PointeTwoLabelRoundedCell\PointsTwoLabelRoundedCellTableViewCell.cs" />
+    <Compile Include="Views\Points\cell\PointeTwoLabelRoundedCell\PointsTwoLabelRoundedCellTableViewCell.designer.cs" />
+    <Compile Include="Views\Points\cell\Points Two label cell\PointsTwoLabelTableViewCell.cs" />
+    <Compile Include="Views\Points\cell\Points Two label cell\PointsTwoLabelTableViewCell.designer.cs" />
+    <Compile Include="Views\Points\cell\Points popup cell\MyTableViewCell.cs" />
+    <Compile Include="Views\Points\cell\Points popup cell\MyTableViewCell.designer.cs" />
+    <Compile Include="Views\Points\cell\Points popup cell\PollPopupTableViewCell.cs" />
+    <Compile Include="Views\Points\cell\Points popup cell\PollPopupTableViewCell.designer.cs" />
+    <Compile Include="Views\Points\cell\Points two button cell\PointsTwoButtonTableViewCell.cs" />
+    <Compile Include="Views\Points\cell\Points two button cell\PointsTwoButtonTableViewCell.designer.cs" />
+    <Compile Include="Views\Confirmation\Cells\Confirmation hotel details\ConfirmationHotelDetailsTableViewCell.cs" />
+    <Compile Include="Views\Confirmation\Cells\Confirmation hotel details\ConfirmationHotelDetailsTableViewCell.designer.cs" />
+    <Compile Include="Views\Confirmation\Controller\ConfirmationViewController.cs" />
+    <Compile Include="Views\Confirmation\Controller\ConfirmationViewController.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bgblur.png" />

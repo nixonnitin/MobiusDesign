@@ -3,7 +3,7 @@
 using Foundation;
 using UIKit;
 
-namespace Mobius.iOS.Views
+namespace Mobius.iOS.Views.Points.cell.Pointspopupcell
 {
     public partial class MyTableViewCell : UITableViewCell
     {

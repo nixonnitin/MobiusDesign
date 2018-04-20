@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="width" constant="25" id="ukw-Jx-AlZ"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZy-WF-tFJ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Post Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZy-WF-tFJ">
                                         <rect key="frame" x="35" y="5" width="81.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="q9w-W4-AlF"/>
@@ -63,7 +63,7 @@
                                             <constraint firstAttribute="height" constant="25" id="cKB-Ij-U1l"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJF-MD-jRh">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJF-MD-jRh">
                                         <rect key="frame" x="35" y="5" width="98.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="CQd-rA-bbC"/>

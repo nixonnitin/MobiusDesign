@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-ha-Ps2">
-                        <rect key="frame" x="5" y="8" width="310" height="29"/>
+                        <rect key="frame" x="15" y="8" width="290" height="29"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <segments>
                             <segment title="Pay with Card"/>
@@ -30,9 +30,9 @@
                     </segmentedControl>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="CV6-ha-Ps2" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="5" id="3ml-j3-WAF"/>
+                    <constraint firstItem="CV6-ha-Ps2" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="3ml-j3-WAF"/>
                     <constraint firstItem="CV6-ha-Ps2" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="ddt-4V-lyn"/>
-                    <constraint firstAttribute="trailing" secondItem="CV6-ha-Ps2" secondAttribute="trailing" constant="5" id="oWe-o2-LAt"/>
+                    <constraint firstAttribute="trailing" secondItem="CV6-ha-Ps2" secondAttribute="trailing" constant="15" id="oWe-o2-LAt"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
