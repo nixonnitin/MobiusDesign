@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Foundation;
+using Mobius.iOS.Helper;
 using UIKit;
 
 namespace Mobius.iOS.Views
@@ -19,5 +20,17 @@ namespace Mobius.iOS.Views
         {
             // Note: this .ctor should not contain any initialization logic.
         }
-    }
+		public override void AwakeFromNib()
+		{
+            base.AwakeFromNib();
+            TextFieldPostcode.Placeholder = "Post Code";
+            TextFieldCountry.Placeholder = "Country";
+         
+
+            UIViewHelper.SetViewBorderAndCornerRadiusForTextField(ViewCountry);
+            UIViewHelper.SetViewBorderAndCornerRadiusForTextField(ViewPostcode);
+
+
+		}
+	}
 }

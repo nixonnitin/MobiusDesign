@@ -127,6 +127,13 @@ namespace Mobius.iOS.Helper
             AppDelegate objAppDelegate = (AppDelegate)UIApplication.SharedApplication.Delegate;
             objAppDelegate.Window.RootViewController = navController;
         }
+
+        public static void SetViewBorderAndCornerRadiusForTextField(UIView view, float borderWidth = 2,float cornerRadius = 5)
+        {
+            view.Layer.BorderColor = MobiusHelper.GetColorBorderGrey().CGColor;
+            view.Layer.BorderWidth = borderWidth;
+            view.Layer.CornerRadius = cornerRadius;
+        }
 	}
 
 	/// <summary>
